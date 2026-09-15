@@ -1,0 +1,2512 @@
+[
+  {
+    "id": "3d-printer-k2",
+    "cat": "fabrication",
+    "qty": 1,
+    "bookable": true,
+    "restricted": true,
+    "maxHours": 8,
+    "vendor": "CAMTEH d.o.o.",
+    "model": "Creality K2 Pro Combo",
+    "name": {
+      "hr": "3D pisač Creality K2 Pro Combo (FFF)",
+      "en": "Creality K2 Pro Combo 3D printer (FFF)"
+    },
+    "short": {
+      "hr": "Zatvoreni FFF pisač s CFS jedinicom za više materijala, 300 × 300 × 300 mm.",
+      "en": "Enclosed FFF printer with CFS multi-material unit, 300 × 300 × 300 mm."
+    },
+    "desc": {
+      "hr": "Glavni radni 3D pisač Centra. Zatvoreno grijano kućište omogućuje rad s tehničkim materijalima koji se na otvorenim pisačima odvajaju od podloge. CFS jedinica omogućuje automatsku izmjenu do četiri materijala unutar istog ispisa. Prije prve rezervacije obavezna je kratka obuka.",
+      "en": "The Centre's main production 3D printer. The heated enclosure makes it possible to run engineering materials that warp on open-frame machines, and the CFS unit handles automatic switching between up to four materials within a single print. A short induction is required before your first booking."
+    },
+    "specs": [
+      {
+        "hr": "Radni volumen",
+        "en": "Build volume",
+        "v": "300 × 300 × 300 mm"
+      },
+      {
+        "hr": "Ekstruderi",
+        "en": "Extruders",
+        "v": "1 × direct drive"
+      },
+      {
+        "hr": "Temperatura ekstrudera",
+        "en": "Extruder temperature",
+        "v": "do / up to 300 °C"
+      },
+      {
+        "hr": "Grijana podloga",
+        "en": "Heated bed",
+        "v": "do / up to 110 °C"
+      },
+      {
+        "hr": "Grijana komora",
+        "en": "Heated chamber",
+        "v": "do / up to 60 °C"
+      },
+      {
+        "hr": "Brzina ispisa",
+        "en": "Print speed",
+        "v": "do / up to 600 mm/s"
+      },
+      {
+        "hr": "Materijali",
+        "en": "Materials",
+        "v": "PLA, ABS, PETG, ASA, PET, PA-CF, PLA-CF, PPA-CF"
+      },
+      {
+        "hr": "Povezivost",
+        "en": "Connectivity",
+        "v": "Wi-Fi, Ethernet, USB"
+      },
+      {
+        "hr": "Ostalo",
+        "en": "Other",
+        "v": "Full-auto leveling, AI kamera / AI camera, 4\" LCD"
+      }
+    ],
+    "tags": [
+      "3d ispis",
+      "printanje",
+      "printer",
+      "pisac",
+      "filament",
+      "aditivna proizvodnja",
+      "3d printing",
+      "additive"
+    ],
+    "abbr": {
+      "hr": "3D pisač",
+      "en": "3D printer"
+    }
+  },
+  {
+    "id": "3d-scanner-otter",
+    "cat": "fabrication",
+    "qty": 1,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 4,
+    "vendor": "CAMTEH d.o.o.",
+    "model": "Creality Otter Lite",
+    "name": {
+      "hr": "3D skener Creality Otter Lite",
+      "en": "Creality Otter Lite 3D scanner"
+    },
+    "short": {
+      "hr": "Optički 3D skener, točnost do 0,05 mm, izlaz OBJ / STL / PLY.",
+      "en": "Optical 3D scanner, accuracy to 0.05 mm, OBJ / STL / PLY output."
+    },
+    "desc": {
+      "hr": "Optički skener za reverzno inženjerstvo i digitalizaciju postojećih dijelova. Koristi se kada treba izraditi zamjenski dio, kućište oko postojeće geometrije ili digitalni model fizičkog predmeta prije obrade u CAD-u.",
+      "en": "Optical scanner for reverse engineering and digitising existing parts. Use it when you need a replacement part, an enclosure built around existing geometry, or a digital model of a physical object to take into CAD."
+    },
+    "specs": [
+      {
+        "hr": "Točnost skeniranja",
+        "en": "Scan accuracy",
+        "v": "do / up to 0,05 mm"
+      },
+      {
+        "hr": "Rezolucija točaka",
+        "en": "Point resolution",
+        "v": "0,05 – 2 mm"
+      },
+      {
+        "hr": "Brzina",
+        "en": "Frame rate",
+        "v": "do / up to 30 fps"
+      },
+      {
+        "hr": "Područje skeniranja",
+        "en": "Scan range",
+        "v": "120 – 1200 mm"
+      },
+      {
+        "hr": "Min. volumen",
+        "en": "Min. volume",
+        "v": "20 × 20 × 20 mm"
+      },
+      {
+        "hr": "Izlazni formati",
+        "en": "Export formats",
+        "v": "OBJ, STL, PLY"
+      }
+    ],
+    "tags": [
+      "skeniranje",
+      "scanning",
+      "reverzno inzenjerstvo",
+      "digitalizacija"
+    ]
+  },
+  {
+    "id": "table-saw",
+    "cat": "woodwork",
+    "qty": 1,
+    "bookable": true,
+    "restricted": true,
+    "maxHours": 4,
+    "name": {
+      "hr": "Stolna pila 1.800 W",
+      "en": "Table saw, 1,800 W"
+    },
+    "short": {
+      "hr": "List 254 mm, dubina reza 79 mm pri 90°.",
+      "en": "254 mm blade, 79 mm depth of cut at 90°."
+    },
+    "desc": {
+      "hr": "Stroj za uzdužno i poprečno rezanje ploča i letvica. Najzahtjevniji stroj u radionici po pitanju sigurnosti — rezervacija je moguća tek nakon obuke i uvijek uz prisutnost druge osobe u prostoru.",
+      "en": "For ripping and cross-cutting sheet goods and stock. The most safety-sensitive machine in the workshop — bookable only after induction, and never to be used alone in the room."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "1.800 W"
+      },
+      {
+        "hr": "Promjer lista",
+        "en": "Blade diameter",
+        "v": "254 mm"
+      },
+      {
+        "hr": "Dubina reza na 90°",
+        "en": "Depth of cut at 90°",
+        "v": "79 mm"
+      }
+    ],
+    "tags": [
+      "rezanje",
+      "pilenje",
+      "cutting",
+      "sawing",
+      "circular saw",
+      "kruzna pila"
+    ],
+    "abbr": {
+      "hr": "Stolna pila",
+      "en": "Table saw"
+    }
+  },
+  {
+    "id": "mitre-saw",
+    "cat": "woodwork",
+    "qty": 1,
+    "bookable": true,
+    "restricted": true,
+    "maxHours": 4,
+    "name": {
+      "hr": "Preklopna (potezna) pila 2.000 W",
+      "en": "Sliding mitre saw, 2,000 W"
+    },
+    "short": {
+      "hr": "List 305 mm, precizni kutni i kosi rezovi.",
+      "en": "305 mm blade, accurate mitre and bevel cuts."
+    },
+    "desc": {
+      "hr": "Za precizne poprečne, kutne i kose rezove na letvicama, profilima i užim pločama. Standardni prvi korak kod izrade okvira, nogu i konstrukcijskih elemenata.",
+      "en": "For accurate cross, mitre and bevel cuts in stock, profiles and narrow boards. The usual first step when making frames, legs and structural members."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "2.000 W"
+      },
+      {
+        "hr": "Promjer lista",
+        "en": "Blade diameter",
+        "v": "305 mm"
+      }
+    ],
+    "tags": [
+      "rezanje",
+      "cutting",
+      "sawing",
+      "chop saw",
+      "kutno rezanje"
+    ],
+    "abbr": {
+      "hr": "Preklopna pila",
+      "en": "Mitre saw"
+    }
+  },
+  {
+    "id": "planer",
+    "cat": "woodwork",
+    "qty": 1,
+    "bookable": true,
+    "restricted": true,
+    "maxHours": 4,
+    "name": {
+      "hr": "Stroj za blanjanje 1.250 W",
+      "en": "Thickness planer, 1,250 W"
+    },
+    "short": {
+      "hr": "Poravnavanje i dovođenje drva na točnu debljinu.",
+      "en": "Flattening stock and bringing it to exact thickness."
+    },
+    "desc": {
+      "hr": "Priprema sirovog ili neravnog drva prije daljnje obrade — poravnava plohu i dovodi materijal na jednoliku debljinu po cijeloj dužini.",
+      "en": "Prepares rough or uneven timber before further work — flattens the face and brings the material to a uniform thickness along its full length."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "1.250 W"
+      }
+    ],
+    "tags": [
+      "blanjalica",
+      "debljaca",
+      "planing",
+      "thicknesser",
+      "obrada drva"
+    ],
+    "abbr": {
+      "hr": "Blanjalica",
+      "en": "Planer"
+    }
+  },
+  {
+    "id": "wood-router",
+    "cat": "woodwork",
+    "qty": 1,
+    "bookable": true,
+    "restricted": true,
+    "maxHours": 4,
+    "name": {
+      "hr": "Glodalica za drvo 1.300 W",
+      "en": "Wood router, 1,300 W"
+    },
+    "short": {
+      "hr": "11.000 – 28.000 o/min, profiliranje rubova i utori.",
+      "en": "11,000 – 28,000 rpm, edge profiling and grooves."
+    },
+    "desc": {
+      "hr": "Ručna glodalica za utore, preklope, profilirane rubove i izrezivanje po šabloni. U kombinaciji s radnim stolom i šablonom daje ponovljive rezultate na serijama dijelova.",
+      "en": "Hand-held router for grooves, rebates, profiled edges and template cutting. Combined with a bench and a template it gives repeatable results across batches of parts."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "1.300 W"
+      },
+      {
+        "hr": "Broj okretaja",
+        "en": "No-load speed",
+        "v": "11.000 – 28.000 o/min / rpm"
+      }
+    ],
+    "tags": [
+      "glodanje",
+      "routing",
+      "milling",
+      "utori",
+      "rubovi"
+    ],
+    "abbr": {
+      "hr": "Glodalica",
+      "en": "Router"
+    }
+  },
+  {
+    "id": "belt-sander",
+    "cat": "woodwork",
+    "qty": 1,
+    "bookable": true,
+    "restricted": true,
+    "maxHours": 3,
+    "name": {
+      "hr": "Tračna brusilica i laštilica 370 W",
+      "en": "Belt and disc sander, 370 W"
+    },
+    "short": {
+      "hr": "2.850 o/min, stacionarno brušenje i skidanje materijala.",
+      "en": "2,850 rpm, stationary sanding and stock removal."
+    },
+    "desc": {
+      "hr": "Stacionarni stroj za brzo skidanje materijala, poravnavanje rubova i pripremu spojeva. Koristi se i za skraćivanje 3D-ispisanih dijelova i čišćenje potpora.",
+      "en": "Stationary machine for fast stock removal, squaring edges and preparing joints. Also used to trim 3D-printed parts and clean up support marks."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "370 W"
+      },
+      {
+        "hr": "Broj okretaja",
+        "en": "Speed",
+        "v": "2.850 o/min / rpm"
+      }
+    ],
+    "tags": [
+      "brusenje",
+      "sanding",
+      "grinding",
+      "laštenje",
+      "poliranje"
+    ],
+    "abbr": {
+      "hr": "Tračna brusilica",
+      "en": "Belt sander"
+    }
+  },
+  {
+    "id": "orbital-sander",
+    "cat": "woodwork",
+    "qty": 1,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 3,
+    "name": {
+      "hr": "Ekscentrična brusilica 240 W",
+      "en": "Random orbital sander, 240 W"
+    },
+    "short": {
+      "hr": "0 – 12.000 o/min, ploče Ø 125 mm.",
+      "en": "0 – 12,000 rpm, 125 mm discs."
+    },
+    "desc": {
+      "hr": "Ručna brusilica za završnu obradu ploha bez vidljivih tragova brušenja. Brusne ploče Ø 125 mm granulacije 60 – 240 dostupne su kao potrošni materijal.",
+      "en": "Hand-held sander for finishing surfaces without visible sanding marks. 125 mm discs in grits 60 – 240 are stocked as consumables."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "240 W"
+      },
+      {
+        "hr": "Broj okretaja",
+        "en": "Speed",
+        "v": "0 – 12.000 o/min / rpm"
+      },
+      {
+        "hr": "Promjer ploče",
+        "en": "Disc diameter",
+        "v": "125 mm"
+      }
+    ],
+    "tags": [
+      "brusenje",
+      "sanding",
+      "polishing",
+      "finiranje"
+    ]
+  },
+  {
+    "id": "multi-tool",
+    "cat": "woodwork",
+    "qty": 1,
+    "bookable": true,
+    "restricted": true,
+    "maxHours": 3,
+    "name": {
+      "hr": "Električni višenamjenski alat 350 W",
+      "en": "Oscillating multi-tool, 350 W"
+    },
+    "short": {
+      "hr": "Sustav STARLOCK-Plus, oscilirajući rez i brušenje.",
+      "en": "STARLOCK-Plus system, plunge cutting and sanding."
+    },
+    "desc": {
+      "hr": "Oscilirajući alat za uranjajuće rezove, rezanje u kut i obradu mjesta gdje druge pile ne dosežu. STARLOCK-Plus prihvat omogućuje brzu izmjenu nastavaka bez alata.",
+      "en": "Oscillating tool for plunge cuts, flush cuts and work in places other saws cannot reach. The STARLOCK-Plus interface allows tool-free accessory changes."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "350 W"
+      },
+      {
+        "hr": "Prihvat",
+        "en": "Accessory system",
+        "v": "STARLOCK-Plus"
+      }
+    ],
+    "tags": [
+      "oscilirajuci",
+      "oscillating",
+      "rezanje",
+      "starlock",
+      "renovator"
+    ],
+    "abbr": {
+      "hr": "Višenamjenski alat",
+      "en": "Multi-tool"
+    }
+  },
+  {
+    "id": "drill-press",
+    "cat": "metalwork",
+    "qty": 1,
+    "bookable": true,
+    "restricted": true,
+    "maxHours": 4,
+    "name": {
+      "hr": "Stolna bušilica 550 W",
+      "en": "Bench drill press, 550 W"
+    },
+    "short": {
+      "hr": "510 – 2.430 o/min, stezna glava 3 – 13 mm.",
+      "en": "510 – 2,430 rpm, 3 – 13 mm chuck."
+    },
+    "desc": {
+      "hr": "Za bušenje okomitih, ponovljivih provrta u metalu, drvu i plastici. Regulacija broja okretaja omogućuje ispravnu brzinu za svaki materijal i promjer svrdla.",
+      "en": "For vertical, repeatable holes in metal, wood and plastic. Variable speed lets you match the correct surface speed to each material and drill diameter."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "550 W"
+      },
+      {
+        "hr": "Broj okretaja",
+        "en": "Speed range",
+        "v": "510 – 2.430 o/min / rpm"
+      },
+      {
+        "hr": "Stezna glava",
+        "en": "Chuck capacity",
+        "v": "3 – 13 mm"
+      }
+    ],
+    "tags": [
+      "busenje",
+      "drilling",
+      "busilica",
+      "drill",
+      "provrt"
+    ],
+    "abbr": {
+      "hr": "Stolna bušilica",
+      "en": "Drill press"
+    }
+  },
+  {
+    "id": "drill-kit",
+    "cat": "metalwork",
+    "qty": 1,
+    "bookable": true,
+    "restricted": true,
+    "maxHours": 8,
+    "name": {
+      "hr": "Set bušilica i kutna brusilica (akumulatorski)",
+      "en": "Cordless drill and angle grinder set"
+    },
+    "short": {
+      "hr": "Bušilica/odvijač, udarna bušilica, kutna brusilica, baterije i punjač.",
+      "en": "Drill/driver, impact drill, angle grinder, batteries and charger."
+    },
+    "desc": {
+      "hr": "Prijenosni komplet za montažu i obradu izvan fiksnih radnih mjesta. Kutna brusilica zahtijeva obuku i obaveznu zaštitu za oči i sluh.",
+      "en": "Portable set for assembly and cutting away from the fixed workstations. The angle grinder requires induction and mandatory eye and hearing protection."
+    },
+    "specs": [
+      {
+        "hr": "Sadržaj",
+        "en": "Contents",
+        "v": "Bušilica/odvijač, udarna bušilica, kutna brusilica / drill-driver, impact drill, angle grinder"
+      },
+      {
+        "hr": "Napajanje",
+        "en": "Power",
+        "v": "Akumulatorsko, baterije i punjač uključeni / cordless, batteries and charger included"
+      }
+    ],
+    "tags": [
+      "busenje",
+      "drilling",
+      "odvijanje",
+      "brusenje",
+      "kutna brusilica",
+      "grinder",
+      "akumulatorski",
+      "cordless"
+    ],
+    "abbr": {
+      "hr": "Set bušilica",
+      "en": "Drill set"
+    }
+  },
+  {
+    "id": "micro-mill",
+    "cat": "metalwork",
+    "qty": 1,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 4,
+    "name": {
+      "hr": "Mikro glodalica 100 W",
+      "en": "Micro milling machine, 100 W"
+    },
+    "short": {
+      "hr": "Radna podloga 200 × 70 mm, sitni precizni radovi.",
+      "en": "200 × 70 mm table, fine precision work."
+    },
+    "desc": {
+      "hr": "Mala glodalica za precizne zahvate na sitnim dijelovima — izrada kućišta za senzore, dorada tiskanih pločica i modelarski radovi.",
+      "en": "Small mill for precision work on small parts — sensor housings, PCB rework and model-making."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "100 W"
+      },
+      {
+        "hr": "Dimenzije podloge",
+        "en": "Table size",
+        "v": "200 × 70 mm"
+      }
+    ],
+    "tags": [
+      "glodanje",
+      "milling",
+      "cnc",
+      "precizna obrada"
+    ]
+  },
+  {
+    "id": "rotary-tool",
+    "cat": "metalwork",
+    "qty": 1,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 4,
+    "name": {
+      "hr": "Rotacijski alat (dremilica) 130 W",
+      "en": "Rotary tool, 130 W"
+    },
+    "short": {
+      "hr": "10.000 – 33.000 o/min, rezanje, brušenje, graviranje.",
+      "en": "10,000 – 33,000 rpm, cutting, grinding, engraving."
+    },
+    "desc": {
+      "hr": "Univerzalni alat za sitne zahvate: rezanje, graviranje, poliranje i čišćenje. Uz radnu postaju za vertikalnu montažu radi i kao mala stolna bušilica.",
+      "en": "General-purpose tool for fine work: cutting, engraving, polishing and clean-up. With the vertical workstation it doubles as a small drill press."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "130 W"
+      },
+      {
+        "hr": "Broj okretaja",
+        "en": "Speed",
+        "v": "10.000 – 33.000 o/min / rpm"
+      }
+    ],
+    "tags": [
+      "dremel",
+      "graviranje",
+      "engraving",
+      "rezanje",
+      "poliranje",
+      "rotary"
+    ]
+  },
+  {
+    "id": "rotary-stand",
+    "cat": "metalwork",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Radna postaja za rotacijski alat",
+      "en": "Rotary tool workstation"
+    },
+    "short": {
+      "hr": "Vertikalna montaža, pomak 50 mm.",
+      "en": "Vertical mount, 50 mm travel."
+    },
+    "desc": {
+      "hr": "Stalak koji rotacijski alat pretvara u malu stolnu bušilicu s kontroliranim vertikalnim pomakom.",
+      "en": "Stand that turns the rotary tool into a small drill press with controlled vertical travel."
+    },
+    "specs": [
+      {
+        "hr": "Pomak",
+        "en": "Travel",
+        "v": "50 mm"
+      }
+    ],
+    "tags": [
+      "dremel",
+      "stalak",
+      "stand"
+    ]
+  },
+  {
+    "id": "bench-vise",
+    "cat": "metalwork",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Škripac — fiksna montaža",
+      "en": "Bench vice — fixed mount"
+    },
+    "short": {
+      "hr": "Trajno montiran na radni stol.",
+      "en": "Permanently mounted on the workbench."
+    },
+    "desc": {
+      "hr": "Škripac trajno montiran na radne stolove u metalskoj zoni. Dostupan je svakome tko koristi taj radni stol — ne rezervira se zasebno.",
+      "en": "Vice permanently mounted on the benches in the metalwork zone. Available to anyone using that bench — not booked separately."
+    },
+    "specs": [],
+    "tags": [
+      "stezanje",
+      "clamping",
+      "vice",
+      "vise",
+      "skripac"
+    ]
+  },
+  {
+    "id": "edge-vise",
+    "cat": "metalwork",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Škripac — rubna montaža",
+      "en": "Bench vice — clamp-on"
+    },
+    "short": {
+      "hr": "Prenosivi škripac, steže se na rub stola.",
+      "en": "Portable vice, clamps to the bench edge."
+    },
+    "desc": {
+      "hr": "Lagani škripac koji se steže na rub bilo kojeg radnog stola — koristan kada je potrebno stegnuti dio izvan metalske zone.",
+      "en": "Light vice that clamps onto the edge of any bench — useful when you need to hold a part outside the metalwork zone."
+    },
+    "specs": [],
+    "tags": [
+      "stezanje",
+      "clamping",
+      "vice",
+      "vise",
+      "skripac"
+    ]
+  },
+  {
+    "id": "tap-die-set",
+    "cat": "metalwork",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Set rezača navoja, 51-dijelni",
+      "en": "Tap and die set, 51-piece"
+    },
+    "short": {
+      "hr": "M3 – M12, ureznici i nareznice.",
+      "en": "M3 – M12, taps and dies."
+    },
+    "desc": {
+      "hr": "Za izradu i popravak metričkih navoja u metalu i tvrdoj plastici, uključujući urezivanje navoja izravno u 3D-ispisane dijelove.",
+      "en": "For cutting and repairing metric threads in metal and hard plastics, including tapping threads directly into 3D-printed parts."
+    },
+    "specs": [
+      {
+        "hr": "Raspon",
+        "en": "Range",
+        "v": "M3 – M12"
+      }
+    ],
+    "tags": [
+      "navoji",
+      "threading",
+      "urezivanje",
+      "ureznik",
+      "nareznica",
+      "tap",
+      "die"
+    ]
+  },
+  {
+    "id": "screw-extractor",
+    "cat": "metalwork",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Set za vađenje vijaka, 6-dijelni",
+      "en": "Screw extractor set, 6-piece"
+    },
+    "short": {
+      "hr": "M3 – M24, vađenje oštećenih vijaka.",
+      "en": "M3 – M24, removal of damaged screws."
+    },
+    "desc": {
+      "hr": "Za vađenje vijaka s oštećenom glavom ili puknutih u provrtu.",
+      "en": "For removing screws with stripped heads or snapped off inside a hole."
+    },
+    "specs": [
+      {
+        "hr": "Raspon",
+        "en": "Range",
+        "v": "M3 – M24"
+      }
+    ],
+    "tags": [
+      "vijci",
+      "screws",
+      "extractor",
+      "ostecen vijak"
+    ]
+  },
+  {
+    "id": "sheet-shears",
+    "cat": "metalwork",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Komplet škara za lim, 3-dijelni",
+      "en": "Sheet metal shears, 3-piece set"
+    },
+    "short": {
+      "hr": "Lijevi, desni i ravni rez.",
+      "en": "Left, right and straight cut."
+    },
+    "desc": {
+      "hr": "Tri para škara za ravne i zakrivljene rezove u tankom limu — izrada nosača, oklopa i kućišta.",
+      "en": "Three pairs of shears for straight and curved cuts in thin sheet — brackets, shields and enclosures."
+    },
+    "specs": [],
+    "tags": [
+      "lim",
+      "sheet metal",
+      "skare",
+      "shears",
+      "rezanje lima"
+    ]
+  },
+  {
+    "id": "hole-saw-set",
+    "cat": "metalwork",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Set kruna za rupe",
+      "en": "Hole saw set"
+    },
+    "short": {
+      "hr": "6 – 70 mm.",
+      "en": "6 – 70 mm."
+    },
+    "desc": {
+      "hr": "Krune za izradu većih provrta — prolazi za kabele, prekidače, konektore i ventilatore u kućištima.",
+      "en": "Hole saws for larger openings — cable glands, switches, connectors and fan cut-outs in enclosures."
+    },
+    "specs": [
+      {
+        "hr": "Promjeri",
+        "en": "Diameters",
+        "v": "6 – 70 mm"
+      }
+    ],
+    "tags": [
+      "busenje",
+      "drilling",
+      "krune",
+      "hole saw",
+      "provrt"
+    ]
+  },
+  {
+    "id": "tool-trolley",
+    "cat": "handtools",
+    "qty": 2,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 8,
+    "name": {
+      "hr": "Radionička kolica s alatom",
+      "en": "Workshop tool trolley"
+    },
+    "short": {
+      "hr": "Pokretna kolica s osnovnim kompletom alata.",
+      "en": "Mobile trolley with a full basic tool set."
+    },
+    "desc": {
+      "hr": "Pokretna kolica s kompletom ručnog alata koja se dovlače na radno mjesto. Rezerviraju se kada radite duži projekt na jednom mjestu i treba vam alat pri ruci.",
+      "en": "Mobile trolley with a hand tool set that you bring to your work position. Book one when you are running a longer project in one spot and want the tools to hand."
+    },
+    "specs": [],
+    "tags": [
+      "alat",
+      "tools",
+      "kolica",
+      "trolley",
+      "radionica"
+    ]
+  },
+  {
+    "id": "tool-case",
+    "cat": "handtools",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Kovčeg za alat, 117-dijelni",
+      "en": "Tool case, 117-piece"
+    },
+    "short": {
+      "hr": "Čelik, osnovni komplet za montažu i servis.",
+      "en": "Steel, general assembly and service set."
+    },
+    "desc": {
+      "hr": "Prijenosni komplet ključeva, nasadnih ključeva, kliješta i odvijača za rad izvan radionice ili na montaži.",
+      "en": "Portable set of spanners, sockets, pliers and screwdrivers for work outside the workshop or on installations."
+    },
+    "specs": [
+      {
+        "hr": "Broj dijelova",
+        "en": "Pieces",
+        "v": "117"
+      }
+    ],
+    "tags": [
+      "alat",
+      "tools",
+      "kljucevi",
+      "nasadni",
+      "spanner",
+      "socket"
+    ]
+  },
+  {
+    "id": "screwdriver-set",
+    "cat": "handtools",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Set odvijača, 100-dijelni",
+      "en": "Screwdriver set, 100-piece"
+    },
+    "short": {
+      "hr": "Ravni, križni, Torx i imbus nastavci.",
+      "en": "Slotted, cross-head, Torx and hex bits."
+    },
+    "desc": {
+      "hr": "Osnovni set odvijača i bitova, po jedan na svakoj strani radionice.",
+      "en": "Core screwdriver and bit set, one on each side of the workshop."
+    },
+    "specs": [
+      {
+        "hr": "Broj dijelova",
+        "en": "Pieces",
+        "v": "100"
+      }
+    ],
+    "tags": [
+      "odvijaci",
+      "screwdrivers",
+      "bitovi",
+      "bits",
+      "torx",
+      "imbus"
+    ]
+  },
+  {
+    "id": "precision-screwdrivers",
+    "cat": "handtools",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Set preciznih odvijača, 7-dijelni",
+      "en": "Precision screwdriver set, 7-piece"
+    },
+    "short": {
+      "hr": "Za elektroniku i sitnu mehaniku.",
+      "en": "For electronics and fine mechanics."
+    },
+    "desc": {
+      "hr": "Odvijači malih dimenzija za rastavljanje uređaja, rad na tiskanim pločicama i sitnoj mehanici.",
+      "en": "Small-format drivers for disassembling devices and working on PCBs and fine mechanisms."
+    },
+    "specs": [
+      {
+        "hr": "Broj dijelova",
+        "en": "Pieces",
+        "v": "7"
+      }
+    ],
+    "tags": [
+      "odvijaci",
+      "screwdrivers",
+      "elektronika",
+      "precizno"
+    ]
+  },
+  {
+    "id": "precision-tool-set",
+    "cat": "handtools",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Set preciznog alata, 84-dijelni",
+      "en": "Precision tool set, 84-piece"
+    },
+    "short": {
+      "hr": "Bitovi, pincete, poluge i pomagala za rastavljanje.",
+      "en": "Bits, tweezers, spudgers and opening tools."
+    },
+    "desc": {
+      "hr": "Kompletan set za servis elektronike — nastavci za sve uobičajene sigurnosne glave, antistatičke pincete i alat za otvaranje kućišta bez oštećenja.",
+      "en": "Complete electronics service set — bits for all common security heads, anti-static tweezers and tools for opening housings without damage."
+    },
+    "specs": [
+      {
+        "hr": "Broj dijelova",
+        "en": "Pieces",
+        "v": "84"
+      }
+    ],
+    "tags": [
+      "odvijaci",
+      "pinceta",
+      "tweezers",
+      "servis",
+      "repair",
+      "ifixit"
+    ]
+  },
+  {
+    "id": "hex-key-set",
+    "cat": "handtools",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Set imbus ključeva, 9-dijelni",
+      "en": "Hex key set, 9-piece"
+    },
+    "short": {
+      "hr": "Metrički imbus ključevi.",
+      "en": "Metric hex keys."
+    },
+    "desc": {
+      "hr": "Standardni metrički imbus ključevi — najčešće korišteni alat pri sastavljanju aluminijskih profila i 3D-ispisanih sklopova.",
+      "en": "Standard metric hex keys — the most-used tool when assembling aluminium extrusion and 3D-printed assemblies."
+    },
+    "specs": [
+      {
+        "hr": "Broj dijelova",
+        "en": "Pieces",
+        "v": "9"
+      }
+    ],
+    "tags": [
+      "imbus",
+      "hex",
+      "allen",
+      "kljucevi",
+      "keys"
+    ]
+  },
+  {
+    "id": "clamp-300",
+    "cat": "handtools",
+    "qty": 4,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Stega 300 mm",
+      "en": "Clamp, 300 mm"
+    },
+    "short": {
+      "hr": "Kratke stege za lijepljenje i pridržavanje.",
+      "en": "Short clamps for glue-ups and holding."
+    },
+    "desc": {
+      "hr": "Stege za pridržavanje dijelova pri lijepljenju, bušenju i rezanju.",
+      "en": "Clamps for holding parts during glue-ups, drilling and cutting."
+    },
+    "specs": [
+      {
+        "hr": "Raspon",
+        "en": "Capacity",
+        "v": "300 mm"
+      }
+    ],
+    "tags": [
+      "stezanje",
+      "clamping",
+      "stege",
+      "clamps"
+    ]
+  },
+  {
+    "id": "clamp-500",
+    "cat": "handtools",
+    "qty": 4,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Stega 500 mm",
+      "en": "Clamp, 500 mm"
+    },
+    "short": {
+      "hr": "Srednje stege za šire sklopove.",
+      "en": "Medium clamps for wider assemblies."
+    },
+    "desc": {
+      "hr": "Stege srednjeg raspona za šire sklopove i lijepljenje ploča.",
+      "en": "Medium-capacity clamps for wider assemblies and panel glue-ups."
+    },
+    "specs": [
+      {
+        "hr": "Raspon",
+        "en": "Capacity",
+        "v": "500 mm"
+      }
+    ],
+    "tags": [
+      "stezanje",
+      "clamping",
+      "stege",
+      "clamps"
+    ]
+  },
+  {
+    "id": "clamp-915",
+    "cat": "handtools",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Stega 915 mm",
+      "en": "Clamp, 915 mm"
+    },
+    "short": {
+      "hr": "Duge stege za velike sklopove.",
+      "en": "Long clamps for large assemblies."
+    },
+    "desc": {
+      "hr": "Duge stege za okvire, kućišta i sklopove preko pola metra.",
+      "en": "Long clamps for frames, cabinets and assemblies over half a metre."
+    },
+    "specs": [
+      {
+        "hr": "Raspon",
+        "en": "Capacity",
+        "v": "915 mm"
+      }
+    ],
+    "tags": [
+      "stezanje",
+      "clamping",
+      "stege",
+      "clamps"
+    ]
+  },
+  {
+    "id": "wire-stripper",
+    "cat": "handtools",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Kliješta za skidanje izolacije",
+      "en": "Automatic wire stripper"
+    },
+    "short": {
+      "hr": "Automatsko prilagođavanje promjeru vodiča.",
+      "en": "Self-adjusting to conductor diameter."
+    },
+    "desc": {
+      "hr": "Automatski se prilagođavaju presjeku vodiča i skidaju izolaciju bez zarezivanja bakra.",
+      "en": "Self-adjusts to the conductor cross-section and removes insulation without nicking the copper."
+    },
+    "specs": [],
+    "tags": [
+      "kliješta",
+      "pliers",
+      "kabeli",
+      "wires",
+      "skidanje izolacije"
+    ]
+  },
+  {
+    "id": "caulking-gun",
+    "cat": "handtools",
+    "qty": 4,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Pištolj za kartuše",
+      "en": "Caulking gun"
+    },
+    "short": {
+      "hr": "Za sve kartuše 310 ml (Ø 50 × 225 mm).",
+      "en": "Fits all 310 ml cartridges (Ø 50 × 225 mm)."
+    },
+    "desc": {
+      "hr": "Za nanošenje ljepila, silikona i brtvila iz standardnih kartuša.",
+      "en": "For applying adhesives, silicone and sealants from standard cartridges."
+    },
+    "specs": [
+      {
+        "hr": "Kartuša",
+        "en": "Cartridge",
+        "v": "310 ml, Ø 50 × 225 mm"
+      }
+    ],
+    "tags": [
+      "ljepilo",
+      "silikon",
+      "brtvilo",
+      "adhesive",
+      "sealant"
+    ]
+  },
+  {
+    "id": "glue-gun",
+    "cat": "handtools",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Pištolj za vruće lijepljenje 250 W",
+      "en": "Hot glue gun, 250 W"
+    },
+    "short": {
+      "hr": "Patrone 12 × 190 mm.",
+      "en": "12 × 190 mm glue sticks."
+    },
+    "desc": {
+      "hr": "Za brzo spajanje pri izradi prototipova i privremeno pričvršćivanje.",
+      "en": "For fast joins during prototyping and temporary fixing."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "250 W"
+      },
+      {
+        "hr": "Uložak",
+        "en": "Stick size",
+        "v": "12 × 190 mm"
+      }
+    ],
+    "tags": [
+      "ljepilo",
+      "lijepljenje",
+      "glue",
+      "gluing",
+      "vruce ljepilo"
+    ]
+  },
+  {
+    "id": "roller-supports",
+    "cat": "handtools",
+    "qty": 6,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Potporni nosači",
+      "en": "Roller supports"
+    },
+    "short": {
+      "hr": "Nosivost 100 kg po nosaču.",
+      "en": "100 kg load capacity each."
+    },
+    "desc": {
+      "hr": "Podesivi nosači koji pridržavaju duge komade na ulazu i izlazu iz stolne i preklopne pile.",
+      "en": "Adjustable stands that support long stock at the infeed and outfeed of the table and mitre saws."
+    },
+    "specs": [
+      {
+        "hr": "Nosivost",
+        "en": "Capacity",
+        "v": "100 kg"
+      }
+    ],
+    "tags": [
+      "nosaci",
+      "supports",
+      "stalci",
+      "stands"
+    ]
+  },
+  {
+    "id": "soldering-station",
+    "cat": "electronics",
+    "qty": 2,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 6,
+    "name": {
+      "hr": "Lemna stanica s vakuumskom pumpom",
+      "en": "Soldering station with desoldering pump"
+    },
+    "short": {
+      "hr": "Lemilo + vakuum, 160 – 480 °C.",
+      "en": "Iron + vacuum desoldering, 160 – 480 °C."
+    },
+    "desc": {
+      "hr": "Osnovno radno mjesto elektroničke zone. Uz lemilo uključuje i vakuumsku pumpu za odlemljivanje, što omogućuje uklanjanje komponenata s više nožica bez oštećenja pločice.",
+      "en": "The core workstation of the electronics zone. Alongside the iron it includes a vacuum desoldering pump, letting you remove multi-pin components without damaging the board."
+    },
+    "specs": [
+      {
+        "hr": "Temperaturni raspon",
+        "en": "Temperature range",
+        "v": "160 – 480 °C"
+      },
+      {
+        "hr": "Sadržaj",
+        "en": "Includes",
+        "v": "Lemilo i vakuumska pumpa / iron and vacuum pump"
+      }
+    ],
+    "tags": [
+      "lemljenje",
+      "lemilo",
+      "lemna",
+      "soldering",
+      "odlemljivanje",
+      "desoldering",
+      "tinol",
+      "solder",
+      "elektronika"
+    ]
+  },
+  {
+    "id": "oscilloscope",
+    "cat": "electronics",
+    "qty": 2,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 6,
+    "name": {
+      "hr": "Digitalni osciloskop 2 × 200 MHz",
+      "en": "Digital oscilloscope, 2 × 200 MHz"
+    },
+    "short": {
+      "hr": "Fosforni prikaz, 1 GSa/s, dva kanala.",
+      "en": "Digital phosphor display, 1 GSa/s, two channels."
+    },
+    "desc": {
+      "hr": "Dvokanalni osciloskop s fosfornim prikazom koji intenzitetom boje prikazuje učestalost pojave signala — time se rijetki poremećaji i jitter vide izravno na zaslonu, bez posebnog okidanja.",
+      "en": "Two-channel scope with a digital phosphor display that encodes how often a signal occurs as colour intensity — rare glitches and jitter become visible directly on screen without special triggering."
+    },
+    "specs": [
+      {
+        "hr": "Propusnost",
+        "en": "Bandwidth",
+        "v": "2 × 200 MHz"
+      },
+      {
+        "hr": "Brzina uzorkovanja",
+        "en": "Sample rate",
+        "v": "1 GSa/s"
+      },
+      {
+        "hr": "Kanali",
+        "en": "Channels",
+        "v": "2"
+      }
+    ],
+    "tags": [
+      "osciloskop",
+      "oscilloscope",
+      "scope",
+      "mjerenje",
+      "signal",
+      "valni oblik",
+      "waveform"
+    ]
+  },
+  {
+    "id": "function-gen",
+    "cat": "electronics",
+    "qty": 2,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 6,
+    "name": {
+      "hr": "Programabilni generator funkcija",
+      "en": "Programmable function generator"
+    },
+    "short": {
+      "hr": "Proizvoljni valni oblici za ispitivanje sklopova.",
+      "en": "Arbitrary waveforms for circuit testing."
+    },
+    "desc": {
+      "hr": "Generira sinusne, pravokutne, trokutaste i proizvoljno definirane signale za ispitivanje sklopova, filtara i pojačala. Programabilan je, pa se ponavljajući ispitni nizovi mogu spremiti i ponovno pokrenuti.",
+      "en": "Produces sine, square, triangle and arbitrary waveforms for testing circuits, filters and amplifiers. Being programmable, repeated test sequences can be stored and replayed."
+    },
+    "specs": [
+      {
+        "hr": "Tip",
+        "en": "Type",
+        "v": "Programabilni / programmable"
+      }
+    ],
+    "tags": [
+      "generator",
+      "signal",
+      "valni oblik",
+      "waveform",
+      "funkcijski",
+      "signal generator"
+    ]
+  },
+  {
+    "id": "lab-psu",
+    "cat": "electronics",
+    "qty": 2,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 6,
+    "name": {
+      "hr": "Laboratorijski izvor napajanja",
+      "en": "Laboratory power supply"
+    },
+    "short": {
+      "hr": "2 × 32 V / 2 × 3 A + fiksnih 5 V.",
+      "en": "2 × 32 V / 2 × 3 A plus fixed 5 V."
+    },
+    "desc": {
+      "hr": "Dvokanalni izvor s ograničenjem struje — kanali se mogu spojiti serijski ili paralelno. Ograničenje struje štiti prototip kada se prvi put stavlja pod napon.",
+      "en": "Dual-channel supply with current limiting; channels can be series- or parallel-connected. The current limit protects a prototype the first time it is powered up."
+    },
+    "specs": [
+      {
+        "hr": "Kanali",
+        "en": "Channels",
+        "v": "2 × 0 – 32 V / 0 – 3 A"
+      },
+      {
+        "hr": "Fiksni izlaz",
+        "en": "Fixed output",
+        "v": "5 V"
+      }
+    ],
+    "tags": [
+      "napajanje",
+      "power supply",
+      "izvor",
+      "psu",
+      "laboratorijski",
+      "struja",
+      "napon"
+    ]
+  },
+  {
+    "id": "bench-dmm",
+    "cat": "electronics",
+    "qty": 2,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 6,
+    "model": "UT-802",
+    "name": {
+      "hr": "Stolni multimetar UT-802",
+      "en": "Bench multimeter UT-802"
+    },
+    "short": {
+      "hr": "Stolni instrument za precizna mjerenja.",
+      "en": "Bench instrument for precision measurement."
+    },
+    "desc": {
+      "hr": "Stolni multimetar veće rezolucije i stabilnosti od ručnog — koristi se kada je mjerenje potrebno dokumentirati ili pratiti kroz duže vrijeme.",
+      "en": "Higher resolution and stability than a handheld unit — used when a measurement has to be documented or tracked over a longer period."
+    },
+    "specs": [
+      {
+        "hr": "Izvedba",
+        "en": "Form factor",
+        "v": "Stolni / benchtop"
+      }
+    ],
+    "tags": [
+      "multimetar",
+      "multimeter",
+      "mjerenje",
+      "measurement",
+      "napon",
+      "struja",
+      "otpor"
+    ]
+  },
+  {
+    "id": "handheld-dmm",
+    "cat": "electronics",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Digitalni multimetar (ručni)",
+      "en": "Digital multimeter (handheld)"
+    },
+    "short": {
+      "hr": "Napon, struja, otpor, kontinuitet.",
+      "en": "Voltage, current, resistance, continuity."
+    },
+    "desc": {
+      "hr": "Ručni multimetar za svakodnevna mjerenja i traženje kvarova.",
+      "en": "Handheld meter for everyday measurements and fault finding."
+    },
+    "specs": [],
+    "tags": [
+      "multimetar",
+      "multimeter",
+      "mjerenje",
+      "measurement",
+      "napon",
+      "struja",
+      "otpor"
+    ]
+  },
+  {
+    "id": "clamp-meter",
+    "cat": "electronics",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Strujna kliješta 600 A AC/DC",
+      "en": "Clamp meter, 600 A AC/DC"
+    },
+    "short": {
+      "hr": "Mjerenje struje bez prekidanja strujnog kruga.",
+      "en": "Current measurement without breaking the circuit."
+    },
+    "desc": {
+      "hr": "Mjere struju bez prekidanja kruga — obuhvatom vodiča. Koriste se pri ispitivanju napajanja motora i uređaja veće snage.",
+      "en": "Measures current by clamping around a conductor, without breaking the circuit. Used when testing motor drives and higher-power equipment."
+    },
+    "specs": [
+      {
+        "hr": "Mjerno područje",
+        "en": "Range",
+        "v": "600 A AC/DC"
+      }
+    ],
+    "tags": [
+      "multimetar",
+      "mjerenje",
+      "struja",
+      "current",
+      "amperemetar"
+    ]
+  },
+  {
+    "id": "breadboard",
+    "cat": "electronics",
+    "qty": 4,
+    "bookable": false,
+    "restricted": false,
+    "model": "SD-359",
+    "name": {
+      "hr": "Eksperimentalna pločica SD-359",
+      "en": "Breadboard SD-359"
+    },
+    "short": {
+      "hr": "2520 + 700 kontakata, bez lemljenja.",
+      "en": "2,520 + 700 tie points, solderless."
+    },
+    "desc": {
+      "hr": "Velika eksperimentalna pločica za sastavljanje sklopova bez lemljenja. Kompleti spojnih žica dostupni su kao potrošni materijal.",
+      "en": "Large solderless breadboard for assembling circuits without soldering. Jumper wire sets are available as consumables."
+    },
+    "specs": [
+      {
+        "hr": "Kontakti",
+        "en": "Tie points",
+        "v": "2520 + 700"
+      }
+    ],
+    "tags": [
+      "protoboard",
+      "prototip",
+      "prototyping",
+      "spajanje",
+      "bez lemljenja",
+      "solderless"
+    ]
+  },
+  {
+    "id": "pcb-kit",
+    "cat": "electronics",
+    "qty": 3,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Kit za izradu tiskanih pločica",
+      "en": "PCB etching kit"
+    },
+    "short": {
+      "hr": "Komplet s posudicom za jetkanje.",
+      "en": "Complete kit with etching tray."
+    },
+    "desc": {
+      "hr": "Komplet za izradu jednostavnih jednoslojnih tiskanih pločica u kući, kada čekanje na vanjsku proizvodnju usporava iteraciju prototipa.",
+      "en": "Kit for producing simple single-layer PCBs in-house, for when waiting on an external fab slows down prototype iteration."
+    },
+    "specs": [],
+    "tags": [
+      "tiskana plocica",
+      "pcb",
+      "jetkanje",
+      "etching",
+      "plocice"
+    ]
+  },
+  {
+    "id": "helping-hands",
+    "cat": "electronics",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Treća ruka za lemljenje",
+      "en": "Helping hands / soldering aid"
+    },
+    "short": {
+      "hr": "Dvije podesive štipaljke.",
+      "en": "Two adjustable crocodile clips."
+    },
+    "desc": {
+      "hr": "Pridržava pločicu i vodiče tijekom lemljenja.",
+      "en": "Holds the board and wires steady while soldering."
+    },
+    "specs": [],
+    "tags": [
+      "lemljenje",
+      "soldering",
+      "stipaljke",
+      "drzac",
+      "holder"
+    ]
+  },
+  {
+    "id": "solder-mat",
+    "cat": "electronics",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Podloga za lemljenje 45 × 30 cm",
+      "en": "Soldering mat, 45 × 30 cm"
+    },
+    "short": {
+      "hr": "Toplinski otporna radna podloga.",
+      "en": "Heat-resistant work surface."
+    },
+    "desc": {
+      "hr": "Štiti radnu plohu od vrućeg lemila i kapljica tinola.",
+      "en": "Protects the bench surface from the hot iron and solder splashes."
+    },
+    "specs": [
+      {
+        "hr": "Dimenzije",
+        "en": "Dimensions",
+        "v": "45 × 30 cm"
+      }
+    ],
+    "tags": [
+      "lemljenje",
+      "soldering",
+      "podloga",
+      "mat"
+    ]
+  },
+  {
+    "id": "magnifier-lamp",
+    "cat": "electronics",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Stolna lampa s povećalom",
+      "en": "Magnifier bench lamp"
+    },
+    "short": {
+      "hr": "Povećanje 4×, LED 6500 K, 6 W.",
+      "en": "4× magnification, 6500 K LED, 6 W."
+    },
+    "desc": {
+      "hr": "Osvjetljenje i povećanje za rad sa SMD komponentama i sitnim spojevima.",
+      "en": "Light and magnification for work with SMD parts and fine joints."
+    },
+    "specs": [
+      {
+        "hr": "Povećanje",
+        "en": "Magnification",
+        "v": "4×"
+      },
+      {
+        "hr": "Rasvjeta",
+        "en": "Lighting",
+        "v": "LED 6500 K, 6 W"
+      }
+    ],
+    "tags": [
+      "povecalo",
+      "magnifier",
+      "lampa",
+      "lamp",
+      "rasvjeta",
+      "smd"
+    ]
+  },
+  {
+    "id": "head-magnifier",
+    "cat": "electronics",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Naglavno povećalo s LED rasvjetom",
+      "en": "Head-worn magnifier with LED"
+    },
+    "short": {
+      "hr": "Podesivo 1 – 3,5×.",
+      "en": "Adjustable 1 – 3.5×."
+    },
+    "desc": {
+      "hr": "Naglavno povećalo koje ostavlja obje ruke slobodne pri finom radu.",
+      "en": "Head-worn magnifier that keeps both hands free during fine work."
+    },
+    "specs": [
+      {
+        "hr": "Povećanje",
+        "en": "Magnification",
+        "v": "1 – 3,5×"
+      }
+    ],
+    "tags": [
+      "povecalo",
+      "magnifier",
+      "naglavno",
+      "loupe"
+    ]
+  },
+  {
+    "id": "antistatic-mat",
+    "cat": "safety",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Antistatička podloga, 3-dijelna",
+      "en": "Anti-static mat set, 3-piece"
+    },
+    "short": {
+      "hr": "60 × 60 cm, s narukvicom i uzemljenjem.",
+      "en": "60 × 60 cm, with wrist strap and earth lead."
+    },
+    "desc": {
+      "hr": "Obavezna pri radu s mikrokontrolerima, FPGA pločicama i CMOS komponentama. Elektrostatičko pražnjenje oštećuje sklopove i bez vidljivog znaka kvara.",
+      "en": "Mandatory when handling microcontrollers, FPGA boards and CMOS parts. Electrostatic discharge damages circuits with no visible sign of failure."
+    },
+    "specs": [
+      {
+        "hr": "Dimenzije",
+        "en": "Dimensions",
+        "v": "60 × 60 cm"
+      }
+    ],
+    "tags": [
+      "esd",
+      "antistatik",
+      "antistatic",
+      "uzemljenje",
+      "narukvica"
+    ]
+  },
+  {
+    "id": "thermal-camera",
+    "cat": "measurement",
+    "qty": 1,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 4,
+    "name": {
+      "hr": "Termalna kamera",
+      "en": "Thermal imaging camera"
+    },
+    "short": {
+      "hr": "Mjerno područje −20 do 1000 °C.",
+      "en": "Measuring range −20 to 1,000 °C."
+    },
+    "desc": {
+      "hr": "Za pronalaženje pregrijanih komponenata na pločicama, provjeru hlađenja i toplinskih mostova. Pokriva raspon od hlađenih sklopova do procesa lemljenja i zagrijavanja.",
+      "en": "For locating overheating components on boards, checking cooling and thermal bridging. The range covers everything from chilled assemblies to soldering and heating processes."
+    },
+    "specs": [
+      {
+        "hr": "Mjerno područje",
+        "en": "Range",
+        "v": "−20 do / to 1000 °C"
+      }
+    ],
+    "tags": [
+      "termovizija",
+      "thermal",
+      "infracrvena",
+      "infrared",
+      "temperatura",
+      "mjerenje"
+    ]
+  },
+  {
+    "id": "laser-meter",
+    "cat": "measurement",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Laserski daljinomjer 120 m",
+      "en": "Laser distance meter, 120 m"
+    },
+    "short": {
+      "hr": "Mjerenje udaljenosti, površine i volumena.",
+      "en": "Distance, area and volume measurement."
+    },
+    "desc": {
+      "hr": "Za izmjeru prostora, planiranje montaže i provjeru gabarita prije izrade.",
+      "en": "For measuring up spaces, planning installations and checking clearances before fabrication."
+    },
+    "specs": [
+      {
+        "hr": "Domet",
+        "en": "Range",
+        "v": "120 m"
+      }
+    ],
+    "tags": [
+      "daljinomjer",
+      "laser",
+      "mjerenje udaljenosti",
+      "distance"
+    ]
+  },
+  {
+    "id": "lux-meter",
+    "cat": "measurement",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Svjetlomjer (luksmetar)",
+      "en": "Light meter (lux meter)"
+    },
+    "short": {
+      "hr": "0 – 100.000 lx.",
+      "en": "0 – 100,000 lx."
+    },
+    "desc": {
+      "hr": "Mjerenje osvijetljenosti pri projektiranju rasvjete i ispitivanju LED sklopova.",
+      "en": "Illuminance measurement for lighting design and testing LED assemblies."
+    },
+    "specs": [
+      {
+        "hr": "Mjerno područje",
+        "en": "Range",
+        "v": "0 – 100.000 lx"
+      }
+    ],
+    "tags": [
+      "luks",
+      "lux",
+      "rasvjeta",
+      "lighting",
+      "mjerenje svjetla"
+    ]
+  },
+  {
+    "id": "anemometer",
+    "cat": "measurement",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Anemometar",
+      "en": "Anemometer"
+    },
+    "short": {
+      "hr": "0 – 30 m/s.",
+      "en": "0 – 30 m/s."
+    },
+    "desc": {
+      "hr": "Mjerenje brzine strujanja zraka — provjera ventilacije, hlađenja kućišta i odsisa.",
+      "en": "Air-speed measurement — checking ventilation, enclosure cooling and extraction."
+    },
+    "specs": [
+      {
+        "hr": "Mjerno područje",
+        "en": "Range",
+        "v": "0 – 30 m/s"
+      }
+    ],
+    "tags": [
+      "zrak",
+      "air",
+      "ventilacija",
+      "ventilation",
+      "brzina zraka"
+    ]
+  },
+  {
+    "id": "tachometer",
+    "cat": "measurement",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Brojač okretaja (mini)",
+      "en": "Tachometer (compact)"
+    },
+    "short": {
+      "hr": "Beskontaktno mjerenje broja okretaja.",
+      "en": "Non-contact rotational speed measurement."
+    },
+    "desc": {
+      "hr": "Provjera stvarnog broja okretaja motora, vretena i ventilatora.",
+      "en": "Verifying the actual speed of motors, spindles and fans."
+    },
+    "specs": [],
+    "tags": [
+      "okretaji",
+      "rpm",
+      "brzina vrtnje",
+      "speed"
+    ]
+  },
+  {
+    "id": "thermometer",
+    "cat": "measurement",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Digitalni termometar sa sondom",
+      "en": "Digital thermometer with probe"
+    },
+    "short": {
+      "hr": "−250 do +1300 °C.",
+      "en": "−250 to +1,300 °C."
+    },
+    "desc": {
+      "hr": "Kontaktno mjerenje temperature sondom — procesi lemljenja, ekstruzije i toplinske obrade.",
+      "en": "Contact temperature measurement by probe — soldering, extrusion and heat-treatment processes."
+    },
+    "specs": [
+      {
+        "hr": "Mjerno područje",
+        "en": "Range",
+        "v": "−250 do / to +1300 °C"
+      }
+    ],
+    "tags": [
+      "temperatura",
+      "temperature",
+      "sonda",
+      "probe"
+    ]
+  },
+  {
+    "id": "sound-meter",
+    "cat": "measurement",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Mjerač jačine zvuka",
+      "en": "Sound level meter"
+    },
+    "short": {
+      "hr": "Mjerenje razine buke u dB.",
+      "en": "Noise level measurement in dB."
+    },
+    "desc": {
+      "hr": "Provjera razine buke u radionici i pri ispitivanju uređaja i akustičkih projekata.",
+      "en": "Checking workshop noise levels and testing devices and acoustic projects."
+    },
+    "specs": [],
+    "tags": [
+      "buka",
+      "noise",
+      "decibeli",
+      "db",
+      "zvuk",
+      "sound"
+    ]
+  },
+  {
+    "id": "cable-tester",
+    "cat": "measurement",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Tester mrežnih i telefonskih kabela",
+      "en": "Network and telephone cable tester"
+    },
+    "short": {
+      "hr": "UTP, telefonski i ethernet kabeli.",
+      "en": "UTP, telephone and ethernet cables."
+    },
+    "desc": {
+      "hr": "Provjera ispravnosti i redoslijeda žila nakon krimpanja konektora.",
+      "en": "Verifies continuity and pin order after crimping connectors."
+    },
+    "specs": [],
+    "tags": [
+      "mreza",
+      "network",
+      "utp",
+      "ethernet",
+      "rj45",
+      "kabel"
+    ]
+  },
+  {
+    "id": "usb-tester",
+    "cat": "measurement",
+    "qty": 1,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "USB tester napona i struje",
+      "en": "USB voltage and current tester"
+    },
+    "short": {
+      "hr": "Mjerenje potrošnje na USB priključku.",
+      "en": "Measures consumption at a USB port."
+    },
+    "desc": {
+      "hr": "Mjeri napon, struju i potrošnju USB uređaja — korisno pri procjeni autonomije prijenosnih prototipova.",
+      "en": "Measures voltage, current and consumption of USB devices — useful when estimating the runtime of portable prototypes."
+    },
+    "specs": [],
+    "tags": [
+      "usb",
+      "potrosnja",
+      "consumption",
+      "punjenje",
+      "charging"
+    ]
+  },
+  {
+    "id": "aio-workstation",
+    "cat": "computing",
+    "qty": 2,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 8,
+    "name": {
+      "hr": "Radna stanica AIO, 27\"",
+      "en": "All-in-one workstation, 27\""
+    },
+    "short": {
+      "hr": "i7-13620H, 32 GB RAM, 512 GB SSD, Windows 11.",
+      "en": "i7-13620H, 32 GB RAM, 512 GB SSD, Windows 11."
+    },
+    "desc": {
+      "hr": "Radna stanica za CAD, pripremu modela za ispis, obradu skenova i razvoj programske podrške. 32 GB radne memorije podnosi veće sklopove i mreže točaka iz 3D skenera.",
+      "en": "Workstation for CAD, print preparation, scan processing and software development. 32 GB of RAM handles larger assemblies and the point clouds coming off the 3D scanner."
+    },
+    "specs": [
+      {
+        "hr": "Procesor",
+        "en": "CPU",
+        "v": "Intel Core i7-13620H"
+      },
+      {
+        "hr": "Memorija",
+        "en": "Memory",
+        "v": "32 GB"
+      },
+      {
+        "hr": "Pohrana",
+        "en": "Storage",
+        "v": "512 GB SSD"
+      },
+      {
+        "hr": "Zaslon",
+        "en": "Display",
+        "v": "27\" FHD IPS"
+      },
+      {
+        "hr": "Operacijski sustav",
+        "en": "Operating system",
+        "v": "Windows 11 Pro"
+      },
+      {
+        "hr": "Povezivost",
+        "en": "Connectivity",
+        "v": "Wi-Fi, Bluetooth"
+      }
+    ],
+    "tags": [
+      "racunalo",
+      "computer",
+      "pc",
+      "cad",
+      "windows",
+      "radna stanica",
+      "workstation"
+    ]
+  },
+  {
+    "id": "mini-pc",
+    "cat": "computing",
+    "qty": 4,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 24,
+    "name": {
+      "hr": "Mini PC / razvojna ploča (ARM)",
+      "en": "Mini PC / ARM developer board"
+    },
+    "short": {
+      "hr": "16 GB RAM, 64-bitni četverojezgreni ARM, 40-pinski I/O.",
+      "en": "16 GB RAM, 64-bit quad-core ARM, 40-pin I/O header."
+    },
+    "desc": {
+      "hr": "Jednopločno računalo sa 40-pinskim I/O priključkom — most između programske podrške i fizičkog svijeta. Koristi se za IoT prototipove, računalni vid i upravljanje uređajima. Rezervira se i preko noći jer se testovi često puštaju u kontinuitetu.",
+      "en": "Single-board computer with a 40-pin I/O header — the bridge between software and the physical world. Used for IoT prototypes, computer vision and device control. Bookable overnight, since tests are often left running."
+    },
+    "specs": [
+      {
+        "hr": "Procesor",
+        "en": "CPU",
+        "v": "64-bitni četverojezgreni ARM / 64-bit quad-core ARM"
+      },
+      {
+        "hr": "Memorija",
+        "en": "Memory",
+        "v": "16 GB"
+      },
+      {
+        "hr": "I/O",
+        "en": "I/O",
+        "v": "40-pinski sustav / 40-pin header"
+      },
+      {
+        "hr": "Napajanje",
+        "en": "Power",
+        "v": "USB-C, 5 A"
+      },
+      {
+        "hr": "Kućište",
+        "en": "Case",
+        "v": "Uključeno / included"
+      }
+    ],
+    "tags": [
+      "raspberry",
+      "jetson",
+      "sbc",
+      "razvojna ploca",
+      "iot",
+      "gpio",
+      "linux",
+      "racunalo",
+      "embedded"
+    ]
+  },
+  {
+    "id": "portable-screen",
+    "cat": "computing",
+    "qty": 4,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 24,
+    "name": {
+      "hr": "Prijenosni zaslon 15,6\"",
+      "en": "Portable monitor, 15.6\""
+    },
+    "short": {
+      "hr": "HDMI i USB-C, napajanje preko USB-C.",
+      "en": "HDMI and USB-C, USB-C powered."
+    },
+    "desc": {
+      "hr": "Prijenosni zaslon koji se spaja na mini PC ili prijenosno računalo. Rezervira se najčešće uz mini PC, kao radna konzola za razvojnu ploču.",
+      "en": "Portable display for a mini PC or laptop. Most often booked together with a mini PC, as a working console for the developer board."
+    },
+    "specs": [
+      {
+        "hr": "Dijagonala",
+        "en": "Size",
+        "v": "15,6\""
+      },
+      {
+        "hr": "Priključci",
+        "en": "Inputs",
+        "v": "HDMI, USB-C"
+      }
+    ],
+    "tags": [
+      "monitor",
+      "zaslon",
+      "display",
+      "ekran",
+      "screen"
+    ]
+  },
+  {
+    "id": "workbench",
+    "cat": "workspace",
+    "qty": 6,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 8,
+    "name": {
+      "hr": "Radni stol sa 6 ladica",
+      "en": "Workbench with 6 drawers"
+    },
+    "short": {
+      "hr": "170 × 60 × 84 cm, s ladicama za alat.",
+      "en": "170 × 60 × 84 cm, with tool drawers."
+    },
+    "desc": {
+      "hr": "Fiksno radno mjesto s ladicama i pristupom mrežnom napajanju. Rezervirajte stol kada radite višednevni projekt i trebate prostor koji ostaje vaš.",
+      "en": "Fixed workstation with drawers and mains access. Book a bench when you are running a multi-day project and need space that stays yours."
+    },
+    "specs": [
+      {
+        "hr": "Dimenzije",
+        "en": "Dimensions",
+        "v": "170 × 60 × 84 cm"
+      },
+      {
+        "hr": "Ladice",
+        "en": "Drawers",
+        "v": "6"
+      }
+    ],
+    "tags": [
+      "stol",
+      "bench",
+      "radno mjesto",
+      "workstation",
+      "radni prostor"
+    ]
+  },
+  {
+    "id": "height-bench",
+    "cat": "workspace",
+    "qty": 6,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 8,
+    "name": {
+      "hr": "Radni stol podesive visine",
+      "en": "Height-adjustable workbench"
+    },
+    "short": {
+      "hr": "135 × 60 × 85 cm, nosivost 200 kg.",
+      "en": "135 × 60 × 85 cm, 200 kg load capacity."
+    },
+    "desc": {
+      "hr": "Stol podesive visine za rad stojeći ili sjedeći, nosivosti 200 kg. Pogodan za montažu većih sklopova i rad u timu.",
+      "en": "Height-adjustable bench for standing or seated work, rated to 200 kg. Suited to assembling larger builds and working in pairs."
+    },
+    "specs": [
+      {
+        "hr": "Dimenzije",
+        "en": "Dimensions",
+        "v": "135 × 60 × 85 cm"
+      },
+      {
+        "hr": "Nosivost",
+        "en": "Load capacity",
+        "v": "200 kg"
+      }
+    ],
+    "tags": [
+      "stol",
+      "bench",
+      "radno mjesto",
+      "workstation",
+      "podesiv",
+      "adjustable"
+    ]
+  },
+  {
+    "id": "whiteboard",
+    "cat": "workspace",
+    "qty": 2,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 8,
+    "vendor": "SB Commerce d.o.o.",
+    "name": {
+      "hr": "Pokretna ploča na stalku 240 × 120 cm",
+      "en": "Mobile whiteboard on stand, 240 × 120 cm"
+    },
+    "short": {
+      "hr": "Dvostrana ploča za radionice i planiranje.",
+      "en": "Double-sided board for workshops and planning."
+    },
+    "desc": {
+      "hr": "Velika pokretna ploča za radionice, planiranje sprinta i mentorske sesije. Rezervira se uz prostor kada se održava radionica.",
+      "en": "Large mobile board for workshops, sprint planning and mentoring sessions. Book it alongside the space when running a workshop."
+    },
+    "specs": [
+      {
+        "hr": "Dimenzije",
+        "en": "Dimensions",
+        "v": "240 × 120 cm"
+      }
+    ],
+    "tags": [
+      "ploca",
+      "board",
+      "radionica",
+      "workshop",
+      "planiranje",
+      "planning",
+      "flipchart"
+    ]
+  },
+  {
+    "id": "compressor",
+    "cat": "support",
+    "qty": 2,
+    "bookable": true,
+    "restricted": true,
+    "maxHours": 4,
+    "name": {
+      "hr": "Kompresor 1.500 W, 50 l",
+      "en": "Air compressor, 1,500 W, 50 l"
+    },
+    "short": {
+      "hr": "Maks. 10 bar, usis 220 l/min, 230 V.",
+      "en": "Max. 10 bar, 220 l/min intake, 230 V."
+    },
+    "desc": {
+      "hr": "Izvor komprimiranog zraka za pneumatski alat, čišćenje dijelova i lakiranje. Rad s komprimiranim zrakom zahtijeva obuku — mlaz zraka pod tlakom opasan je za oči i kožu.",
+      "en": "Compressed air for pneumatic tools, part cleaning and spraying. Working with compressed air requires induction — a pressurised jet is dangerous to eyes and skin."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "1.500 W"
+      },
+      {
+        "hr": "Maksimalni tlak",
+        "en": "Max. pressure",
+        "v": "10 bar"
+      },
+      {
+        "hr": "Spremnik",
+        "en": "Tank",
+        "v": "50 l"
+      },
+      {
+        "hr": "Snaga usisa",
+        "en": "Intake",
+        "v": "220 l/min"
+      }
+    ],
+    "tags": [
+      "zrak",
+      "air",
+      "pneumatika",
+      "pneumatic",
+      "tlak",
+      "pressure",
+      "kompresor"
+    ],
+    "abbr": {
+      "hr": "Kompresor",
+      "en": "Compressor"
+    }
+  },
+  {
+    "id": "wet-dry-vac",
+    "cat": "support",
+    "qty": 1,
+    "bookable": true,
+    "restricted": false,
+    "maxHours": 2,
+    "name": {
+      "hr": "Usisivač za mokro i suho usisavanje",
+      "en": "Wet and dry vacuum cleaner"
+    },
+    "short": {
+      "hr": "1.500 W, spremnik 30 l.",
+      "en": "1,500 W, 30 l tank."
+    },
+    "desc": {
+      "hr": "Za čišćenje radnog mjesta nakon rada i odsis piljevine sa strojeva. Čišćenje radnog mjesta obavezno je prije kraja svake rezervacije.",
+      "en": "For cleaning your work area afterwards and extracting dust from the machines. Clearing your workspace is mandatory before the end of every booking."
+    },
+    "specs": [
+      {
+        "hr": "Snaga",
+        "en": "Power",
+        "v": "1.500 W"
+      },
+      {
+        "hr": "Spremnik",
+        "en": "Tank",
+        "v": "30 l"
+      }
+    ],
+    "tags": [
+      "usisavac",
+      "vacuum",
+      "ciscenje",
+      "cleaning",
+      "piljevina",
+      "dust"
+    ]
+  },
+  {
+    "id": "cable-reel",
+    "cat": "support",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Kabel na bubnju s utičnicama, 25 m",
+      "en": "Cable reel with sockets, 25 m"
+    },
+    "short": {
+      "hr": "Produžni kabel za rad izvan fiksnih mjesta.",
+      "en": "Extension reel for work away from fixed points."
+    },
+    "desc": {
+      "hr": "Napajanje za rad izvan dosega fiksnih utičnica. Kabel pri korištenju treba u potpunosti odmotati.",
+      "en": "Power for work beyond the reach of fixed sockets. Fully unwind the cable before drawing load through it."
+    },
+    "specs": [
+      {
+        "hr": "Duljina",
+        "en": "Length",
+        "v": "25 m"
+      }
+    ],
+    "tags": [
+      "produzni",
+      "extension",
+      "kabel",
+      "cable",
+      "napajanje",
+      "struja"
+    ]
+  },
+  {
+    "id": "work-lamp",
+    "cat": "support",
+    "qty": 4,
+    "bookable": false,
+    "restricted": false,
+    "vendor": "Tokić d.d.",
+    "model": "HAZET 1979-4",
+    "name": {
+      "hr": "Radionička LED lampa, akumulatorska",
+      "en": "Cordless LED work lamp"
+    },
+    "short": {
+      "hr": "Ručna, zglobna, Li-Ion baterija.",
+      "en": "Handheld, articulated, Li-Ion battery."
+    },
+    "desc": {
+      "hr": "Prenosiva rasvjeta za rad u slabo osvijetljenim ili zaklonjenim područjima.",
+      "en": "Portable lighting for work in poorly lit or shadowed areas."
+    },
+    "specs": [
+      {
+        "hr": "Napajanje",
+        "en": "Power",
+        "v": "Li-Ion baterija / battery"
+      }
+    ],
+    "tags": [
+      "rasvjeta",
+      "lighting",
+      "lampa",
+      "lamp",
+      "svjetlo",
+      "light"
+    ]
+  },
+  {
+    "id": "safety-glasses",
+    "cat": "safety",
+    "qty": 10,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Zaštitne naočale",
+      "en": "Safety glasses"
+    },
+    "short": {
+      "hr": "Obavezne pri radu sa svim strojevima.",
+      "en": "Mandatory when using any machine."
+    },
+    "desc": {
+      "hr": "Obavezne pri svakom radu sa strojevima za rezanje, brušenje i bušenje, kao i pri lemljenju. Dostupne su na ulazu u radionicu.",
+      "en": "Mandatory whenever cutting, grinding or drilling machines are in use, and while soldering. Available at the workshop entrance."
+    },
+    "specs": [],
+    "tags": [
+      "zastita",
+      "safety",
+      "ppe",
+      "naocale",
+      "goggles",
+      "oci",
+      "eyes"
+    ]
+  },
+  {
+    "id": "ear-defenders",
+    "cat": "safety",
+    "qty": 2,
+    "bookable": false,
+    "restricted": false,
+    "name": {
+      "hr": "Zaštitne slušalice",
+      "en": "Ear defenders"
+    },
+    "short": {
+      "hr": "Obavezne uz stolnu pilu, brusilice i kompresor.",
+      "en": "Mandatory with the table saw, grinders and compressor."
+    },
+    "desc": {
+      "hr": "Zaštita sluha pri radu sa stolnom i preklopnom pilom, kutnom brusilicom i kompresorom.",
+      "en": "Hearing protection when using the table and mitre saws, angle grinder and compressor."
+    },
+    "specs": [],
+    "tags": [
+      "zastita",
+      "safety",
+      "ppe",
+      "sluh",
+      "hearing",
+      "buka",
+      "noise"
+    ]
+  }
+]
