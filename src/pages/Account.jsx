@@ -16,23 +16,53 @@ export function StatusBadge({ status }) {
   return <span className={`badge ${STATUS_BADGE[status] || ''}`}>{t(`booking.${key}`)}</span>
 }
 
-function ReservationRow({ r, onCancel, canCancel }) {
+/**
+ * Bookings made together share a groupId and are shown as a single row —
+ * one slot, several tools, one cancel button.
+ */
+function groupRows(list) {
+  const out = []
+  const byGroup = new Map()
+  for (const r of list) {
+    if (!r.groupId) { out.push({ key: r.id, items: [r] }); continue }
+    if (!byGroup.has(r.groupId)) {
+      const entry = { key: r.groupId, groupId: r.groupId, items: [] }
+      byGroup.set(r.groupId, entry)
+      out.push(entry)
+    }
+    byGroup.get(r.groupId).items.push(r)
+  }
+  return out
+}
+
+function ReservationRow({ row, onCancel, canCancel }) {
   const { t, lang, dict } = useI18n()
-  const tool = TOOL_BY_ID[r.toolId]
+  const first = row.items[0]
+  const statuses = [...new Set(row.items.map((x) => x.status))]
   return (
     <tr>
       <td>
-        <strong>{tool ? tool.name[lang] : r.toolId}</strong>
-        {r.note && <div className="tiny faint" style={{ marginTop: 3, maxWidth: 320 }}>{r.note}</div>}
+        {row.items.map((r) => {
+          const tool = TOOL_BY_ID[r.toolId]
+          return (
+            <div key={r.id} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <strong>{tool ? tool.name[lang] : r.toolId}</strong>
+              {statuses.length > 1 && <StatusBadge status={r.status} />}
+            </div>
+          )
+        })}
+        {first.note && <div className="tiny faint" style={{ marginTop: 3, maxWidth: 320 }}>{first.note}</div>}
       </td>
       <td style={{ whiteSpace: 'nowrap' }}>
-        {formatDate(r.date, dict)}
-        <div className="tiny faint">{fmtHour(r.hour)} – {fmtHour(r.hour + r.hours)}</div>
+        {formatDate(first.date, dict)}
+        <div className="tiny faint">{fmtHour(first.hour)} – {fmtHour(first.hour + first.hours)}</div>
       </td>
-      <td><StatusBadge status={r.status} /></td>
+      <td>{statuses.length === 1 ? <StatusBadge status={statuses[0]} /> : <span className="tiny faint">—</span>}</td>
       <td style={{ textAlign: 'right' }}>
         {canCancel && (
-          <button type="button" className="btn btn--sm btn--danger" onClick={() => onCancel(r)}>{t('account.cancel')}</button>
+          <button type="button" className="btn btn--sm btn--danger" onClick={() => onCancel(row)}>
+            {row.items.length > 1 ? t('booking.cancelGroup') : t('account.cancel')}
+          </button>
         )}
       </td>
     </tr>
@@ -61,10 +91,11 @@ export default function Account() {
     }
   }, [rows])
 
-  async function cancel(r) {
+  async function cancel(row) {
     if (!confirm(t('account.cancelConfirm'))) return
     try {
-      await api.del(`/reservations/${r.id}`)
+      if (row.groupId) await api.del(`/reservations/group/${row.groupId}`)
+      else await api.del(`/reservations/${row.items[0].id}`)
       toast(t('booking.statusCancelled'))
       load()
     } catch {
@@ -109,7 +140,7 @@ export default function Account() {
                   <thead><tr>
                     <th>{t('booking.tool')}</th><th>{t('booking.when')}</th><th>{t('booking.status')}</th><th />
                   </tr></thead>
-                  <tbody>{upcoming.map((r) => <ReservationRow key={r.id} r={r} onCancel={cancel} canCancel />)}</tbody>
+                  <tbody>{groupRows(upcoming).map((row) => <ReservationRow key={row.key} row={row} onCancel={cancel} canCancel />)}</tbody>
                 </table></div></div>
               )}
 
@@ -120,7 +151,7 @@ export default function Account() {
                     <thead><tr>
                       <th>{t('booking.tool')}</th><th>{t('booking.when')}</th><th>{t('booking.status')}</th><th />
                     </tr></thead>
-                    <tbody>{past.slice(0, 30).map((r) => <ReservationRow key={r.id} r={r} onCancel={cancel} canCancel={false} />)}</tbody>
+                    <tbody>{groupRows(past).slice(0, 30).map((row) => <ReservationRow key={row.key} row={row} onCancel={cancel} canCancel={false} />)}</tbody>
                   </table></div></div>
                 </>
               )}

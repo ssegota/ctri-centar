@@ -53,7 +53,20 @@ ok('restricted tool without induction → pending', r.data.reservation?.status =
 const resId = r.data.reservation.id
 
 r = await call('GET', `/availability?toolId=compressor&from=${day}&days=1`)
-ok('pending booking holds capacity', r.data.availability[day][9].free === 1 && r.data.availability[day][9].total === 2, r.data.availability?.[day]?.[9])
+ok('pending booking holds capacity', r.data.availability.compressor[day][9].free === 1 && r.data.availability.compressor[day][9].total === 2, r.data.availability?.compressor?.[day]?.[9])
+
+console.log('\n── booking several tools in one go ──')
+r = await call('POST', '/reservations', { toolIds: ['oscilloscope', 'soldering-station', 'mini-pc'], date: day, hour: 13, hours: 2, note: 'Ispitivanje prototipa' })
+ok('three tools booked together', r.status === 201 && r.data.reservations.length === 3, r.data)
+const gid = r.data.groupId
+ok('group id issued', !!gid)
+r = await call('GET', '/reservations')
+ok('all three appear for the member', r.data.reservations.filter((x) => x.groupId === gid).length === 3)
+r = await call('DELETE', `/reservations/group/${gid}`)
+ok('cancelling the group clears all three', r.status === 200 && r.data.cancelled === 3, r.data)
+r = await call('GET', `/availability?toolIds=oscilloscope,soldering-station,mini-pc&from=${day}&days=1`)
+ok('capacity returned to every tool', ['oscilloscope', 'soldering-station', 'mini-pc'].every((id) => r.data.availability[id][day][13].free === r.data.tools[id].qty), r.data.availability)
+
 
 const memberJar = { ...jar }
 jar = { ...adminJar }

@@ -163,8 +163,9 @@ r = await call('POST', '/reservations', { toolId: 'clamp-300', date: day, hour: 
 ok('non-bookable item rejected', r.status === 409 && r.data.code === 'not_bookable', r.data)
 
 r = await call('GET', `/availability?toolId=soldering-station&from=${day}&days=7`)
-ok('availability reflects the booking', r.data.availability[day][10].free === 1 && r.data.availability[day][10].total === 2, r.data.availability?.[day]?.[10])
-ok('untouched hour stays fully free', r.data.availability[day][15].free === 2)
+const av = (id) => r.data.availability[id]
+ok('availability reflects the booking', av('soldering-station')[day][10].free === 1 && av('soldering-station')[day][10].total === 2, av('soldering-station')?.[day]?.[10])
+ok('untouched hour stays fully free', av('soldering-station')[day][15].free === 2)
 ok('own bookings are returned', r.data.mine.length === 1)
 
 console.log('\n── capacity across units ─────────────────────────')
@@ -198,7 +199,45 @@ console.log('\n── cancellation & ownership ───────────
 r = await call('DELETE', `/reservations/${myRes}`)
 ok('member cancels own booking', r.status === 200)
 r = await call('GET', `/availability?toolId=soldering-station&from=${day}&days=1`)
-ok('capacity is released on cancel', r.data.availability[day][10].free === 2, r.data.availability[day][10])
+ok('capacity is released on cancel', r.data.availability['soldering-station'][day][10].free === 2, r.data.availability['soldering-station'][day][10])
+
+console.log('\n── booking several tools at once ─────────────────')
+const multiDay = futureDate(2)
+r = await call('POST', '/reservations', { toolIds: ['oscilloscope', 'lab-psu', 'bench-dmm'], date: multiDay, hour: 10, hours: 2 })
+ok('three tools book in one request', r.status === 201 && r.data.reservations.length === 3, r.data)
+ok('they share a group id', new Set(r.data.reservations.map((x) => x.groupId)).size === 1 && !!r.data.groupId, r.data.groupId)
+const groupId = r.data.groupId
+
+r = await call('GET', `/availability?toolIds=oscilloscope,lab-psu,bench-dmm&from=${multiDay}&days=1`)
+ok('availability answers for every tool', Object.keys(r.data.availability).length === 3, Object.keys(r.data.availability || {}))
+ok('each tool lost one unit', ['oscilloscope', 'lab-psu', 'bench-dmm'].every((id) => r.data.availability[id][multiDay][10].free === 1), r.data.availability)
+
+// table-saw has one unit and is already taken that day, so the whole group must fail
+r = await call('POST', '/reservations', { toolIds: ['function-gen', 'table-saw'], date: day, hour: 10, hours: 1 })
+ok('a full tool rejects the whole group', r.status === 409, r.data)
+r = await call('GET', `/availability?toolId=function-gen&from=${day}&days=1`)
+ok('nothing was half-booked', r.data.availability['function-gen'][day][10].free === 2, r.data.availability['function-gen'][day][10])
+
+// 3d-scanner is open to all; table-saw is restricted but ana has the induction,
+// so both land confirmed — status is decided per tool, not per group.
+r = await call('POST', '/reservations', { toolIds: ['3d-scanner-otter', 'table-saw'], date: multiDay, hour: 16, hours: 1 })
+ok('status is decided per tool', r.status === 201 && r.data.reservations.every((x) => x.status === 'confirmed'), r.data.reservations?.map((x) => [x.toolId, x.status]))
+
+// mini-pc is unrestricted, compressor is restricted and ana has no induction for it
+r = await call('POST', '/reservations', { toolIds: ['mini-pc', 'compressor'], date: multiDay, hour: 17, hours: 1 })
+const byTool = Object.fromEntries((r.data.reservations || []).map((x) => [x.toolId, x.status]))
+ok('one group can hold both confirmed and pending', byTool['mini-pc'] === 'confirmed' && byTool['compressor'] === 'pending', byTool)
+
+r = await call('DELETE', `/reservations/group/${groupId}`)
+ok('cancelling a group cancels all three', r.status === 200 && r.data.cancelled === 3, r.data)
+r = await call('GET', `/availability?toolIds=oscilloscope,lab-psu,bench-dmm&from=${multiDay}&days=1`)
+ok('group cancel releases every tool', ['oscilloscope', 'lab-psu', 'bench-dmm'].every((id) => r.data.availability[id][multiDay][10].free === 2), r.data.availability)
+
+const manyIds = ['oscilloscope','lab-psu','bench-dmm','function-gen','soldering-station','thermal-camera','mini-pc','portable-screen','aio-workstation','workbench','height-bench','whiteboard','tool-trolley']
+r = await call('POST', '/reservations', { toolIds: manyIds, date: multiDay, hour: 14, hours: 1 })
+ok('more than 12 tools is rejected', r.status === 400 && r.data.code === 'too_many_tools', r.data)
+r = await call('POST', '/reservations', { toolIds: Array(6).fill('oscilloscope'), date: multiDay, hour: 14, hours: 1 })
+ok('a repeated tool counts once', r.status === 201 && r.data.reservations.length === 1, r.data)
 
 console.log('\n── privilege escalation guards ───────────────────')
 ok('member cannot list users', (await call('GET', '/admin/users')).status === 403)

@@ -17,6 +17,7 @@ import {
 import { isValidDate } from '../../src/lib/schedule.js'
 
 const MIN_PASSWORD = 10
+const MAX_TOOLS_PER_BOOKING = 12
 const MAX_FAILED = 8
 const LOCK_MS = 15 * 60 * 1000
 
@@ -414,13 +415,22 @@ function decorate(r, users) {
   return { ...r, userName: u?.name || '—', userUsername: u?.username || '—', userOrg: u?.org || '' }
 }
 
+/** Accepts ?toolIds=a,b,c (or a single ?toolId=) and answers for all of them. */
+function requestedTools(url) {
+  const raw = url.searchParams.get('toolIds') || url.searchParams.get('toolId') || ''
+  const ids = [...new Set(raw.split(',').map((x) => clean(x, 60)).filter(Boolean))]
+  if (ids.length === 0) throw bad('no tool', 'no_tool')
+  if (ids.length > MAX_TOOLS_PER_BOOKING) throw bad('too many tools', 'too_many_tools')
+  const tools = ids.map((id) => TOOL_BY_ID[id])
+  if (tools.some((t) => !t)) throw notFound('unknown tool')
+  return tools
+}
+
 async function handleAvailability(req, url) {
   await requireUser(req)
-  const toolId = url.searchParams.get('toolId')
+  const tools = requestedTools(url)
   const from = url.searchParams.get('from')
   const days = Math.min(31, Math.max(1, Number(url.searchParams.get('days')) || 7))
-  const tool = TOOL_BY_ID[toolId]
-  if (!tool) throw notFound('unknown tool')
   if (!isValidDate(from)) throw bad('bad date', 'bad_date')
 
   const dates = []
@@ -430,17 +440,21 @@ async function handleAvailability(req, url) {
     cursor.setDate(cursor.getDate() + 1)
   }
 
-  const [reservations, users] = await Promise.all([readDoc(KEYS.reservations, {}), readDoc(KEYS.users, {})])
-  const list = Object.values(reservations).filter((r) => r.toolId === toolId && dates.includes(r.date))
+  const reservations = await readDoc(KEYS.reservations, {})
+  const ids = new Set(tools.map((t) => t.id))
+  const list = Object.values(reservations).filter((r) => ids.has(r.toolId) && dates.includes(r.date))
   const me = await currentUser(req)
 
   return json({
-    tool: { id: tool.id, qty: tool.qty, maxHours: tool.maxHours || 4, restricted: !!tool.restricted },
-    availability: availabilityMap(tool, dates, list),
+    tools: Object.fromEntries(
+      tools.map((t) => [t.id, { id: t.id, qty: t.qty, maxHours: t.maxHours || 4, restricted: !!t.restricted }]),
+    ),
+    availability: Object.fromEntries(
+      tools.map((t) => [t.id, availabilityMap(t, dates, list.filter((r) => r.toolId === t.id))]),
+    ),
     mine: list
       .filter((r) => r.userId === me.id && ACTIVE_STATUSES.includes(r.status))
-      .map((r) => ({ id: r.id, date: r.date, hour: r.hour, hours: r.hours, status: r.status })),
-    busy: me.role === 'admin' ? list.filter((r) => ACTIVE_STATUSES.includes(r.status)).map((r) => decorate(r, users)) : [],
+      .map((r) => ({ id: r.id, toolId: r.toolId, date: r.date, hour: r.hour, hours: r.hours, status: r.status, groupId: r.groupId || null })),
   })
 }
 
@@ -449,48 +463,65 @@ async function handleCreateReservation(req) {
   if (user.mustChangePassword) throw forbidden('password change required')
   const body = await readJson(req)
 
-  const tool = TOOL_BY_ID[clean(body.toolId, 60)]
+  // One tool or many — `toolIds` is the multi-select form, `toolId` the single.
+  const rawIds = Array.isArray(body.toolIds) && body.toolIds.length ? body.toolIds : [body.toolId]
+  const ids = [...new Set(rawIds.map((x) => clean(x, 60)).filter(Boolean))]
+  if (ids.length === 0) throw bad('no tool', 'no_tool')
+  if (ids.length > MAX_TOOLS_PER_BOOKING) throw bad('too many tools', 'too_many_tools')
+  const tools = ids.map((id) => TOOL_BY_ID[id])
+  if (tools.some((t) => !t)) throw notFound('unknown tool')
+
   const date = clean(body.date, 12)
   const hour = Number(body.hour)
   const hours = Number(body.hours)
   const note = cleanMultiline(body.note, 600)
 
-  const reservations = await readDoc(KEYS.reservations, {})
-  assertBookable(tool, date, hour, hours, Object.values(reservations))
+  const existing = Object.values(await readDoc(KEYS.reservations, {}))
+  for (const tool of tools) assertBookable(tool, date, hour, hours, existing)
 
-  // Higher-risk machines need a recorded induction; without one the booking
-  // is held for the manager to approve.
-  const needsApproval = !!tool.restricted && !(user.trained || []).includes(tool.id)
-  const id = randomId(9)
-  const reservation = {
-    id,
+  const groupId = tools.length > 1 ? randomId(9) : null
+  const now = new Date().toISOString()
+  const build = (tool) => ({
+    id: randomId(9),
     toolId: tool.id,
     userId: user.id,
     date,
     hour,
     hours,
     note,
-    status: needsApproval ? 'pending' : 'confirmed',
-    createdAt: new Date().toISOString(),
+    groupId,
+    // Higher-risk machines need a recorded induction; without one the booking
+    // is held for the manager to approve. Judged per tool, not per group.
+    status: tool.restricted && !(user.trained || []).includes(tool.id) ? 'pending' : 'confirmed',
+    createdAt: now,
     decidedAt: null,
     decidedBy: null,
-  }
+  })
 
-  let conflicted = false
+  let failure = null
+  let created = []
   await updateDoc(KEYS.reservations, (all) => {
-    // Re-check capacity against the freshest copy before committing.
-    try {
-      assertBookable(tool, date, hour, hours, Object.values(all))
-    } catch {
-      conflicted = true
-      return all
+    // Re-check every tool against the freshest copy, then commit all of them
+    // or none — a half-booked group is worse than a clean rejection.
+    const running = Object.values(all)
+    const batch = []
+    for (const tool of tools) {
+      try {
+        assertBookable(tool, date, hour, hours, [...running, ...batch])
+      } catch (err) {
+        failure = { code: err.code || 'full', toolId: tool.id }
+        return all
+      }
+      batch.push(build(tool))
     }
-    all[id] = reservation
+    for (const r of batch) all[r.id] = r
+    created = batch
     return all
   })
-  if (conflicted) throw new HttpError(409, 'full', 'full')
+  if (failure) throw new HttpError(409, failure.code, failure.code)
 
-  return json({ reservation }, { status: 201 })
+  // `reservation` is kept for callers that booked a single tool.
+  return json({ reservations: created, reservation: created[0], groupId }, { status: 201 })
 }
 
 async function handleListReservations(req, url) {
@@ -502,6 +533,26 @@ async function handleListReservations(req, url) {
     .map((r) => decorate(r, users))
     .sort((a, b) => (a.date === b.date ? a.hour - b.hour : a.date < b.date ? 1 : -1))
   return json({ reservations: list })
+}
+
+/** Cancels every still-active booking in a group the caller owns. */
+async function handleCancelGroup(req, groupId) {
+  const user = await requireUser(req)
+  let count = 0
+  await updateDoc(KEYS.reservations, (all) => {
+    for (const r of Object.values(all)) {
+      if (r.groupId !== groupId) continue
+      if (r.userId !== user.id && user.role !== 'admin') continue
+      if (!ACTIVE_STATUSES.includes(r.status)) continue
+      r.status = 'cancelled'
+      r.decidedAt = new Date().toISOString()
+      r.decidedBy = user.username
+      count++
+    }
+    return all
+  })
+  if (count === 0) throw notFound()
+  return json({ ok: true, cancelled: count })
 }
 
 async function handleCancelReservation(req, id) {
@@ -609,6 +660,7 @@ export default async function handler(req, context) {
     if (path === '/availability' && method === 'GET') return await handleAvailability(req, url)
     if (path === '/reservations' && method === 'GET') return await handleListReservations(req, url)
     if (path === '/reservations' && method === 'POST') return await handleCreateReservation(req)
+    if ((m = path.match(/^\/reservations\/group\/([\w-]+)$/)) && method === 'DELETE') return await handleCancelGroup(req, m[1])
     if ((m = path.match(/^\/reservations\/([\w-]+)$/)) && method === 'DELETE') return await handleCancelReservation(req, m[1])
     if ((m = path.match(/^\/admin\/reservations\/([\w-]+)\/approve$/)) && method === 'POST') {
       return await handleDecideReservation(req, m[1], 'confirmed')

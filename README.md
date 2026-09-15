@@ -42,8 +42,8 @@ catch-all cannot shadow `/api/*`.
 ```bash
 npm run dev        # http://localhost:5173 — app + API
 npm start          # netlify dev, if you want the real Netlify runtime
-npm run test:api   # 53 API tests, own throwaway store, no server needed
-npm run test:e2e   # 14 end-to-end checks against a running dev server
+npm run test:api   # 66 API tests, own throwaway store, no server needed
+npm run test:e2e   # 19 end-to-end checks against a running dev server
 npm run reset      # wipe the local store; next request re-seeds admin/admin
 ```
 
@@ -94,6 +94,14 @@ agree on what a valid slot is — and the server re-validates every request.
 
 Each catalogue entry has a quantity; that is its capacity. Six workbenches mean
 six people can book 10:00 on Tuesday. The grid shows remaining units per hour.
+
+**Several items can be booked at once.** The picker on `/book` is a checkbox
+list, up to 12 items. The timetable then shows *combined* availability — a slot
+is offered only when every selected item is free — and confirming writes one
+reservation per item, sharing a `groupId`, all or nothing: if any one of them is
+taken, nothing is written. Status is still decided per item, so a group can hold
+a confirmed oscilloscope alongside a compressor awaiting induction approval.
+`My account` shows the group as a single row with one **Cancel all**.
 
 **Safety-critical equipment requires an induction.** Ten items are marked
 `restricted` — table saw, mitre saw, planer, drill press, router, drill/grinder
