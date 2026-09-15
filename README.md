@@ -28,24 +28,41 @@ The first request creates the administrator account:
 The admin panel shows a red banner until that password is changed
 (**Moj račun → Sigurnost**). Change it before the site is public.
 
+### A note on API routing
+
+`netlify/functions/api.js` declares `config.path = "/api/*"`, and that is the
+*only* thing routing the API. Do not add an `/api/*` rewrite to `netlify.toml`:
+setting a custom path removes the default `/.netlify/functions/<name>` endpoint,
+so a rewrite pointing there returns 404 for every API call. It is also
+unnecessary — Netlify matches serverless functions before redirects, so the SPA
+catch-all cannot shadow `/api/*`.
+
 ## Local development
 
 ```bash
 npm run dev        # http://localhost:5173 — app + API
 npm start          # netlify dev, if you want the real Netlify runtime
-npm run test:api   # 53 API tests, no server needed
+npm run test:api   # 53 API tests, own throwaway store, no server needed
+npm run test:e2e   # 14 end-to-end checks against a running dev server
+npm run reset      # wipe the local store; next request re-seeds admin/admin
 ```
 
 `npm run dev` mounts the Netlify function as Vite middleware (see
 `vite.config.js`), so the whole app works without the Netlify CLI. Outside the
 Netlify runtime, Blobs are unavailable, so the store falls back to JSON files in
-`.netlify/blobs-local/` — delete that directory to reset local data.
+`.netlify/blobs-local/` — `npm run reset` clears it.
+
+`npm run test:api` writes to `.netlify/blobs-test/` instead, via
+`CTRI_LOCAL_STORE_DIR`, because it changes the admin password and locks an
+account. `npm run test:e2e` runs against the dev server and does write to the
+dev store.
 
 ---
 
 ## How access works
 
-There is no public sign-up. The flow is deliberate:
+Using the Centre is free for everyone — no membership and no hourly charge.
+There is still no public sign-up; the flow is deliberate:
 
 1. **Apply** — `/apply`. Three applicant types (student, individual, company),
    each with its own fields, plus a free-text explanation of the project. The
@@ -71,7 +88,7 @@ An admin cannot demote or deactivate themselves.
 
 ## How booking works
 
-Hourly slots, **Mon–Sat 08:00–20:00**, Sunday closed. Opening hours live in
+Hourly slots, **Mon–Fri 08:00–20:00**, closed at weekends. Opening hours live in
 `src/lib/schedule.js` and are shared by the browser and the server, so both
 agree on what a valid slot is — and the server re-validates every request.
 
@@ -148,18 +165,26 @@ diacritics. The mark is drawn as SVG in `src/components/Logo.jsx`: the two dark
 rings use `currentColor` so it inverts with the theme, while the teal ring and
 the coral dot stay fixed.
 
-### Placeholders to fill in
+### Still to fill in
 
-Marked in the UI with a dashed border, and all in `src/i18n/{hr,en}.js` under
-`about.contact`:
+The Centre's address (Alda Negrija 6, Pula), email (`ctri@fipu.unipu.hr`) and
+opening hours (Mon–Fri 08:00–20:00) are in. What remains, all in
+`src/i18n/{hr,en}.js` and marked in the UI with a dashed border:
 
-- **Address** — `about.contact.address`
 - **Phone** — `about.contact.phone`
-- **Email** — `about.contact.email` (currently `kontakt@ctri.hr`)
-- Opening hours are set to Mon–Sat 08:00–20:00; if that is wrong, change
-  `OPEN_HOUR`, `CLOSE_HOUR` and `OPEN_DAYS` in `src/lib/schedule.js`.
-- Footer links for terms, privacy and accessibility point at `/about` until
-  real documents exist.
+- **Data retention period and DPO contact** — `about.privacyTodo`
+- **Formal accessibility statement** — `about.accessTodo`
+
+Opening hours are enforced, not just displayed: change `OPEN_HOUR`,
+`CLOSE_HOUR` and `OPEN_DAYS` in `src/lib/schedule.js` and both the timetable and
+the server-side validation follow.
+
+### Language
+
+Croatian is the default for every visitor. The browser's own language is
+deliberately ignored, so an English-language browser in Pula still lands on the
+Croatian site; English is an explicit choice made with the header toggle and
+remembered per browser.
 
 ---
 
@@ -190,6 +215,25 @@ Marked in the UI with a dashed border, and all in `src/i18n/{hr,en}.js` under
   functions run in UTC, so pin the site to `Europe/Zagreb` (`TZ` in
   Netlify's environment settings) if the Centre's hours must be exact.
 - **No email.** By design, for now — see above.
+
+## Troubleshooting
+
+**`admin` / `admin` is rejected.** In order of likelihood:
+
+1. *The password was already changed.* Any successful password change clears the
+   default. Locally, `npm run reset` wipes the store and the next request
+   re-seeds `admin` / `admin`. On a deployed site, delete the `users` key in the
+   `ctri` blob store (`netlify blobs:delete ctri users`) and reload.
+2. *The account is locked.* Eight failed attempts locks it for 15 minutes. The
+   sign-in form now says so explicitly rather than blaming the password.
+3. *The API is not reachable.* If the form reports a server error with a status
+   code, the problem is routing or the function, not the password — see the
+   routing note above. `curl -i https://<site>/api/auth/me` should return 401
+   with JSON, not HTML.
+
+**Bookings say the Centre is closed.** Netlify functions run in UTC while slots
+are computed in local time. Set `TZ=Europe/Zagreb` in the site's environment
+variables.
 
 ## Layout
 

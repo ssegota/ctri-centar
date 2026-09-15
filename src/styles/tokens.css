@@ -37,9 +37,14 @@
   --danger: #c02a20;
   --danger-soft: rgba(192, 42, 32, 0.12);
 
-  --hero-bg: #142b3b;
-  --hero-fg: #ffffff;
-  --hero-muted: #9fb6c4;
+  /* The hero follows the theme — white in light, navy in dark, as on the
+     brand sheet. The CTA band is a deliberate dark accent block in both. */
+  --hero-bg: #ffffff;
+  --hero-fg: #142b3b;
+  --hero-muted: #56707f;
+  --band-bg: #142b3b;
+  --band-fg: #ffffff;
+  --band-muted: #9fb6c4;
 
   --shadow-sm: 0 1px 2px rgba(20, 43, 59, 0.06), 0 1px 3px rgba(20, 43, 59, 0.08);
   --shadow-md: 0 4px 6px -2px rgba(20, 43, 59, 0.05), 0 12px 20px -6px rgba(20, 43, 59, 0.12);
@@ -91,6 +96,9 @@
   --hero-bg: #142b3b;
   --hero-fg: #ffffff;
   --hero-muted: #9fb6c4;
+  --band-bg: #142b3b;
+  --band-fg: #ffffff;
+  --band-muted: #9fb6c4;
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 6px 14px -4px rgba(0, 0, 0, 0.45);

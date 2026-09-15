@@ -67,17 +67,17 @@ export default {
     audienceEyebrow: 'Who it is for',
     audienceTitle: 'Three ways to use the Centre.',
     audienceLead:
-      'Access is open but not anonymous. Every application is reviewed so we know who is working in the space and which training they need.',
+      'Using the Centre is free for everyone — no membership, no hourly charge. Access is open but not anonymous: every application is reviewed so we know who is working in the space and which training they need.',
     audience: [
       {
         t: 'Students',
         d: 'For final-year and master’s projects, competition teams and work outside the curriculum.',
-        pts: ['Free access with valid student status', 'Priority for out-of-hours bookings', 'Mentoring support on technical decisions'],
+        pts: ['Access with valid student status', 'Priority for out-of-hours bookings', 'Mentoring support on technical decisions'],
       },
       {
         t: 'Individuals',
         d: 'For engineers, makers and anyone working on their own project outside an employer.',
-        pts: ['Annual membership', 'Full access to the equipment catalogue', 'Project storage space available'],
+        pts: ['Full access to the equipment catalogue', 'Project storage space available', 'Work at your own pace, no commitment'],
       },
       {
         t: 'Companies and startups',
@@ -120,7 +120,7 @@ export default {
     missionTitle: 'Why the Centre exists',
     mission: [
       'Istria has technical education, a manufacturing tradition, and people who know how to work with their hands. What it lacked was a shared space where those three meet before a company exists.',
-      'Without such a space, the route from idea to prototype runs through buying equipment that gets used a handful of times, or through giving up. CTRI keeps that equipment in one place, maintains it, and rents it out by the hour.',
+      'Without such a space, the route from idea to prototype runs through buying equipment that gets used a handful of times, or through giving up. CTRI keeps that equipment in one place, maintains it, and makes it available by the hour at no charge.',
       'The Centre is not a production facility and does not do series manufacturing. It does prototypes, testing, repair and learning — everything that comes before the decision to manufacture anything at all.',
     ],
 
@@ -130,13 +130,32 @@ export default {
       { t: 'Protective equipment', d: 'Safety glasses are mandatory whenever cutting, grinding or drilling machines are in use, and while soldering. Hearing protection is mandatory around the saws, grinders and compressor.' },
       { t: 'Never alone with machines', d: 'Higher-risk machines may only be used while another person is present in the space.' },
       { t: 'Clear workspace', d: 'Leave your work area clean and return tools to their place before your booking ends. A vacuum and cleaning kit are available in the space.' },
-      { t: 'Consumables', d: 'Basic consumables (abrasives, solder, insulation tape, cable ties) are included. Filament, board stock and materials for larger projects you bring yourself or order through the Centre.' },
+      { t: 'Consumables', d: 'Basic consumables (abrasives, solder, insulation tape, cable ties) are included. Filament, board stock and materials for larger projects you bring yourself or arrange with the Centre manager.' },
       { t: 'Cancelling a booking', d: 'Cancel at least two hours before the start so someone else can take the slot. Repeated no-shows may lead to a temporary restriction.' },
     ],
 
     equipTitle: 'Where the equipment comes from',
     equipLead:
       'The catalogue is drawn from the procurement for equipping the Centre, split into groups: IT equipment and machines, tools for research and innovation work, and electrical machines, apparatus and measuring instruments. Only tools and devices are catalogued — furniture, storage and consumables are tracked separately and are not bookable.',
+
+    privacyTitle: 'Privacy',
+    privacyLead: 'What the Centre collects, why, and for how long.',
+    privacyBlocks: [
+      { t: 'What we collect', d: 'From your application: name, email address, phone, city, your study or company details, and the explanation you wrote yourself. Once an account exists: username, an encrypted record of your password, your induction records and your booking history.' },
+      { t: 'Why', d: 'The data is used only to assess your application, run your account, allocate equipment and keep the space safe. It is not shared with third parties and is not used for marketing.' },
+      { t: 'Passwords', d: 'Passwords are never stored. Only a cryptographic digest (PBKDF2-SHA256) is kept, and the password cannot be reconstructed from it.' },
+      { t: 'Your rights', d: 'You can ask to see your data, have it corrected, or have your account deleted. Send the request to the Centre email address listed under Contact.' },
+    ],
+    privacyTodo: 'Retention periods and the data protection officer\u2019s contact details will be added alongside the institution\u2019s formal privacy policy.',
+
+    accessTitle: 'Accessibility',
+    accessLead: 'How usable this site is, and what is still missing.',
+    accessBlocks: [
+      { t: 'What has been done', d: 'The site is fully keyboard operable, has a visible focus indicator and a skip-to-content link. The interface is built from semantic HTML, works on small screens, and ships in light and dark themes with checked text contrast.' },
+      { t: 'Known limitations', d: 'The booking timetable is a grid that scrolls horizontally on narrow screens and takes more keyboard steps to traverse than the rest of the site.' },
+      { t: 'Reporting a problem', d: 'If you hit something you cannot use, email the Centre and describe the page and how you are accessing it.' },
+    ],
+    accessTodo: 'A formal accessibility statement and the results of an external audit will be published in due course.',
 
     contactTitle: 'Contact',
     contactLead: 'For questions about access, training or partnerships.',
@@ -145,13 +164,13 @@ export default {
       hoursLabel: 'Opening hours',
       emailLabel: 'Email',
       phoneLabel: 'Phone',
-      address: 'Centre address — to be completed',
-      hours: 'Mon – Sat, 08:00 – 20:00',
-      hoursNote: 'Closed on Sundays',
-      email: 'kontakt@ctri.hr',
-      phone: '+385 (0)52 000 000',
+      address: 'Alda Negrija 6, 52100 Pula, Croatia',
+      hours: 'Mon – Fri, 08:00 – 20:00',
+      hoursNote: 'Closed at weekends',
+      email: 'ctri@fipu.unipu.hr',
+      phone: 'Phone number — to be confirmed',
     },
-    placeholderNote: 'Details marked as incomplete will be replaced with the Centre’s real information before launch.',
+    placeholderNote: 'The phone number will be published once confirmed.',
   },
 
   tools: {
@@ -278,6 +297,8 @@ export default {
     noAccount: 'No account yet?',
     applyLink: 'Apply for access to the Centre',
     badCredentials: 'Incorrect username or password',
+    locked: 'Too many failed attempts. The account is locked for 15 minutes.',
+    serverError: 'Sign-in is unavailable — the server returned an error ({status}). This is not your password. Try again, or contact the Centre manager.',
     inactive: 'This account is deactivated. Contact the Centre manager.',
     setPwTitle: 'Set a new password',
     setPwLead: 'Before you continue, replace the temporary password with one of your own.',

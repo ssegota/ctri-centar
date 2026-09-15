@@ -6,12 +6,17 @@ export const LOCALES = { hr, en }
 const STORAGE_KEY = 'ctri.lang'
 const I18nCtx = createContext(null)
 
+/**
+ * Croatian is the default for everyone. The browser's own language is
+ * deliberately ignored — this is a Croatian county's centre, and an English
+ * browser in Pula should still land on the Croatian site. English is an
+ * explicit choice made with the header toggle, and it is remembered.
+ */
 function detect() {
   try {
     const saved = localStorage.getItem(STORAGE_KEY)
     if (saved && LOCALES[saved]) return saved
   } catch {}
-  if (typeof navigator !== 'undefined' && /^en/i.test(navigator.language || '')) return 'en'
   return 'hr'
 }
 

@@ -16,7 +16,10 @@ let backend = null
 async function localBackend() {
   const fs = await import('node:fs/promises')
   const path = await import('node:path')
-  const dir = path.resolve(process.cwd(), LOCAL_DIR)
+  // CTRI_LOCAL_STORE_DIR lets the test suite point at a throwaway directory.
+  // Without it the tests would share the dev server's store and, among other
+  // things, leave the admin password changed.
+  const dir = path.resolve(process.cwd(), process.env.CTRI_LOCAL_STORE_DIR || LOCAL_DIR)
   await fs.mkdir(dir, { recursive: true })
   const file = (key) => path.join(dir, `${key}.json`)
   return {

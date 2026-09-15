@@ -9,16 +9,13 @@
 [functions]
   node_bundler = "esbuild"
 
-# Redirects are matched top-down, so /api/* reaches the function before the
-# SPA fallback can swallow it. The function also declares `config.path`, but
-# this rule makes the routing explicit and independent of that precedence.
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api/:splat"
-  status = 200
-  force = true
+# No /api/* rule here on purpose. netlify/functions/api.js declares
+# `config.path = "/api/*"`, and Netlify matches serverless functions BEFORE
+# redirects, so the SPA fallback below can never swallow an API call. Adding a
+# rewrite to /.netlify/functions/api would in fact break it: setting a custom
+# path removes the default /.netlify/functions/<name> endpoint.
 
-# SPA fallback — anything that is not /api/* or a real file serves index.html
+# SPA fallback — anything that is not an API route or a real file serves index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"

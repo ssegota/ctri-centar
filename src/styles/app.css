@@ -45,6 +45,8 @@ p { text-wrap: pretty; }
 .wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gutter); }
 .section { padding-block: clamp(56px, 9vw, 104px); }
 .section--alt { background: var(--bg-alt); }
+/* Anchored sections must clear the sticky header when linked from the footer. */
+section[id] { scroll-margin-top: calc(var(--header-h) + 16px); }
 .stack { display: flex; flex-direction: column; }
 .grid { display: grid; gap: 24px; }
 .page { min-height: calc(100vh - var(--header-h) - 260px); }
@@ -261,15 +263,15 @@ table.t tbody tr:hover { background: var(--bg-alt); }
 /* ===== Hero ============================================================= */
 .hero { position: relative; background: var(--hero-bg); color: var(--hero-fg); overflow: hidden; }
 .hero__in { position: relative; z-index: 2; padding-block: clamp(72px, 12vw, 132px) clamp(88px, 13vw, 148px); max-width: 780px; }
-.hero h1 { color: #fff; }
+.hero h1 { color: var(--hero-fg); }
 .hero__tag { margin-top: 30px; color: var(--teal); font-weight: 700; font-size: clamp(.95rem, 1.6vw, 1.08rem); letter-spacing: .01em; }
 .hero__lead { margin-top: 20px; color: var(--hero-muted); font-size: clamp(1rem, 1.5vw, 1.15rem); max-width: 56ch; }
 .hero__cta { margin-top: 38px; display: flex; gap: 12px; flex-wrap: wrap; }
-.hero__cta .btn--ghost { border-color: rgba(255,255,255,.34); color: #fff; }
-.hero__cta .btn--ghost:hover { background: rgba(255,255,255,.1); }
+.hero__cta .btn--ghost { border-color: var(--border-strong); color: var(--hero-fg); }
+.hero__cta .btn--ghost:hover { background: color-mix(in srgb, var(--hero-fg) 8%, transparent); }
 .hero__mark {
   position: absolute; z-index: 1; right: -8%; bottom: -28%;
-  width: min(760px, 78vw); opacity: .14; color: #fff; pointer-events: none;
+  width: min(760px, 78vw); opacity: .12; color: var(--hero-fg); pointer-events: none;
 }
 /* The oversized background marks read as one silhouette, not a tinted logo. */
 .hero__mark path, .cta-band__mark path { stroke: currentColor; }
@@ -318,10 +320,10 @@ table.t tbody tr:hover { background: var(--bg-alt); }
 .zone__c { font-size: .74rem; font-weight: 800; color: var(--fg-faint); letter-spacing: .06em; }
 .zone p { font-size: .9rem; color: var(--fg-muted); }
 
-.cta-band { background: var(--hero-bg); color: #fff; border-radius: var(--r-xl); padding: clamp(32px, 5vw, 56px); position: relative; overflow: hidden; }
-.cta-band h2 { color: #fff; max-width: 18ch; }
-.cta-band p { color: var(--hero-muted); margin-top: 14px; max-width: 52ch; }
-.cta-band__mark { position: absolute; right: -60px; top: -60px; width: 320px; opacity: .1; color: #fff; }
+.cta-band { background: var(--band-bg); color: var(--band-fg); border-radius: var(--r-xl); padding: clamp(32px, 5vw, 56px); position: relative; overflow: hidden; }
+.cta-band h2 { color: var(--band-fg); max-width: 18ch; }
+.cta-band p { color: var(--band-muted); margin-top: 14px; max-width: 52ch; }
+.cta-band__mark { position: absolute; right: -60px; top: -60px; width: 320px; opacity: .1; color: var(--band-fg); }
 
 /* ===== Tool catalogue =================================================== */
 .tool-layout { display: grid; grid-template-columns: 250px 1fr; gap: 36px; align-items: start; }

@@ -67,17 +67,58 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section section--alt" id="contact">
+      <section className="section" id="privacy">
+        <div className="wrap">
+          <span className="eyebrow">{t('about.privacyTitle')}</span>
+          <h2 className="mt-2">{t('about.privacyTitle')}</h2>
+          <p className="lead mt-3">{t('about.privacyLead')}</p>
+          <div className="grid mt-4" style={{ gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))' }}>
+            {t('about.privacyBlocks').map((b) => (
+              <article className="card" key={b.t}>
+                <h3 style={{ fontSize: '1rem', marginBottom: 10 }}>{b.t}</h3>
+                <p className="small muted">{b.d}</p>
+              </article>
+            ))}
+          </div>
+          <div className="placeholder mt-3">
+            <b>{t('common.placeholder')}</b>
+            {t('about.privacyTodo')}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--alt" id="accessibility">
+        <div className="wrap">
+          <span className="eyebrow">{t('about.accessTitle')}</span>
+          <h2 className="mt-2">{t('about.accessTitle')}</h2>
+          <p className="lead mt-3">{t('about.accessLead')}</p>
+          <div className="grid mt-4" style={{ gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))' }}>
+            {t('about.accessBlocks').map((b) => (
+              <article className="card" key={b.t}>
+                <h3 style={{ fontSize: '1rem', marginBottom: 10 }}>{b.t}</h3>
+                <p className="small muted">{b.d}</p>
+              </article>
+            ))}
+          </div>
+          <div className="placeholder mt-3">
+            <b>{t('common.placeholder')}</b>
+            {t('about.accessTodo')}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="contact">
         <div className="wrap">
           <span className="eyebrow">{t('about.contactTitle')}</span>
           <h2 className="mt-2">{t('about.contactTitle')}</h2>
           <p className="lead mt-3">{t('about.contactLead')}</p>
 
           <div className="grid mt-4" style={{ gridTemplateColumns: 'repeat(auto-fit,minmax(230px,1fr))' }}>
-            {/* Address is a deliberate placeholder until the Centre's location is confirmed */}
-            <div className="placeholder">
-              <b>{t('about.contact.addressLabel')}</b>
-              {t('about.contact.address')}
+            <div className="card card--pad-sm">
+              <div className="tiny faint" style={{ fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', marginBottom: 6 }}>
+                {t('about.contact.addressLabel')}
+              </div>
+              <div style={{ fontWeight: 700 }}>{t('about.contact.address')}</div>
             </div>
             <div className="card card--pad-sm">
               <div className="tiny faint" style={{ fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', marginBottom: 6 }}>

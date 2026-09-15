@@ -5,7 +5,11 @@
 import { rm } from 'node:fs/promises'
 import { resolve } from 'node:path'
 
-await rm(resolve(process.cwd(), '.netlify/blobs-local'), { recursive: true, force: true })
+// Own store, wiped each run. These tests change the admin password and lock an
+// account, so they must never touch the store `npm run dev` is using.
+const STORE = '.netlify/blobs-test'
+process.env.CTRI_LOCAL_STORE_DIR = STORE
+await rm(resolve(process.cwd(), STORE), { recursive: true, force: true })
 const { default: handler } = await import('../netlify/functions/api.js')
 
 const BASE = 'http://localhost:8888'
@@ -140,6 +144,14 @@ const sunday = (() => {
 })()
 r = await call('POST', '/reservations', { toolId: 'soldering-station', date: sunday, hour: 10, hours: 1 })
 ok('Sunday is closed', r.status === 409 && r.data.code === 'closed', r.data)
+
+const saturday = (() => {
+  const d = new Date(); d.setHours(0, 0, 0, 0)
+  d.setDate(d.getDate() + ((6 - d.getDay() + 7) % 7 || 7))
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+})()
+r = await call('POST', '/reservations', { toolId: 'soldering-station', date: saturday, hour: 10, hours: 1 })
+ok('Saturday is closed', r.status === 409 && r.data.code === 'closed', r.data)
 
 r = await call('POST', '/reservations', { toolId: 'soldering-station', date: day, hour: 19, hours: 2 })
 ok('cannot run past closing time', r.status === 409 && r.data.code === 'closed', r.data)

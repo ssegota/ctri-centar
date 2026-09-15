@@ -27,10 +27,14 @@ export default function Login() {
       if (u.mustChangePassword) nav('/set-password', { replace: true })
       else nav(loc.state?.from || '/account', { replace: true })
     } catch (err) {
-      if (err.code === 'inactive') setError(t('auth.inactive'))
-      else if (err.code === 'locked') setError(t('auth.badCredentials'))
+      // Only say "wrong password" when the server actually said so. A 404 or a
+      // 500 here means the API is misrouted or down, and reporting that as bad
+      // credentials sends people hunting for a password problem that isn't one.
+      if (err.code === 'bad_credentials') setError(t('auth.badCredentials'))
+      else if (err.code === 'inactive') setError(t('auth.inactive'))
+      else if (err.code === 'locked') setError(t('auth.locked'))
       else if (err.code === 'network') setError(t('common.networkError'))
-      else setError(t('auth.badCredentials'))
+      else setError(t('auth.serverError', { status: err.status || '?' }))
     } finally {
       setBusy(false)
     }

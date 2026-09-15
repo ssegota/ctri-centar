@@ -37,10 +37,9 @@ export default function Footer() {
           <div>
             <h4>{t('footer.legal')}</h4>
             <ul>
-              {/* Placeholder targets — replace with the Centre's published documents */}
               <li><Link to="/about#rules">{t('footer.terms')}</Link></li>
-              <li><Link to="/about#contact">{t('footer.privacy')}</Link></li>
-              <li><Link to="/about#contact">{t('footer.accessibility')}</Link></li>
+              <li><Link to="/about#privacy">{t('footer.privacy')}</Link></li>
+              <li><Link to="/about#accessibility">{t('footer.accessibility')}</Link></li>
             </ul>
           </div>
         </div>

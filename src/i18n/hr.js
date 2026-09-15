@@ -67,17 +67,17 @@ export default {
     audienceEyebrow: 'Za koga',
     audienceTitle: 'Tri načina korištenja Centra.',
     audienceLead:
-      'Pristup je otvoren, ali nije anoniman. Svaka prijava se pregledava kako bismo znali tko radi u prostoru i koja mu je obuka potrebna.',
+      'Korištenje Centra besplatno je za sve — nema članarine ni naknade po satu. Pristup je otvoren, ali nije anoniman: svaka prijava se pregledava kako bismo znali tko radi u prostoru i koja mu je obuka potrebna.',
     audience: [
       {
         t: 'Studenti',
         d: 'Za završne i diplomske radove, natjecateljske timove i projekte izvan nastave.',
-        pts: ['Besplatan pristup uz važeći studentski status', 'Prednost pri rezervaciji izvan radnog vremena', 'Mentorska podrška za tehničke odluke'],
+        pts: ['Pristup uz važeći studentski status', 'Prednost pri rezervaciji izvan radnog vremena', 'Mentorska podrška za tehničke odluke'],
       },
       {
         t: 'Privatne osobe',
         d: 'Za inženjere, makere i sve koji rade na vlastitom projektu izvan poslodavca.',
-        pts: ['Godišnja članarina', 'Puni pristup katalogu opreme', 'Mogućnost korištenja prostora za pohranu projekta'],
+        pts: ['Puni pristup katalogu opreme', 'Mogućnost korištenja prostora za pohranu projekta', 'Rad u vlastitom ritmu, bez obveza'],
       },
       {
         t: 'Tvrtke i startupi',
@@ -120,7 +120,7 @@ export default {
     missionTitle: 'Zašto Centar postoji',
     mission: [
       'Istra ima tehničko obrazovanje, ima proizvodnu tradiciju i ima ljude koji znaju raditi rukama. Ono što joj je nedostajalo je zajednički prostor u kojem se to troje susreće prije nego što nastane tvrtka.',
-      'Bez takvog prostora put od ideje do prototipa vodi preko kupnje opreme koja se koristi nekoliko puta, ili preko odustajanja. CTRI tu opremu drži na jednom mjestu, održava je i daje na korištenje po satu.',
+      'Bez takvog prostora put od ideje do prototipa vodi preko kupnje opreme koja se koristi nekoliko puta, ili preko odustajanja. CTRI tu opremu drži na jednom mjestu, održava je i daje na besplatno korištenje po satu.',
       'Centar nije proizvodni pogon i ne radi serijsku proizvodnju. Radi prototipove, ispitivanja, popravke i učenje — sve ono što prethodi odluci da se nešto uopće počne proizvoditi.',
     ],
 
@@ -130,13 +130,32 @@ export default {
       { t: 'Zaštitna oprema', d: 'Zaštitne naočale obavezne su pri svakom radu sa strojevima za rezanje, brušenje i bušenje te pri lemljenju. Zaštita sluha obavezna je uz pile, brusilice i kompresor.' },
       { t: 'Nikad sami uz strojeve', d: 'Rad sa strojevima s povećanim rizikom dopušten je samo kada je u prostoru prisutna još jedna osoba.' },
       { t: 'Čisto radno mjesto', d: 'Radno mjesto ostavljate čistim, a alat vraćate na mjesto prije kraja rezervacije. Usisivač i pribor za čišćenje dostupni su u prostoru.' },
-      { t: 'Potrošni materijal', d: 'Osnovni potrošni materijal (brusni papir, tinol, izolacijska traka, vezice) uključen je u korištenje. Filament, vetronit ploče i materijal za veće projekte donosite sami ili nabavljate preko Centra.' },
+      { t: 'Potrošni materijal', d: 'Osnovni potrošni materijal (brusni papir, tinol, izolacijska traka, vezice) uključen je u korištenje. Filament, vetronit ploče i materijal za veće projekte donosite sami ili ih dogovarate s voditeljem Centra.' },
       { t: 'Otkazivanje termina', d: 'Termin otkažite najkasnije dva sata prije početka kako bi ga netko drugi mogao iskoristiti. Ponovljena neiskorištena rezervacija može dovesti do privremenog ograničenja.' },
     ],
 
     equipTitle: 'Odakle oprema',
     equipLead:
       'Katalog opreme sastavljen je iz nabave za opremanje Centra, podijeljene u grupe: informatička oprema i strojevi, alat za istraživačko-inovacijski rad te električni strojevi, aparati i mjerni instrumenti. U katalogu su navedeni samo alati i uređaji — namještaj, pohrana i potrošni materijal vode se odvojeno i ne rezerviraju se.',
+
+    privacyTitle: 'Zaštita podataka',
+    privacyLead: 'Što Centar prikuplja, zašto i koliko dugo.',
+    privacyBlocks: [
+      { t: 'Što prikupljamo', d: 'Iz prijave za korištenje: ime i prezime, adresu e-pošte, telefon i mjesto, podatke o studiju odnosno tvrtki te obrazloženje koje ste sami napisali. Nakon otvaranja računa: korisničko ime, kriptirani zapis lozinke, evidenciju obuka i zapise vaših rezervacija.' },
+      { t: 'Zašto', d: 'Podaci se koriste isključivo za razmatranje prijave, vođenje korisničkog računa, raspodjelu opreme i sigurnost u prostoru. Ne prosljeđuju se trećim stranama i ne koriste se za marketing.' },
+      { t: 'Lozinke', d: 'Lozinke se ne pohranjuju. Čuva se samo kriptografski sažetak (PBKDF2-SHA256) iz kojeg se lozinka ne može rekonstruirati.' },
+      { t: 'Vaša prava', d: 'Možete zatražiti uvid u svoje podatke, ispravak ili brisanje računa. Zahtjev pošaljite na adresu e-pošte Centra navedenu pod Kontakt.' },
+    ],
+    privacyTodo: 'Rok čuvanja podataka i kontakt službenika za zaštitu podataka bit će dopunjeni uz službenu politiku privatnosti ustanove.',
+
+    accessTitle: 'Pristupačnost',
+    accessLead: 'Koliko je ova stranica upotrebljiva i što još nedostaje.',
+    accessBlocks: [
+      { t: 'Što je napravljeno', d: 'Stranica se u cijelosti koristi tipkovnicom, ima vidljiv fokus i poveznicu za preskakanje na sadržaj. Sučelje je izrađeno semantičkim HTML-om, radi na malim zaslonima i dolazi u svijetloj i tamnoj temi s provjerenim kontrastom teksta.' },
+      { t: 'Poznata ograničenja', d: 'Raspored rezervacija je tablica koja se na uskim zaslonima pomiče vodoravno i zahtijeva više koraka tipkovnicom nego ostatak stranice.' },
+      { t: 'Prijava problema', d: 'Ako naiđete na sadržaj koji ne možete koristiti, javite nam na adresu e-pošte Centra i opišite stranicu i način na koji joj pristupate.' },
+    ],
+    accessTodo: 'Službena Izjava o pristupačnosti i rezultati vanjske procjene bit će objavljeni naknadno.',
 
     contactTitle: 'Kontakt',
     contactLead: 'Za pitanja o korištenju, obuci ili suradnji.',
@@ -145,13 +164,13 @@ export default {
       hoursLabel: 'Radno vrijeme',
       emailLabel: 'E-pošta',
       phoneLabel: 'Telefon',
-      address: 'Adresa Centra — dopuniti',
-      hours: 'Pon – Sub, 08:00 – 20:00',
-      hoursNote: 'Nedjeljom zatvoreno',
-      email: 'kontakt@ctri.hr',
-      phone: '+385 (0)52 000 000',
+      address: 'Alda Negrija 6, 52100 Pula',
+      hours: 'Pon – Pet, 08:00 – 20:00',
+      hoursNote: 'Vikendom zatvoreno',
+      email: 'ctri@fipu.unipu.hr',
+      phone: 'Broj telefona — dopuniti',
     },
-    placeholderNote: 'Podaci označeni kao nepotpuni zamijenit će se stvarnim podacima Centra prije objave.',
+    placeholderNote: 'Broj telefona bit će objavljen naknadno.',
   },
 
   tools: {
@@ -278,6 +297,8 @@ export default {
     noAccount: 'Nemate račun?',
     applyLink: 'Prijavite se za korištenje Centra',
     badCredentials: 'Neispravno korisničko ime ili lozinka',
+    locked: 'Previše neuspjelih pokušaja. Račun je zaključan 15 minuta.',
+    serverError: 'Prijava trenutno nije moguća — poslužitelj je vratio pogrešku ({status}). Nije riječ o lozinci. Pokušajte ponovno ili se javite voditelju Centra.',
     inactive: 'Račun je deaktiviran. Javite se voditelju Centra.',
     setPwTitle: 'Postavite novu lozinku',
     setPwLead: 'Prije prvog korištenja potrebno je zamijeniti privremenu lozinku vlastitom.',

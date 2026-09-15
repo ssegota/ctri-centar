@@ -6,7 +6,7 @@
 
 export const OPEN_HOUR = 8 // first bookable hour
 export const CLOSE_HOUR = 20 // first hour that is no longer bookable
-export const OPEN_DAYS = [1, 2, 3, 4, 5, 6] // Mon–Sat (JS getDay: Sun = 0)
+export const OPEN_DAYS = [1, 2, 3, 4, 5] // Mon–Fri (JS getDay: Sun = 0)
 export const DEFAULT_MAX_HOURS = 4
 
 /** All bookable start hours in a day: 8 … 19 */
