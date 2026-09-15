@@ -28,6 +28,7 @@ export default {
   },
 
   home: {
+    heroTitle: ['Technology', 'that connects', 'Istria.'],
     heroLead:
       'CTRI is an open workshop and laboratory where students, researchers and founders across Istria build physical products — from the first sketch to a working prototype. Equipment, space and mentoring in one place.',
     ctaApply: 'Apply for access',

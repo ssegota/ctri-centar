@@ -28,6 +28,7 @@ export default {
   },
 
   home: {
+    heroTitle: ['Tehnologija', 'koja povezuje', 'Istru.'],
     heroLead:
       'CTRI je otvorena radionica i laboratorij u kojem studenti, istraživači i poduzetnici iz Istre razvijaju fizičke proizvode — od prve skice do funkcionalnog prototipa. Oprema, prostor i mentorstvo na jednom mjestu.',
     ctaApply: 'Prijavite se za korištenje',

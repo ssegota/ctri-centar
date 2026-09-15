@@ -16,7 +16,12 @@ export default function Home() {
         <div className="wrap hero__in">
           <div className="dot-rule" aria-hidden="true" />
           <h1 style={{ marginTop: 28 }}>
-            Tehnologija<br />koja povezuje<br />Istru.
+            {t('home.heroTitle').map((line, i) => (
+              <span key={line}>
+                {i > 0 && <br />}
+                {line}
+              </span>
+            ))}
           </h1>
           <p className="hero__tag">{t('brand.tagline')}</p>
           <p className="hero__lead">{t('home.heroLead')}</p>
