@@ -1,0 +1,13 @@
+# Not needed at runtime on the VPS. node_modules is NOT excluded: CI prunes it
+# to production dependencies and ships it, so the server needs no npm.
+.git
+.github/
+.gitignore
+.env
+.env.*
+.netlify/
+deploy/
+design/
+tools/
+scripts/
+README.md
