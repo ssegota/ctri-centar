@@ -4,7 +4,7 @@ export default {
   locale: 'hr-HR',
 
   brand: {
-    name: 'CTRI',
+    name: 'CTRL',
     full: 'Centar za tehnološki razvoj Istarske županije',
     fullLines: ['Centar za tehnološki', 'razvoj Istarske županije'],
     tagline: 'Znanje. Infrastruktura. Suradnja.',
@@ -30,14 +30,14 @@ export default {
   home: {
     heroTitle: ['Tehnologija', 'koja povezuje', 'Istru.'],
     heroLead:
-      'CTRI je otvorena radionica i laboratorij u kojem studenti, istraživači i poduzetnici iz Istre razvijaju fizičke proizvode — od prve skice do funkcionalnog prototipa. Oprema, prostor i mentorstvo na jednom mjestu.',
+      'CTRL je otvorena radionica i laboratorij u kojem studenti, istraživači i poduzetnici iz Istre razvijaju fizičke proizvode — od prve skice do funkcionalnog prototipa. Oprema, prostor i mentorstvo na jednom mjestu.',
     ctaApply: 'Prijavite se za korištenje',
     ctaTools: 'Pregledajte opremu',
 
-    whatEyebrow: 'Što je CTRI',
+    whatEyebrow: 'Što je CTRL',
     whatTitle: 'Prostor između ideje i proizvoda.',
     whatLead:
-      'Najveći broj dobrih tehnoloških ideja u Istri nikada ne dođe do prototipa — ne zbog nedostatka znanja, nego zbog nedostatka pristupa strojevima, instrumentima i ljudima koji su ih već koristili. CTRI postoji da ukloni upravo tu prepreku.',
+      'Najveći broj dobrih tehnoloških ideja u Istri nikada ne dođe do prototipa — ne zbog nedostatka znanja, nego zbog nedostatka pristupa strojevima, instrumentima i ljudima koji su ih već koristili. CTRL postoji da ukloni upravo tu prepreku.',
 
     pillars: [
       {
@@ -116,12 +116,12 @@ export default {
 
   about: {
     title: 'O Centru',
-    lead: 'CTRI je infrastrukturni projekt Istarske županije usmjeren na ono što nedostaje između fakulteta i tržišta: mjesto gdje se ideja može fizički napraviti, izmjeriti i pokvariti bez posljedica.',
+    lead: 'CTRL je infrastrukturni projekt Istarske županije usmjeren na ono što nedostaje između fakulteta i tržišta: mjesto gdje se ideja može fizički napraviti, izmjeriti i pokvariti bez posljedica.',
 
     missionTitle: 'Zašto Centar postoji',
     mission: [
       'Istra ima tehničko obrazovanje, ima proizvodnu tradiciju i ima ljude koji znaju raditi rukama. Ono što joj je nedostajalo je zajednički prostor u kojem se to troje susreće prije nego što nastane tvrtka.',
-      'Bez takvog prostora put od ideje do prototipa vodi preko kupnje opreme koja se koristi nekoliko puta, ili preko odustajanja. CTRI tu opremu drži na jednom mjestu, održava je i daje na besplatno korištenje po satu.',
+      'Bez takvog prostora put od ideje do prototipa vodi preko kupnje opreme koja se koristi nekoliko puta, ili preko odustajanja. CTRL tu opremu drži na jednom mjestu, održava je i daje na besplatno korištenje po satu.',
       'Centar nije proizvodni pogon i ne radi serijsku proizvodnju. Radi prototipove, ispitivanja, popravke i učenje — sve ono što prethodi odluci da se nešto uopće počne proizvoditi.',
     ],
 
@@ -303,7 +303,7 @@ export default {
     inactive: 'Račun je deaktiviran. Javite se voditelju Centra.',
     setPwTitle: 'Postavite novu lozinku',
     setPwLead: 'Prije prvog korištenja potrebno je zamijeniti privremenu lozinku vlastitom.',
-    setPwInviteLead: 'Dobrodošli u CTRI. Postavite lozinku za svoj novi račun.',
+    setPwInviteLead: 'Dobrodošli u CTRL. Postavite lozinku za svoj novi račun.',
     setPw: 'Spremi lozinku',
     pwTooShort: 'Lozinka mora imati najmanje 10 znakova',
     pwMismatch: 'Lozinke se ne podudaraju',

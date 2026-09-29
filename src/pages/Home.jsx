@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---- What CTRI is -------------------------------------------- */}
+      {/* ---- What CTRL is -------------------------------------------- */}
       <section className="section">
         <div className="wrap">
           <span className="eyebrow">{t('home.whatEyebrow')}</span>

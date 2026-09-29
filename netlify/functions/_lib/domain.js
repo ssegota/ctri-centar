@@ -59,7 +59,7 @@ export function makeUsername(firstName, lastName, users) {
 
 export function makeRef(applications) {
   const year = new Date().getFullYear()
-  const prefix = `CTRI-${year}-`
+  const prefix = `CTRL-${year}-`
   const used = Object.values(applications)
     .map((a) => a.ref)
     .filter((r) => typeof r === 'string' && r.startsWith(prefix))

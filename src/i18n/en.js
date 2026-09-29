@@ -4,7 +4,7 @@ export default {
   locale: 'en-GB',
 
   brand: {
-    name: 'CTRI',
+    name: 'CTRL',
     full: 'Technology Development Centre of Istria County',
     fullLines: ['Technology Development Centre', 'of Istria County'],
     tagline: 'Knowledge. Infrastructure. Collaboration.',
@@ -30,14 +30,14 @@ export default {
   home: {
     heroTitle: ['Technology', 'that connects', 'Istria.'],
     heroLead:
-      'CTRI is an open workshop and laboratory where students, researchers and founders across Istria build physical products — from the first sketch to a working prototype. Equipment, space and mentoring in one place.',
+      'CTRL is an open workshop and laboratory where students, researchers and founders across Istria build physical products — from the first sketch to a working prototype. Equipment, space and mentoring in one place.',
     ctaApply: 'Apply for access',
     ctaTools: 'Browse the equipment',
 
-    whatEyebrow: 'What CTRI is',
+    whatEyebrow: 'What CTRL is',
     whatTitle: 'The space between an idea and a product.',
     whatLead:
-      'Most good technical ideas in Istria never reach a prototype — not for lack of knowledge, but for lack of access to machines, instruments and people who have used them before. CTRI exists to remove exactly that obstacle.',
+      'Most good technical ideas in Istria never reach a prototype — not for lack of knowledge, but for lack of access to machines, instruments and people who have used them before. CTRL exists to remove exactly that obstacle.',
 
     pillars: [
       {
@@ -116,12 +116,12 @@ export default {
 
   about: {
     title: 'About the Centre',
-    lead: 'CTRI is an infrastructure project of Istria County aimed at what is missing between the university and the market: a place where an idea can be physically made, measured and broken without consequence.',
+    lead: 'CTRL is an infrastructure project of Istria County aimed at what is missing between the university and the market: a place where an idea can be physically made, measured and broken without consequence.',
 
     missionTitle: 'Why the Centre exists',
     mission: [
       'Istria has technical education, a manufacturing tradition, and people who know how to work with their hands. What it lacked was a shared space where those three meet before a company exists.',
-      'Without such a space, the route from idea to prototype runs through buying equipment that gets used a handful of times, or through giving up. CTRI keeps that equipment in one place, maintains it, and makes it available by the hour at no charge.',
+      'Without such a space, the route from idea to prototype runs through buying equipment that gets used a handful of times, or through giving up. CTRL keeps that equipment in one place, maintains it, and makes it available by the hour at no charge.',
       'The Centre is not a production facility and does not do series manufacturing. It does prototypes, testing, repair and learning — everything that comes before the decision to manufacture anything at all.',
     ],
 
@@ -303,7 +303,7 @@ export default {
     inactive: 'This account is deactivated. Contact the Centre manager.',
     setPwTitle: 'Set a new password',
     setPwLead: 'Before you continue, replace the temporary password with one of your own.',
-    setPwInviteLead: 'Welcome to CTRI. Set a password for your new account.',
+    setPwInviteLead: 'Welcome to CTRL. Set a password for your new account.',
     setPw: 'Save password',
     pwTooShort: 'Password must be at least 10 characters',
     pwMismatch: 'Passwords do not match',

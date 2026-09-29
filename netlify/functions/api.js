@@ -1,5 +1,5 @@
 /**
- * CTRI API — a single Netlify function that serves every /api/* route.
+ * CTRL API — a single Netlify function that serves every /api/* route.
  *
  * Auth: signed session token in an httpOnly cookie.
  * Storage: Netlify Blobs (see _lib/store.js).

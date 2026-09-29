@@ -10,7 +10,7 @@ export function Mark({ className = '', style }) {
 }
 
 /**
- * The official CTRI lockup. Both artworks are rendered and CSS shows the one
+ * The official CTRL lockup. Both artworks are rendered and CSS shows the one
  * that matches the active theme, so switching themes never waits on a fetch.
  * The lockup carries the Croatian name in both languages — it is the
  * registered logo, not translatable copy.

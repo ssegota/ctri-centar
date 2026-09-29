@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "CTRI — Centar za tehnološki razvoj Istarske županije. Public site, tool catalogue, member accounts and reservations.",
+  "description": "CTRL — Centar za tehnološki razvoj Istarske županije. Public site, tool catalogue, member accounts and reservations.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

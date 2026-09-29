@@ -84,8 +84,8 @@ function CredentialsCard({ creds, name, onClose }) {
   if (!creds) return null
 
   const message = lang === 'hr'
-    ? `Poštovani/a ${name},\n\nvaša prijava za korištenje Centra za tehnološki razvoj Istarske županije je odobrena.\n\nKorisničko ime: ${creds.username}\nPrivremena lozinka: ${creds.password}\n\nAktivirajte račun i postavite vlastitu lozinku na:\n${creds.inviteUrl}\n\nPoveznica vrijedi ${creds.expiresInDays} dana. Javit ćemo vam se s terminom uvodne obuke.\n\nSrdačan pozdrav,\nCTRI`
-    : `Dear ${name},\n\nyour application to use the Technology Development Centre of Istria County has been approved.\n\nUsername: ${creds.username}\nTemporary password: ${creds.password}\n\nActivate your account and set your own password at:\n${creds.inviteUrl}\n\nThe link is valid for ${creds.expiresInDays} days. We will be in touch with an induction slot.\n\nBest regards,\nCTRI`
+    ? `Poštovani/a ${name},\n\nvaša prijava za korištenje Centra za tehnološki razvoj Istarske županije je odobrena.\n\nKorisničko ime: ${creds.username}\nPrivremena lozinka: ${creds.password}\n\nAktivirajte račun i postavite vlastitu lozinku na:\n${creds.inviteUrl}\n\nPoveznica vrijedi ${creds.expiresInDays} dana. Javit ćemo vam se s terminom uvodne obuke.\n\nSrdačan pozdrav,\nCTRL`
+    : `Dear ${name},\n\nyour application to use the Technology Development Centre of Istria County has been approved.\n\nUsername: ${creds.username}\nTemporary password: ${creds.password}\n\nActivate your account and set your own password at:\n${creds.inviteUrl}\n\nThe link is valid for ${creds.expiresInDays} days. We will be in touch with an induction slot.\n\nBest regards,\nCTRL`
 
   return (
     <div className="panel" style={{ marginBottom: 24, borderColor: 'var(--ok)' }}>
@@ -420,7 +420,7 @@ function AddMember({ onDone }) {
             <option value="student">{t('apply.types.student.t')}</option>
             <option value="individual">{t('apply.types.individual.t')}</option>
             <option value="company">{t('apply.types.company.t')}</option>
-            <option value="staff">CTRI</option>
+            <option value="staff">CTRL</option>
           </Select>
         </Field>
         <Field label={t('apply.f.companyName')} name="a-org" hint={t('common.optional')}>

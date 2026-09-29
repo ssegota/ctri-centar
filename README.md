@@ -1,4 +1,4 @@
-# CTRI — Centar za tehnološki razvoj Istarske županije
+# CTRL — Centar za tehnološki razvoj Istarske županije
 
 Public site, searchable equipment catalogue, member accounts and an hourly
 booking system for the Centre's makerspace. Croatian and English, light and
@@ -53,7 +53,7 @@ Netlify runtime, Blobs are unavailable, so the store falls back to JSON files in
 `.netlify/blobs-local/` — `npm run reset` clears it.
 
 `npm run test:api` writes to `.netlify/blobs-test/` instead, via
-`CTRI_LOCAL_STORE_DIR`, because it changes the admin password and locks an
+`CTRL_LOCAL_STORE_DIR`, because it changes the admin password and locks an
 account. `npm run test:e2e` runs against the dev server and does write to the
 dev store.
 
@@ -66,7 +66,7 @@ There is still no public sign-up; the flow is deliberate:
 
 1. **Apply** — `/apply`. Three applicant types (student, individual, company),
    each with its own fields, plus a free-text explanation of the project. The
-   applicant gets a reference number like `CTRI-2026-0001`.
+   applicant gets a reference number like `CTRL-2026-0001`.
 2. **Review** — the application lands in **Administracija → Prijave** with
    everything the applicant submitted.
 3. **Approve** — creates an account with a generated username (`ime.prezime`)

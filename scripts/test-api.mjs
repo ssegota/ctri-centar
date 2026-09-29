@@ -8,7 +8,7 @@ import { resolve } from 'node:path'
 // Own store, wiped each run. These tests change the admin password and lock an
 // account, so they must never touch the store `npm run dev` is using.
 const STORE = '.netlify/blobs-test'
-process.env.CTRI_LOCAL_STORE_DIR = STORE
+process.env.CTRL_LOCAL_STORE_DIR = STORE
 await rm(resolve(process.cwd(), STORE), { recursive: true, force: true })
 const { default: handler } = await import('../netlify/functions/api.js')
 
@@ -66,7 +66,7 @@ r = await call('POST', '/applications', {
     gdpr: true, safety: true,
   },
 })
-ok('accepts a valid application', r.status === 201 && /^CTRI-\d{4}-0001$/.test(r.data.ref), r.data)
+ok('accepts a valid application', r.status === 201 && /^CTRL-\d{4}-0001$/.test(r.data.ref), r.data)
 const appRef = r.data.ref
 r = await call('POST', '/applications', {
   type: 'company',
@@ -76,7 +76,7 @@ r = await call('POST', '/applications', {
     gdpr: true, safety: true,
   },
 })
-ok('reference numbers increment', r.data.ref === 'CTRI-2026-0002' || /0002$/.test(r.data.ref), r.data)
+ok('reference numbers increment', r.data.ref === 'CTRL-2026-0002' || /0002$/.test(r.data.ref), r.data)
 
 console.log('\n── admin guard ───────────────────────────────────')
 ok('anonymous cannot list applications', (await call('GET', '/admin/applications')).status === 401)
