@@ -497,6 +497,14 @@ export default {
     placeholder: 'Content in preparation',
   },
 
+  partners: {
+    title: 'In partnership with',
+    lead: 'The Centre is a project of Istria County, delivered in partnership with Juraj Dobrila University of Pula and its Faculty of Informatics.',
+    istra: 'Istria County',
+    unipu: 'Juraj Dobrila University of Pula',
+    fipu: 'Faculty of Informatics in Pula',
+  },
+
   footer: {
     explore: 'Centre',
     access: 'Access',

@@ -497,6 +497,14 @@ export default {
     placeholder: 'Sadržaj u pripremi',
   },
 
+  partners: {
+    title: 'U suradnji s',
+    lead: 'Centar je projekt Istarske županije, ostvaren u suradnji sa Sveučilištem Jurja Dobrile u Puli i njegovim Fakultetom informatike.',
+    istra: 'Istarska županija',
+    unipu: 'Sveučilište Jurja Dobrile u Puli',
+    fipu: 'Fakultet informatike u Puli',
+  },
+
   footer: {
     explore: 'Centar',
     access: 'Pristup',

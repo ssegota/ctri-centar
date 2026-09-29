@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Mark } from '../components/Logo.jsx'
+import Partners from '../components/Partners.jsx'
 import { ArrowRight, Cap, User, Building } from '../components/Icons.jsx'
 import { useI18n } from '../i18n/index.jsx'
 
@@ -134,8 +135,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ---- Partners ------------------------------------------------- */}
+      <section className="partners-band">
+        <div className="wrap">
+          <div style={{ maxWidth: '46ch' }}>
+            <span className="eyebrow">{t('partners.title')}</span>
+            <p className="small muted mt-1">{t('partners.lead')}</p>
+          </div>
+          <Partners />
+        </div>
+      </section>
+
       {/* ---- Closing CTA ---------------------------------------------- */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section className="section">
         <div className="wrap">
           <div className="cta-band">
             <Mark className="cta-band__mark" />

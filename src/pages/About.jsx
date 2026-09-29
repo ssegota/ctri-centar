@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Mark } from '../components/Logo.jsx'
+import Partners from '../components/Partners.jsx'
 import { Shield, ArrowRight } from '../components/Icons.jsx'
 import { useI18n } from '../i18n/index.jsx'
 import { TOOLS, BOOKABLE, RESTRICTED } from '../lib/tools.js'
@@ -67,7 +68,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section" id="privacy">
+      <section className="section section--alt" id="privacy">
         <div className="wrap">
           <span className="eyebrow">{t('about.privacyTitle')}</span>
           <h2 className="mt-2">{t('about.privacyTitle')}</h2>
@@ -87,7 +88,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section section--alt" id="accessibility">
+      <section className="section" id="accessibility">
         <div className="wrap">
           <span className="eyebrow">{t('about.accessTitle')}</span>
           <h2 className="mt-2">{t('about.accessTitle')}</h2>
@@ -104,6 +105,15 @@ export default function About() {
             <b>{t('common.placeholder')}</b>
             {t('about.accessTodo')}
           </div>
+        </div>
+      </section>
+
+      <section className="section section--alt" id="partners">
+        <div className="wrap">
+          <span className="eyebrow">{t('partners.title')}</span>
+          <h2 className="mt-2">{t('partners.title')}</h2>
+          <p className="lead mt-3">{t('partners.lead')}</p>
+          <div className="mt-4"><Partners variant="cards" /></div>
         </div>
       </section>
 

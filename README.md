@@ -169,9 +169,25 @@ the visitor picks one, after which their choice is remembered.
 
 Typeface is **Figtree**, the closest widely available match to the geometric
 sans on the brand sheet, with the Latin Extended subset for Croatian
-diacritics. The mark is drawn as SVG in `src/components/Logo.jsx`: the two dark
-rings use `currentColor` so it inverts with the theme, while the teal ring and
-the coral dot stay fixed.
+diacritics.
+
+### Logos
+
+All in `public/brand/`, cropped and trimmed from the official artwork:
+
+| File | Use |
+| ---- | --- |
+| `ctri-light.png` / `ctri-dark.png` | Official lockup; `Logo.jsx` renders both and CSS shows the one for the active theme |
+| `ctri-mark-light.png` | The mark alone, used as a CSS mask for the one-colour background watermarks |
+| `unipu.png`, `fipu.png` | University seal and FIPU mark, with the "Fakultet informatike u Puli" text cropped off |
+| `istra.png` / `istra-dark.png` | Istria County; the original's white background made transparent, and a white-lettering copy for dark mode |
+
+Partner logos appear in the footer, in a band on the home page and as cards
+on the About page (`src/components/Partners.jsx`). `favicon.png`,
+`apple-touch-icon.png` and `og.png` are generated from the same artwork.
+
+The lockup carries the Croatian name in both languages — it is the registered
+logo, not translatable copy.
 
 ### Still to fill in
 

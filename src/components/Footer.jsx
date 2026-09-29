@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Logo from './Logo.jsx'
+import Partners from './Partners.jsx'
 import { useI18n } from '../i18n/index.jsx'
 
 export default function Footer() {
@@ -42,6 +43,11 @@ export default function Footer() {
               <li><Link to="/about#accessibility">{t('footer.accessibility')}</Link></li>
             </ul>
           </div>
+        </div>
+
+        <div className="ftr__partners">
+          <h4>{t('partners.title')}</h4>
+          <Partners variant="footer" />
         </div>
 
         <div className="ftr__base">

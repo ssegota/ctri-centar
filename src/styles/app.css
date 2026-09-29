@@ -72,23 +72,21 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 16px); }
 }
 
 /* ===== Logo ============================================================= */
-.logo { display: inline-flex; align-items: center; gap: 12px; }
-.logo__mark { width: 40px; height: 40px; flex: none; color: var(--fg); }
-.logo__text { display: flex; flex-direction: column; gap: 2px; }
-.logo__word {
-  font-size: 1.44rem; font-weight: 900; letter-spacing: -0.045em; line-height: 1;
-  display: inline-flex; align-items: flex-end; gap: 3px;
+/* Official lockup artwork; the theme decides which of the two is visible. */
+.logo { display: inline-flex; align-items: center; flex: none; line-height: 0; }
+.logo__img { height: 44px; width: auto; }
+.logo__img--dark { display: none; }
+[data-theme='dark'] .logo__img--light { display: none; }
+[data-theme='dark'] .logo__img--dark { display: block; }
+.ftr .logo__img { height: 56px; }
+@media (max-width: 420px) { .hdr .logo__img { height: 38px; } }
+
+/* The mark as a one-colour silhouette, for oversized background use. */
+.mark-silhouette {
+  display: block; aspect-ratio: 512 / 555; background-color: currentColor;
+  -webkit-mask: url('/brand/ctri-mark-light.png') center / contain no-repeat;
+          mask: url('/brand/ctri-mark-light.png') center / contain no-repeat;
 }
-.logo__word i { width: .22em; height: .22em; background: var(--brand-coral); border-radius: 1px; margin-bottom: .1em; font-style: normal; }
-.logo__sub {
-  font-size: .5rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--teal); line-height: 1.25; white-space: nowrap;
-}
-.logo--lg .logo__mark { width: 58px; height: 58px; }
-.logo--lg .logo__word { font-size: 2.1rem; }
-.logo--lg .logo__sub { font-size: .62rem; }
-.logo--bare .logo__sub { display: none; }
-@media (max-width: 420px) { .hdr .logo__sub { display: none; } }
 
 /* ===== Header =========================================================== */
 .hdr {
@@ -273,9 +271,6 @@ table.t tbody tr:hover { background: var(--bg-alt); }
   position: absolute; z-index: 1; right: -8%; bottom: -28%;
   width: min(760px, 78vw); opacity: .12; color: var(--hero-fg); pointer-events: none;
 }
-/* The oversized background marks read as one silhouette, not a tinted logo. */
-.hero__mark path, .cta-band__mark path { stroke: currentColor; }
-.hero__mark circle, .cta-band__mark circle { fill: currentColor; }
 @media (max-width: 900px) { .hero__mark { right: -32%; bottom: -18%; opacity: .1; } }
 
 /* ===== Home sections ==================================================== */
@@ -511,6 +506,8 @@ table.t th.ind-col {
 .ftr a { color: var(--fg-muted); }
 .ftr a:hover { color: var(--fg); }
 .ftr__motto { font-weight: 800; color: var(--teal); font-size: .84rem; letter-spacing: .01em; }
+.ftr__partners { margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--border); }
+.ftr__partners h4 { margin-bottom: 16px; }
 .ftr__base {
   margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--border);
   display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
@@ -537,3 +534,25 @@ table.t th.ind-col {
   font-weight: 700; font-size: .89rem; box-shadow: var(--shadow-lg); max-width: min(520px, calc(100vw - 32px));
 }
 .toast--err { background: var(--danger); color: #fff; }
+
+/* ===== Partner logos ==================================================== */
+.partners { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 28px 40px; }
+.partners a { display: flex; flex-direction: column; align-items: center; gap: 12px; transition: opacity .15s; }
+.partners a:hover { opacity: .8; }
+.partners img { height: 64px; width: auto; }
+.partners__img--dark { display: none; }
+[data-theme='dark'] .partners__img--light { display: none; }
+[data-theme='dark'] .partners__img--dark { display: block; }
+/* Beats the footer's generic column-list rule. */
+.ftr ul.partners { flex-direction: row; align-items: center; }
+.partners--footer { gap: 18px 26px; }
+.partners--footer img { height: 46px; }
+.partners--cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.partners--cards a {
+  justify-content: center; height: 100%; padding: 28px 20px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--r-lg);
+}
+.partners--cards img { height: 92px; }
+.partners__name { font-size: .84rem; font-weight: 700; color: var(--fg-muted); text-align: center; }
+.partners-band { border-top: 1px solid var(--border); padding-block: 36px; }
+.partners-band .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px 40px; flex-wrap: wrap; }
