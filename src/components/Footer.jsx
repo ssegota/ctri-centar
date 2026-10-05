@@ -22,6 +22,7 @@ export default function Footer() {
             <ul>
               <li><Link to="/">{t('nav.home')}</Link></li>
               <li><Link to="/about">{t('nav.about')}</Link></li>
+              <li><Link to="/team">{t('nav.team')}</Link></li>
               <li><Link to="/tools">{t('nav.tools')}</Link></li>
             </ul>
           </div>
