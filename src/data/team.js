@@ -6,7 +6,7 @@
  * drop a square JPG into public/team/ and set the path here.
  */
 export const LEADS = [
-  { id: 'razem', name: 'Jelena Ražem', post: 'dipl. oec.', role: 'head', photo: null },
+  { id: 'nikolic-razem', name: 'Jelena Nikolić Ražem', post: 'dipl. oec.', role: 'business', photo: null },
   { id: 'baressi-segota', pre: 'doc. dr. sc.', name: 'Sandi Baressi Šegota', role: 'scientific', photo: '/team/baressi-segota.jpg' },
 ]
 
@@ -24,5 +24,8 @@ export const TEAM = [
 
 export const fullName = (p) => [p.pre, p.post ? `${p.name},` : p.name, p.post].filter(Boolean).join(' ')
 
-export const initials = (name) =>
-  name.split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join('').toUpperCase()
+/** First and last name only, so a double surname gives JR rather than JN. */
+export function initials(name) {
+  const w = name.split(/\s+/).filter(Boolean)
+  return (w[0][0] + (w.length > 1 ? w[w.length - 1][0] : '')).toUpperCase()
+}

@@ -504,7 +504,7 @@ export default {
     leadsTitle: 'Leadership',
     teamTitle: 'Team',
     teamHeading: 'Who works at the Centre',
-    roles: { head: 'Head of the Centre', scientific: 'Scientific lead' },
+    roles: { business: 'Business manager', scientific: 'Scientific lead' },
   },
 
   partners: {

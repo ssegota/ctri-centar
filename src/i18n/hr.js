@@ -504,7 +504,7 @@ export default {
     leadsTitle: 'Vodstvo Centra',
     teamTitle: 'Tim',
     teamHeading: 'Tko radi u Centru',
-    roles: { head: 'Voditeljica Centra', scientific: 'Znanstveni voditelj' },
+    roles: { business: 'Poslovna voditeljica', scientific: 'Znanstveni voditelj' },
   },
 
   partners: {
