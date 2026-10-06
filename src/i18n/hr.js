@@ -104,9 +104,9 @@ export default {
     stepsTitle: 'Od prijave do prvog termina.',
     steps: [
       { t: 'Pošaljite prijavu', d: 'Ispunite obrazac za studenta, privatnu osobu ili tvrtku i opišite na čemu namjeravate raditi.' },
-      { t: 'Pregled prijave', d: 'Prijavu pregledava voditelj Centra. Odgovor obično stiže u nekoliko radnih dana.' },
-      { t: 'Račun i uvodna obuka', d: 'Nakon odobrenja dobivate korisnički račun i termin uvodne obuke za prostor i sigurnosna pravila.' },
-      { t: 'Rezervirajte opremu', d: 'Kroz raspored rezervirate satove na opremi koja vam treba. Strojevi s povećanim rizikom otključavaju se nakon obuke.' },
+      { t: 'Pregled prijave', d: 'Prijavu pregledava voditelj Centra. Odgovor obično stiže unutar nekoliko radnih dana.' },
+      { t: 'Račun i uvodna obuka', d: 'Nakon odobrenja dobivate korisnički račun, termin uvodne obuke za prostor i sigurnosna pravila.' },
+      { t: 'Rezervirajte opremu', d: 'Putem rasporeda rezervirate sate na opremi koja vam je potrebna. Strojevi s povećanim rizikom otključavaju se nakon obuke.' },
     ],
 
     ctaTitle: 'Imate ideju koju treba napraviti?',
@@ -121,9 +121,9 @@ export default {
 
     missionTitle: 'Zašto Centar postoji',
     mission: [
-      'Istra ima tehničko obrazovanje, ima proizvodnu tradiciju i ima ljude koji znaju raditi rukama. Ono što joj je nedostajalo je zajednički prostor u kojem se to troje susreće prije nego što nastane tvrtka.',
-      'Bez takvog prostora put od ideje do prototipa vodi preko kupnje opreme koja se koristi nekoliko puta, ili preko odustajanja. CTRL tu opremu drži na jednom mjestu, održava je i daje na besplatno korištenje po satu.',
-      'Centar nije proizvodni pogon i ne radi serijsku proizvodnju. Radi prototipove, ispitivanja, popravke i učenje, odnosno sve ono što prethodi odluci da se nešto uopće počne proizvoditi.',
+      'Istra obiluje tehničkim obrazovanjem, proizvodnom tradicijom i ljudima koji znaju raditi rukama. Ono što joj nedostaje jest zajednički prostor u kojem se to troje susreće prije nego što nastane tvrtka.',
+      'Bez takvog prostora put od ideje do prototipa vodi preko kupnje opreme koja se koristi nekoliko puta ili preko odustajanja. CTRL tu opremu drži na jednom mjestu, održava je i daje na besplatno korištenje po satu.',
+      'Centar nije proizvodni pogon i ne radi serijsku proizvodnju. Radi prototipe, ispitivanja, popravke i učenje, sve ono što prethodi odluci da se nešto uopće počne proizvoditi.',
     ],
 
     rulesTitle: 'Pravila korištenja',

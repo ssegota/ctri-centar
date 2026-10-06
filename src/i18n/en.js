@@ -121,8 +121,8 @@ export default {
 
     missionTitle: 'Why the Centre exists',
     mission: [
-      'Istria has technical education, a manufacturing tradition, and people who know how to work with their hands. What it lacked was a shared space where those three meet before a company exists.',
-      'Without such a space, the route from idea to prototype runs through buying equipment that gets used a handful of times, or through giving up. CTRL keeps that equipment in one place, maintains it, and makes it available by the hour at no charge.',
+      'Istria has technical education, a manufacturing tradition, and people who know how to work with their hands. What it lacks is a shared space where those three meet before a company exists.',
+      'Without such a space, the route from idea to prototype runs through buying equipment that gets used a handful of times or through giving up. CTRL keeps that equipment in one place, maintains it, and makes it available by the hour at no charge.',
       'The Centre is not a production facility and does not do series manufacturing. It does prototypes, testing, repair and learning: everything that comes before the decision to manufacture anything at all.',
     ],
 
