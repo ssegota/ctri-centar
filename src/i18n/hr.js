@@ -105,7 +105,7 @@ export default {
     steps: [
       { t: 'Pošaljite prijavu', d: 'Ispunite obrazac za studenta, privatnu osobu ili tvrtku i opišite na čemu namjeravate raditi.' },
       { t: 'Pregled prijave', d: 'Prijavu pregledava voditelj Centra. Odgovor obično stiže unutar nekoliko radnih dana.' },
-      { t: 'Račun i uvodna obuka', d: 'Nakon odobrenja dobivate korisnički račun, termin uvodne obuke za prostor i sigurnosna pravila.' },
+      { t: 'Račun i uvodna obuka', d: 'Nakon odobrenja dobivate korisnički račun te termin uvodne obuke za prostor i sigurnosna pravila.' },
       { t: 'Rezervirajte opremu', d: 'Putem rasporeda rezervirate sate na opremi koja vam je potrebna. Strojevi s povećanim rizikom otključavaju se nakon obuke.' },
     ],
 

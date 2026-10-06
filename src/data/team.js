@@ -17,8 +17,8 @@ export const TEAM = [
   { id: 'bobanovic-dasko', pre: 'doc. dr. sc.', name: 'Mieta Bobanović-Dasko', photo: '/team/bobanovic-dasko.jpg' },
   { id: 'sever', name: 'Luka Sever', post: 'mag. ing. comp.', photo: null },
   { id: 'karlovic', name: 'Ratomir Karlović', post: 'mag. inf.', photo: '/team/karlovic.jpg' },
-  { id: 'milicevic', name: 'Marijela Miličević', post: 'mag. educ. inf.', photo: null },
-  { id: 'rovis', name: 'Mia Rovis', post: 'mag. inf.', photo: null },
+  { id: 'milicevic', name: 'Marijela Miličević', post: 'mag. educ. inf.', photo: '/team/milicevic.jpg' },
+  { id: 'rovis', name: 'Mia Rovis', post: 'mag. inf.', photo: '/team/rovis.jpg' },
   { id: 'staric', name: 'Elvis Starić', post: 'mag. inf.', photo: '/team/staric.jpg' },
   { id: 'prenc', name: 'Petar Prenc', post: 'univ. bacc. inf.', photo: '/team/prenc.jpg' },
 ]
