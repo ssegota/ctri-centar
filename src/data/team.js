@@ -14,6 +14,7 @@ export const TEAM = [
   { id: 'etinger', pre: 'prof. dr. sc.', name: 'Darko Etinger', photo: '/team/etinger.jpg' },
   { id: 'lorencin', pre: 'doc. dr. sc.', name: 'Ivan Lorencin', photo: '/team/lorencin.jpg' },
   { id: 'tankovic', pre: 'izv. prof. dr. sc.', name: 'Nikola Tanković', photo: '/team/tankovic.jpg' },
+  { id: 'bobanovic-dasko', pre: 'doc. dr. sc.', name: 'Mieta Bobanović-Dasko', photo: '/team/bobanovic-dasko.jpg' },
   { id: 'sever', name: 'Luka Sever', post: 'mag. ing. comp.', photo: null },
   { id: 'karlovic', name: 'Ratomir Karlović', post: 'mag. inf.', photo: null },
   { id: 'milicevic', name: 'Marijela Miličević', post: 'mag. educ. inf.', photo: null },
