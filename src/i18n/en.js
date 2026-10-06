@@ -31,14 +31,14 @@ export default {
   home: {
     heroTitle: ['Technology', 'that connects', 'Istria.'],
     heroLead:
-      'CTRL is an open workshop and laboratory where students, researchers and founders across Istria build physical products — from the first sketch to a working prototype. Equipment, space and mentoring in one place.',
+      'CTRL is an open workshop and laboratory where students, researchers and founders across Istria build physical products, from the first sketch to a working prototype. Equipment, space and mentoring in one place.',
     ctaApply: 'Apply for access',
     ctaTools: 'Browse the equipment',
 
     whatEyebrow: 'What CTRL is',
     whatTitle: 'The space between an idea and a product.',
     whatLead:
-      'Most good technical ideas in Istria never reach a prototype — not for lack of knowledge, but for lack of access to machines, instruments and people who have used them before. CTRL exists to remove exactly that obstacle.',
+      'Most good technical ideas in Istria never reach a prototype, not for lack of knowledge but for lack of access to machines, instruments and people who have used them before. CTRL exists to remove exactly that obstacle.',
 
     pillars: [
       {
@@ -49,7 +49,7 @@ export default {
       {
         n: 'Infrastructure',
         t: 'Equipment that rarely pays for itself alone',
-        d: 'Oscilloscopes, an enclosed-chamber 3D printer, a 3D scanner, a table saw and lab power supplies — kit an individual or early-stage startup struggles to justify, and without which no prototype gets made.',
+        d: 'Oscilloscopes, an enclosed-chamber 3D printer, a 3D scanner, a table saw and lab power supplies: kit an individual or early-stage startup struggles to justify, and without which no prototype gets made.',
       },
       {
         n: 'Collaboration',
@@ -69,7 +69,7 @@ export default {
     audienceEyebrow: 'Who it is for',
     audienceTitle: 'Three ways to use the Centre.',
     audienceLead:
-      'Using the Centre is free for everyone — no membership, no hourly charge. Access is open but not anonymous: every application is reviewed so we know who is working in the space and which training they need.',
+      'Using the Centre is free for everyone: no membership, no hourly charge. Access is open but not anonymous: every application is reviewed so we know who is working in the space and which training they need.',
     audience: [
       {
         t: 'Students',
@@ -110,20 +110,20 @@ export default {
     ],
 
     ctaTitle: 'Got something that needs building?',
-    ctaLead: 'The application takes a few minutes. Tell us who you are and what you are making — we will work out the rest together.',
+    ctaLead: 'The application takes a few minutes. Tell us who you are and what you are making, and we will work out the rest together.',
     ctaBtn: 'Apply for access',
     ctaSecondary: 'See what we have',
   },
 
   about: {
     title: 'About the Centre',
-    lead: 'CTRL is an infrastructure project of Istria County aimed at what is missing between the university and the market: a place where an idea can be physically made, measured and broken without consequence.',
+    lead: 'CTRL is an infrastructure project of Istria County aimed at what is missing between the university and the market: a place where an idea can be physically made, measured and tested before it becomes a product.',
 
     missionTitle: 'Why the Centre exists',
     mission: [
       'Istria has technical education, a manufacturing tradition, and people who know how to work with their hands. What it lacked was a shared space where those three meet before a company exists.',
       'Without such a space, the route from idea to prototype runs through buying equipment that gets used a handful of times, or through giving up. CTRL keeps that equipment in one place, maintains it, and makes it available by the hour at no charge.',
-      'The Centre is not a production facility and does not do series manufacturing. It does prototypes, testing, repair and learning — everything that comes before the decision to manufacture anything at all.',
+      'The Centre is not a production facility and does not do series manufacturing. It does prototypes, testing, repair and learning: everything that comes before the decision to manufacture anything at all.',
     ],
 
     rulesTitle: 'Rules of use',
@@ -138,7 +138,7 @@ export default {
 
     equipTitle: 'Where the equipment comes from',
     equipLead:
-      'The catalogue is drawn from the procurement for equipping the Centre, split into groups: IT equipment and machines, tools for research and innovation work, and electrical machines, apparatus and measuring instruments. Only tools and devices are catalogued — furniture, storage and consumables are tracked separately and are not bookable.',
+      'The catalogue is drawn from the procurement for equipping the Centre, split into groups: IT equipment and machines, tools for research and innovation work, and electrical machines, apparatus and measuring instruments. Only tools and devices are catalogued. Furniture, storage and consumables are tracked separately and are not bookable.',
 
     privacyTitle: 'Privacy',
     privacyLead: 'What the Centre collects, why, and for how long.',
@@ -170,7 +170,7 @@ export default {
       hours: 'Mon – Fri, 08:00 – 20:00',
       hoursNote: 'Closed at weekends',
       email: 'ctri@fipu.unipu.hr',
-      phone: 'Phone number — to be confirmed',
+      phone: 'Coming soon',
     },
     placeholderNote: 'The phone number will be published once confirmed.',
   },
@@ -210,9 +210,9 @@ export default {
     bookThis: 'Book a slot',
     loginToBook: 'Sign in to book',
     applyToBook: 'Apply for access to book',
-    noBookingNote: 'This item is not booked in advance — it is available to every member in the space during opening hours.',
+    noBookingNote: 'This item is not booked in advance. It is available to every member in the space during opening hours.',
     restrictedNote: 'This equipment requires training. Your booking will be sent for approval until your induction is recorded.',
-    trainedNote: 'Your induction for this equipment is on record — bookings are confirmed immediately.',
+    trainedNote: 'Your induction for this equipment is on record, so bookings are confirmed immediately.',
     cats: {
       fabrication: 'Digital fabrication',
       woodwork: 'Woodworking',
@@ -229,7 +229,7 @@ export default {
 
   apply: {
     title: 'Apply for access',
-    lead: 'The Centre has no public sign-up. Fill in the application and we will get back to you after review — if it is approved you will receive an account and an induction slot.',
+    lead: 'The Centre has no public sign-up. Fill in the application and we will get back to you after review. If it is approved, you will receive an account and an induction slot.',
     typeTitle: 'Who is applying?',
     types: {
       student: { t: 'Student', d: 'Full-time or part-time student at any higher education institution.' },
@@ -265,8 +265,8 @@ export default {
     },
     ph: {
       motivation:
-        'Describe what you are working on and what you would make at the Centre. There is no right answer — we care about the project, not the phrasing. A few sentences is plenty.',
-      equipment: 'E.g. 3D printer, oscilloscope, table saw — or leave blank if you are not sure yet.',
+        'Describe what you are working on and what you would make at the Centre. There is no right answer: we care about the project, not the phrasing. A few sentences is plenty.',
+      equipment: 'E.g. 3D printer, oscilloscope, table saw. Leave it blank if you are not sure yet.',
       experience: 'E.g. hand tools yes, woodworking machines no. This only affects your training schedule, not the decision.',
       projectTitle: 'A working title is entirely fine',
     },
@@ -300,7 +300,7 @@ export default {
     applyLink: 'Apply for access to the Centre',
     badCredentials: 'Incorrect username or password',
     locked: 'Too many failed attempts. The account is locked for 15 minutes.',
-    serverError: 'Sign-in is unavailable — the server returned an error ({status}). This is not your password. Try again, or contact the Centre manager.',
+    serverError: 'Sign-in is unavailable because the server returned an error ({status}). This is not your password. Try again, or contact the Centre manager.',
     inactive: 'This account is deactivated. Contact the Centre manager.',
     setPwTitle: 'Set a new password',
     setPwLead: 'Before you continue, replace the temporary password with one of your own.',
@@ -345,7 +345,7 @@ export default {
     groupNote: 'Everything selected is booked for the same slot. If any one of them is taken, the slot is unavailable.',
     combinedNote: 'Only slots where every selected item is free are shown as available.',
     successMulti: 'Everything is booked.',
-    successMixed: 'Booked — some items are awaiting approval.',
+    successMixed: 'Booked, but some items are awaiting approval.',
     willConfirm: 'confirms immediately',
     willPend: 'goes for approval',
     cancelGroup: 'Cancel all',
@@ -369,7 +369,7 @@ export default {
     hoursFew: 'hours',
     hour: 'hour',
     note: 'Note (optional)',
-    notePlaceholder: 'A short description of what you are doing — it helps the manager plan the space.',
+    notePlaceholder: 'A short description of what you are doing helps the manager plan the space.',
     confirm: 'Confirm booking',
     confirming: 'Booking…',
     clearSel: 'Clear selection',
@@ -379,7 +379,7 @@ export default {
     pastSlot: 'You cannot book a slot in the past.',
     tooLong: 'The longest booking for this equipment is {n} h.',
     closedSlot: 'The Centre is closed at that time.',
-    needTraining: 'This equipment requires training — the request goes for approval.',
+    needTraining: 'This equipment requires training, so the request goes for approval.',
     available: 'free',
     of: 'of',
     statusPending: 'Awaiting approval',
@@ -477,6 +477,7 @@ export default {
   },
 
   common: {
+    notProvided: 'not provided',
     loading: 'Loading…',
     save: 'Save',
     saving: 'Saving…',
@@ -524,7 +525,7 @@ export default {
     accessibility: 'Accessibility',
     rights: 'All rights reserved.',
     founder: 'A project of Istria County',
-    note: 'Site in progress — some details about the Centre are not final yet.',
+    note: 'This site is in progress and some details about the Centre are not final yet.',
   },
 
   months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],

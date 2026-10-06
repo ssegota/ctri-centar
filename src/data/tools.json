@@ -158,8 +158,8 @@
       "en": "254 mm blade, 79 mm depth of cut at 90°."
     },
     "desc": {
-      "hr": "Stroj za uzdužno i poprečno rezanje ploča i letvica. Najzahtjevniji stroj u radionici po pitanju sigurnosti — rezervacija je moguća tek nakon obuke i uvijek uz prisutnost druge osobe u prostoru.",
-      "en": "For ripping and cross-cutting sheet goods and stock. The most safety-sensitive machine in the workshop — bookable only after induction, and never to be used alone in the room."
+      "hr": "Stroj za uzdužno i poprečno rezanje ploča i letvica. Najzahtjevniji stroj u radionici po pitanju sigurnosti. Rezervacija je moguća tek nakon obuke i uvijek uz prisutnost druge osobe u prostoru.",
+      "en": "For ripping and cross-cutting sheet goods and stock. The most safety-sensitive machine in the workshop: bookable only after induction, and never to be used alone in the room."
     },
     "specs": [
       {
@@ -250,8 +250,8 @@
       "en": "Flattening stock and bringing it to exact thickness."
     },
     "desc": {
-      "hr": "Priprema sirovog ili neravnog drva prije daljnje obrade — poravnava plohu i dovodi materijal na jednoliku debljinu po cijeloj dužini.",
-      "en": "Prepares rough or uneven timber before further work — flattens the face and brings the material to a uniform thickness along its full length."
+      "hr": "Priprema sirovog ili neravnog drva prije daljnje obrade. Poravnava plohu i dovodi materijal na jednoliku debljinu po cijeloj dužini.",
+      "en": "Prepares rough or uneven timber before further work. Flattens the face and brings the material to a uniform thickness along its full length."
     },
     "specs": [
       {
@@ -554,8 +554,8 @@
       "en": "200 × 70 mm table, fine precision work."
     },
     "desc": {
-      "hr": "Mala glodalica za precizne zahvate na sitnim dijelovima — izrada kućišta za senzore, dorada tiskanih pločica i modelarski radovi.",
-      "en": "Small mill for precision work on small parts — sensor housings, PCB rework and model-making."
+      "hr": "Mala glodalica za precizne zahvate na sitnim dijelovima: izrada kućišta za senzore, dorada tiskanih pločica i modelarski radovi.",
+      "en": "Small mill for precision work on small parts: sensor housings, PCB rework and model-making."
     },
     "specs": [
       {
@@ -654,16 +654,16 @@
     "bookable": false,
     "restricted": false,
     "name": {
-      "hr": "Škripac — fiksna montaža",
-      "en": "Bench vice — fixed mount"
+      "hr": "Škripac, fiksna montaža",
+      "en": "Bench vice, fixed mount"
     },
     "short": {
       "hr": "Trajno montiran na radni stol.",
       "en": "Permanently mounted on the workbench."
     },
     "desc": {
-      "hr": "Škripac trajno montiran na radne stolove u metalskoj zoni. Dostupan je svakome tko koristi taj radni stol — ne rezervira se zasebno.",
-      "en": "Vice permanently mounted on the benches in the metalwork zone. Available to anyone using that bench — not booked separately."
+      "hr": "Škripac trajno montiran na radne stolove u metalskoj zoni. Dostupan je svakome tko koristi taj radni stol i ne rezervira se zasebno.",
+      "en": "Vice permanently mounted on the benches in the metalwork zone. Available to anyone using that bench and is not booked separately."
     },
     "specs": [],
     "tags": [
@@ -681,16 +681,16 @@
     "bookable": false,
     "restricted": false,
     "name": {
-      "hr": "Škripac — rubna montaža",
-      "en": "Bench vice — clamp-on"
+      "hr": "Škripac, rubna montaža",
+      "en": "Bench vice, clamp-on"
     },
     "short": {
       "hr": "Prenosivi škripac, steže se na rub stola.",
       "en": "Portable vice, clamps to the bench edge."
     },
     "desc": {
-      "hr": "Lagani škripac koji se steže na rub bilo kojeg radnog stola — koristan kada je potrebno stegnuti dio izvan metalske zone.",
-      "en": "Light vice that clamps onto the edge of any bench — useful when you need to hold a part outside the metalwork zone."
+      "hr": "Lagani škripac koji se steže na rub bilo kojeg radnog stola. Koristan je kada je potrebno stegnuti dio izvan metalske zone.",
+      "en": "Light vice that clamps onto the edge of any bench, useful when you need to hold a part outside the metalwork zone."
     },
     "specs": [],
     "tags": [
@@ -783,8 +783,8 @@
       "en": "Left, right and straight cut."
     },
     "desc": {
-      "hr": "Tri para škara za ravne i zakrivljene rezove u tankom limu — izrada nosača, oklopa i kućišta.",
-      "en": "Three pairs of shears for straight and curved cuts in thin sheet — brackets, shields and enclosures."
+      "hr": "Tri para škara za ravne i zakrivljene rezove u tankom limu, za izradu nosača, oklopa i kućišta.",
+      "en": "Three pairs of shears for straight and curved cuts in thin sheet, for brackets, shields and enclosures."
     },
     "specs": [],
     "tags": [
@@ -810,8 +810,8 @@
       "en": "6 – 70 mm."
     },
     "desc": {
-      "hr": "Krune za izradu većih provrta — prolazi za kabele, prekidače, konektore i ventilatore u kućištima.",
-      "en": "Hole saws for larger openings — cable glands, switches, connectors and fan cut-outs in enclosures."
+      "hr": "Krune za izradu većih provrta, npr. prolaza za kabele, prekidače, konektore i ventilatore u kućištima.",
+      "en": "Hole saws for larger openings such as cable glands, switches, connectors and fan cut-outs in enclosures."
     },
     "specs": [
       {
@@ -971,8 +971,8 @@
       "en": "Bits, tweezers, spudgers and opening tools."
     },
     "desc": {
-      "hr": "Kompletan set za servis elektronike — nastavci za sve uobičajene sigurnosne glave, antistatičke pincete i alat za otvaranje kućišta bez oštećenja.",
-      "en": "Complete electronics service set — bits for all common security heads, anti-static tweezers and tools for opening housings without damage."
+      "hr": "Kompletan set za servis elektronike: nastavci za sve uobičajene sigurnosne glave, antistatičke pincete i alat za otvaranje kućišta bez oštećenja.",
+      "en": "Complete electronics service set: bits for all common security heads, anti-static tweezers and tools for opening housings without damage."
     },
     "specs": [
       {
@@ -1005,8 +1005,8 @@
       "en": "Metric hex keys."
     },
     "desc": {
-      "hr": "Standardni metrički imbus ključevi — najčešće korišteni alat pri sastavljanju aluminijskih profila i 3D-ispisanih sklopova.",
-      "en": "Standard metric hex keys — the most-used tool when assembling aluminium extrusion and 3D-printed assemblies."
+      "hr": "Standardni metrički imbus ključevi, najčešće korišteni alat pri sastavljanju aluminijskih profila i 3D-ispisanih sklopova.",
+      "en": "Standard metric hex keys, the most-used tool when assembling aluminium extrusion and 3D-printed assemblies."
     },
     "specs": [
       {
@@ -1308,8 +1308,8 @@
       "en": "Digital phosphor display, 1 GSa/s, two channels."
     },
     "desc": {
-      "hr": "Dvokanalni osciloskop s fosfornim prikazom koji intenzitetom boje prikazuje učestalost pojave signala — time se rijetki poremećaji i jitter vide izravno na zaslonu, bez posebnog okidanja.",
-      "en": "Two-channel scope with a digital phosphor display that encodes how often a signal occurs as colour intensity — rare glitches and jitter become visible directly on screen without special triggering."
+      "hr": "Dvokanalni osciloskop s fosfornim prikazom koji intenzitetom boje prikazuje učestalost pojave signala. Time se rijetki poremećaji i jitter vide izravno na zaslonu, bez posebnog okidanja.",
+      "en": "Two-channel scope with a digital phosphor display that encodes how often a signal occurs as colour intensity, so rare glitches and jitter become visible directly on screen without special triggering."
     },
     "specs": [
       {
@@ -1389,7 +1389,7 @@
       "en": "2 × 32 V / 2 × 3 A plus fixed 5 V."
     },
     "desc": {
-      "hr": "Dvokanalni izvor s ograničenjem struje — kanali se mogu spojiti serijski ili paralelno. Ograničenje struje štiti prototip kada se prvi put stavlja pod napon.",
+      "hr": "Dvokanalni izvor s ograničenjem struje. Kanali se mogu spojiti serijski ili paralelno. Ograničenje struje štiti prototip kada se prvi put stavlja pod napon.",
       "en": "Dual-channel supply with current limiting; channels can be series- or parallel-connected. The current limit protects a prototype the first time it is powered up."
     },
     "specs": [
@@ -1431,8 +1431,8 @@
       "en": "Bench instrument for precision measurement."
     },
     "desc": {
-      "hr": "Stolni multimetar veće rezolucije i stabilnosti od ručnog — koristi se kada je mjerenje potrebno dokumentirati ili pratiti kroz duže vrijeme.",
-      "en": "Higher resolution and stability than a handheld unit — used when a measurement has to be documented or tracked over a longer period."
+      "hr": "Stolni multimetar veće rezolucije i stabilnosti od ručnog. Koristi se kada je mjerenje potrebno dokumentirati ili pratiti kroz duže vrijeme.",
+      "en": "Higher resolution and stability than a handheld unit, used when a measurement has to be documented or tracked over a longer period."
     },
     "specs": [
       {
@@ -1495,7 +1495,7 @@
       "en": "Current measurement without breaking the circuit."
     },
     "desc": {
-      "hr": "Mjere struju bez prekidanja kruga — obuhvatom vodiča. Koriste se pri ispitivanju napajanja motora i uređaja veće snage.",
+      "hr": "Mjere struju bez prekidanja kruga, obuhvatom vodiča. Koriste se pri ispitivanju napajanja motora i uređaja veće snage.",
       "en": "Measures current by clamping around a conductor, without breaking the circuit. Used when testing motor drives and higher-power equipment."
     },
     "specs": [
@@ -1853,8 +1853,8 @@
       "en": "0 – 30 m/s."
     },
     "desc": {
-      "hr": "Mjerenje brzine strujanja zraka — provjera ventilacije, hlađenja kućišta i odsisa.",
-      "en": "Air-speed measurement — checking ventilation, enclosure cooling and extraction."
+      "hr": "Mjerenje brzine strujanja zraka za provjeru ventilacije, hlađenja kućišta i odsisa.",
+      "en": "Air-speed measurement for checking ventilation, enclosure cooling and extraction."
     },
     "specs": [
       {
@@ -1912,8 +1912,8 @@
       "en": "−250 to +1,300 °C."
     },
     "desc": {
-      "hr": "Kontaktno mjerenje temperature sondom — procesi lemljenja, ekstruzije i toplinske obrade.",
-      "en": "Contact temperature measurement by probe — soldering, extrusion and heat-treatment processes."
+      "hr": "Kontaktno mjerenje temperature sondom kod lemljenja, ekstruzije i toplinske obrade.",
+      "en": "Contact temperature measurement by probe for soldering, extrusion and heat-treatment processes."
     },
     "specs": [
       {
@@ -2000,8 +2000,8 @@
       "en": "Measures consumption at a USB port."
     },
     "desc": {
-      "hr": "Mjeri napon, struju i potrošnju USB uređaja — korisno pri procjeni autonomije prijenosnih prototipova.",
-      "en": "Measures voltage, current and consumption of USB devices — useful when estimating the runtime of portable prototypes."
+      "hr": "Mjeri napon, struju i potrošnju USB uređaja, korisno pri procjeni autonomije prijenosnih prototipova.",
+      "en": "Measures voltage, current and consumption of USB devices, useful when estimating the runtime of portable prototypes."
     },
     "specs": [],
     "tags": [
@@ -2089,8 +2089,8 @@
       "en": "16 GB RAM, 64-bit quad-core ARM, 40-pin I/O header."
     },
     "desc": {
-      "hr": "Jednopločno računalo sa 40-pinskim I/O priključkom — most između programske podrške i fizičkog svijeta. Koristi se za IoT prototipove, računalni vid i upravljanje uređajima. Rezervira se i preko noći jer se testovi često puštaju u kontinuitetu.",
-      "en": "Single-board computer with a 40-pin I/O header — the bridge between software and the physical world. Used for IoT prototypes, computer vision and device control. Bookable overnight, since tests are often left running."
+      "hr": "Jednopločno računalo sa 40-pinskim I/O priključkom, most između programske podrške i fizičkog svijeta. Koristi se za IoT prototipove, računalni vid i upravljanje uređajima. Rezervira se i preko noći jer se testovi često puštaju u kontinuitetu.",
+      "en": "Single-board computer with a 40-pin I/O header, the bridge between software and the physical world. Used for IoT prototypes, computer vision and device control. Bookable overnight, since tests are often left running."
     },
     "specs": [
       {
@@ -2302,8 +2302,8 @@
       "en": "Max. 10 bar, 220 l/min intake, 230 V."
     },
     "desc": {
-      "hr": "Izvor komprimiranog zraka za pneumatski alat, čišćenje dijelova i lakiranje. Rad s komprimiranim zrakom zahtijeva obuku — mlaz zraka pod tlakom opasan je za oči i kožu.",
-      "en": "Compressed air for pneumatic tools, part cleaning and spraying. Working with compressed air requires induction — a pressurised jet is dangerous to eyes and skin."
+      "hr": "Izvor komprimiranog zraka za pneumatski alat, čišćenje dijelova i lakiranje. Rad s komprimiranim zrakom zahtijeva obuku jer je mlaz zraka pod tlakom opasan za oči i kožu.",
+      "en": "Compressed air for pneumatic tools, part cleaning and spraying. Working with compressed air requires induction, because a pressurised jet is dangerous to eyes and skin."
     },
     "specs": [
       {

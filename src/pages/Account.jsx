@@ -57,7 +57,7 @@ function ReservationRow({ row, onCancel, canCancel }) {
         {formatDate(first.date, dict)}
         <div className="tiny faint">{fmtHour(first.hour)} – {fmtHour(first.hour + first.hours)}</div>
       </td>
-      <td>{statuses.length === 1 ? <StatusBadge status={statuses[0]} /> : <span className="tiny faint">—</span>}</td>
+      <td>{statuses.length === 1 && <StatusBadge status={statuses[0]} />}</td>
       <td style={{ textAlign: 'right' }}>
         {canCancel && (
           <button type="button" className="btn btn--sm btn--danger" onClick={() => onCancel(row)}>
@@ -166,7 +166,7 @@ export default function Account() {
               <dl className="kv">
                 <dt>{t('admin.users.name')}</dt><dd>{user.name}</dd>
                 <dt>{t('auth.username')}</dt><dd className="mono">{user.username}</dd>
-                <dt>{t('admin.users.email')}</dt><dd>{user.email || '—'}</dd>
+                <dt>{t('admin.users.email')}</dt><dd>{user.email || t('common.notProvided')}</dd>
                 <dt>{t('account.accountType')}</dt><dd>{t(`apply.types.${user.memberType}.t`) || user.memberType}</dd>
                 {user.org && (<><dt>{t('admin.users.type')}</dt><dd>{user.org}</dd></>)}
                 <dt>{t('account.memberSince')}</dt><dd>{formatDate(user.createdAt.slice(0, 10), dict)}</dd>

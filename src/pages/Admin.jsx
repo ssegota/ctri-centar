@@ -329,7 +329,7 @@ function Members({ users, reload }) {
               <tr key={u.id}>
                 <td>
                   <strong>{u.name}</strong>
-                  <div className="tiny faint">{u.email || '—'}{u.org ? ` · ${u.org}` : ''}</div>
+                  <div className="tiny faint">{[u.email, u.org].filter(Boolean).join(' · ')}</div>
                 </td>
                 <td className="mono small">{u.username}</td>
                 <td>
@@ -594,7 +594,7 @@ function Inductions({ users, reload }) {
                       disabled={saving === u.id}
                       onChange={() => toggle(u, x.id)}
                       style={{ width: 17, height: 17, accentColor: 'var(--teal-bright)' }}
-                      aria-label={`${u.name} — ${x.name[lang]}`}
+                      aria-label={`${u.name}: ${x.name[lang]}`}
                     />
                   </td>
                 ))}

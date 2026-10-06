@@ -253,7 +253,7 @@ export default function Book() {
                 {tools.map((x) => (
                   <span key={x.id} className="chip">
                     {x.name[lang]}
-                    <button type="button" onClick={() => toggle(x.id)} aria-label={`${t('booking.clearAll')} — ${x.name[lang]}`}>
+                    <button type="button" onClick={() => toggle(x.id)} aria-label={`${t('booking.clearAll')}: ${x.name[lang]}`}>
                       <X size={13} />
                     </button>
                   </span>
@@ -265,7 +265,7 @@ export default function Book() {
               <div className="note note--warn" style={{ marginBottom: 16 }}>
                 <div className="row" style={{ gap: 8, alignItems: 'flex-start' }}>
                   <Shield size={16} />
-                  <span>{t('tools.restrictedNote')} — {split.pend.map((x) => x.name[lang]).join(', ')}</span>
+                  <span><strong>{split.pend.map((x) => x.name[lang]).join(', ')}:</strong> {t('tools.restrictedNote')}</span>
                 </div>
               </div>
             )}
@@ -302,8 +302,8 @@ export default function Book() {
                                 className={`slot ${st.cls}`}
                                 disabled={st.disabled}
                                 onClick={() => { setSel((c) => (c && c.date === iso && c.hour === hour ? null : { date: iso, hour })); setHours(1) }}
-                                aria-label={`${formatDate(iso, dict)} ${fmtHour(hour)}${st.disabled ? '' : ` — ${freeAt(iso, hour)}`}`}
-                                title={st.disabled ? undefined : `${formatDate(iso, dict)} ${fmtHour(hour)} — ${freeAt(iso, hour)} ${t('booking.available')}`}
+                                aria-label={`${formatDate(iso, dict)} ${fmtHour(hour)}${st.disabled ? '' : `, ${freeAt(iso, hour)}`}`}
+                                title={st.disabled ? undefined : `${formatDate(iso, dict)} ${fmtHour(hour)}, ${freeAt(iso, hour)} ${t('booking.available')}`}
                               >
                                 {st.label}
                               </button>
@@ -384,7 +384,7 @@ export default function Book() {
             {n === 1 && (
               <p className="small muted mt-4">
                 <Link to={`/tools/${selected[0]}`} style={{ color: 'var(--teal)', fontWeight: 700 }}>
-                  {TOOL_BY_ID[selected[0]].name[lang]} — {t('tools.details')}
+                  {TOOL_BY_ID[selected[0]].name[lang]} · {t('tools.details')}
                 </Link>
               </p>
             )}

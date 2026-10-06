@@ -6,7 +6,7 @@
  * drop a square JPG into public/team/ and set the path here.
  */
 export const LEADS = [
-  { id: 'nikolic-razem', name: 'Jelena Nikolić Ražem', post: 'dipl. oec.', role: 'business', photo: null },
+  { id: 'nikolic-razem', name: 'Jelena Nikolić Ražem', post: 'dipl. oec.', role: 'business', photo: '/team/nikolic-razem.jpg' },
   { id: 'baressi-segota', pre: 'doc. dr. sc.', name: 'Sandi Baressi Šegota', role: 'scientific', photo: '/team/baressi-segota.jpg' },
 ]
 
@@ -16,11 +16,11 @@ export const TEAM = [
   { id: 'tankovic', pre: 'izv. prof. dr. sc.', name: 'Nikola Tanković', photo: '/team/tankovic.jpg' },
   { id: 'bobanovic-dasko', pre: 'doc. dr. sc.', name: 'Mieta Bobanović-Dasko', photo: '/team/bobanovic-dasko.jpg' },
   { id: 'sever', name: 'Luka Sever', post: 'mag. ing. comp.', photo: null },
-  { id: 'karlovic', name: 'Ratomir Karlović', post: 'mag. inf.', photo: null },
+  { id: 'karlovic', name: 'Ratomir Karlović', post: 'mag. inf.', photo: '/team/karlovic.jpg' },
   { id: 'milicevic', name: 'Marijela Miličević', post: 'mag. educ. inf.', photo: null },
   { id: 'rovis', name: 'Mia Rovis', post: 'mag. inf.', photo: null },
-  { id: 'staric', name: 'Elvis Starić', post: 'mag. inf.', photo: null },
-  { id: 'prenc', name: 'Petar Prenc', post: 'univ. bacc. inf.', photo: null },
+  { id: 'staric', name: 'Elvis Starić', post: 'mag. inf.', photo: '/team/staric.jpg' },
+  { id: 'prenc', name: 'Petar Prenc', post: 'univ. bacc. inf.', photo: '/team/prenc.jpg' },
 ]
 
 export const fullName = (p) => [p.pre, p.post ? `${p.name},` : p.name, p.post].filter(Boolean).join(' ')

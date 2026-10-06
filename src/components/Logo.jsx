@@ -23,7 +23,7 @@ export default function Logo({ link = true, className = '' }) {
       <img className="logo__img logo__img--dark" src="/brand/ctri-dark.png" alt="" width="720" height="235" />
     </>
   )
-  const label = `${t('brand.name')} — ${t('brand.full')}`
+  const label = `${t('brand.name')}, ${t('brand.full')}`
   if (!link) return <span className={`logo ${className}`} role="img" aria-label={label}>{inner}</span>
   return <Link to="/" className={`logo ${className}`} aria-label={label}>{inner}</Link>
 }

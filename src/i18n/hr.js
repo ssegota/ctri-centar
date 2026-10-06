@@ -31,14 +31,14 @@ export default {
   home: {
     heroTitle: ['Tehnologija', 'koja povezuje', 'Istru.'],
     heroLead:
-      'CTRL je otvorena radionica i laboratorij u kojem studenti, istraživači i poduzetnici iz Istre razvijaju fizičke proizvode — od prve skice do funkcionalnog prototipa. Oprema, prostor i mentorstvo na jednom mjestu.',
+      'CTRL je otvorena radionica i laboratorij u kojem studenti, istraživači i poduzetnici iz Istre razvijaju fizičke proizvode, od prve skice do funkcionalnog prototipa. Oprema, prostor i mentorstvo na jednom mjestu.',
     ctaApply: 'Prijavite se za korištenje',
     ctaTools: 'Pregledajte opremu',
 
     whatEyebrow: 'Što je CTRL',
     whatTitle: 'Prostor između ideje i proizvoda.',
     whatLead:
-      'Najveći broj dobrih tehnoloških ideja u Istri nikada ne dođe do prototipa — ne zbog nedostatka znanja, nego zbog nedostatka pristupa strojevima, instrumentima i ljudima koji su ih već koristili. CTRL postoji da ukloni upravo tu prepreku.',
+      'Najveći broj dobrih tehnoloških ideja u Istri nikada ne dođe do prototipa, i to ne zbog nedostatka znanja, nego zbog nedostatka pristupa strojevima, instrumentima i ljudima koji su ih već koristili. CTRL postoji da ukloni upravo tu prepreku.',
 
     pillars: [
       {
@@ -49,7 +49,7 @@ export default {
       {
         n: 'Infrastruktura',
         t: 'Oprema koja se inače ne isplati',
-        d: 'Osciloskopi, 3D pisač sa zatvorenom komorom, 3D skener, stolna pila i laboratorijski izvori — oprema koju pojedinac ili rani startup teško opravda, a bez koje se ne dolazi do prototipa.',
+        d: 'Osciloskopi, 3D pisač sa zatvorenom komorom, 3D skener, stolna pila i laboratorijski izvori. To je oprema koju pojedinac ili rani startup teško opravda, a bez koje se ne dolazi do prototipa.',
       },
       {
         n: 'Suradnja',
@@ -69,7 +69,7 @@ export default {
     audienceEyebrow: 'Za koga',
     audienceTitle: 'Tri načina korištenja Centra.',
     audienceLead:
-      'Korištenje Centra besplatno je za sve — nema članarine ni naknade po satu. Pristup je otvoren, ali nije anoniman: svaka prijava se pregledava kako bismo znali tko radi u prostoru i koja mu je obuka potrebna.',
+      'Korištenje Centra besplatno je za sve: nema članarine ni naknade po satu. Pristup je otvoren, ali nije anoniman: svaka prijava se pregledava kako bismo znali tko radi u prostoru i koja mu je obuka potrebna.',
     audience: [
       {
         t: 'Studenti',
@@ -110,20 +110,20 @@ export default {
     ],
 
     ctaTitle: 'Imate ideju koju treba napraviti?',
-    ctaLead: 'Prijava traje nekoliko minuta. Recite nam tko ste i što gradite — ostalo ćemo riješiti zajedno.',
+    ctaLead: 'Prijava traje nekoliko minuta. Recite nam tko ste i što gradite, a ostalo ćemo riješiti zajedno.',
     ctaBtn: 'Prijavite se za korištenje',
     ctaSecondary: 'Pogledajte što imamo',
   },
 
   about: {
     title: 'O Centru',
-    lead: 'CTRL je infrastrukturni projekt Istarske županije usmjeren na ono što nedostaje između fakulteta i tržišta: mjesto gdje se ideja može fizički napraviti, izmjeriti i pokvariti bez posljedica.',
+    lead: 'CTRL je infrastrukturni projekt Istarske županije usmjeren na ono što nedostaje između fakulteta i tržišta: mjesto gdje se ideja može fizički napraviti, izmjeriti i isprobati prije nego što postane proizvod.',
 
     missionTitle: 'Zašto Centar postoji',
     mission: [
       'Istra ima tehničko obrazovanje, ima proizvodnu tradiciju i ima ljude koji znaju raditi rukama. Ono što joj je nedostajalo je zajednički prostor u kojem se to troje susreće prije nego što nastane tvrtka.',
       'Bez takvog prostora put od ideje do prototipa vodi preko kupnje opreme koja se koristi nekoliko puta, ili preko odustajanja. CTRL tu opremu drži na jednom mjestu, održava je i daje na besplatno korištenje po satu.',
-      'Centar nije proizvodni pogon i ne radi serijsku proizvodnju. Radi prototipove, ispitivanja, popravke i učenje — sve ono što prethodi odluci da se nešto uopće počne proizvoditi.',
+      'Centar nije proizvodni pogon i ne radi serijsku proizvodnju. Radi prototipove, ispitivanja, popravke i učenje, odnosno sve ono što prethodi odluci da se nešto uopće počne proizvoditi.',
     ],
 
     rulesTitle: 'Pravila korištenja',
@@ -138,7 +138,7 @@ export default {
 
     equipTitle: 'Odakle oprema',
     equipLead:
-      'Katalog opreme sastavljen je iz nabave za opremanje Centra, podijeljene u grupe: informatička oprema i strojevi, alat za istraživačko-inovacijski rad te električni strojevi, aparati i mjerni instrumenti. U katalogu su navedeni samo alati i uređaji — namještaj, pohrana i potrošni materijal vode se odvojeno i ne rezerviraju se.',
+      'Katalog opreme sastavljen je iz nabave za opremanje Centra, podijeljene u grupe: informatička oprema i strojevi, alat za istraživačko-inovacijski rad te električni strojevi, aparati i mjerni instrumenti. U katalogu su navedeni samo alati i uređaji. Namještaj, pohrana i potrošni materijal vode se odvojeno i ne rezerviraju se.',
 
     privacyTitle: 'Zaštita podataka',
     privacyLead: 'Što Centar prikuplja, zašto i koliko dugo.',
@@ -170,7 +170,7 @@ export default {
       hours: 'Pon – Pet, 08:00 – 20:00',
       hoursNote: 'Vikendom zatvoreno',
       email: 'ctri@fipu.unipu.hr',
-      phone: 'Broj telefona — dopuniti',
+      phone: 'Uskoro',
     },
     placeholderNote: 'Broj telefona bit će objavljen naknadno.',
   },
@@ -210,9 +210,9 @@ export default {
     bookThis: 'Rezerviraj termin',
     loginToBook: 'Prijavite se za rezervaciju',
     applyToBook: 'Prijavite se za korištenje Centra',
-    noBookingNote: 'Ova stavka ne rezervira se unaprijed — dostupna je svim korisnicima u prostoru tijekom radnog vremena.',
+    noBookingNote: 'Ova stavka ne rezervira se unaprijed. Dostupna je svim korisnicima u prostoru tijekom radnog vremena.',
     restrictedNote: 'Za ovu opremu potrebna je obuka. Vaša rezervacija bit će poslana na odobrenje dok obuka ne bude evidentirana.',
-    trainedNote: 'Evidentirana vam je obuka za ovu opremu — rezervacije se potvrđuju odmah.',
+    trainedNote: 'Evidentirana vam je obuka za ovu opremu, pa se rezervacije potvrđuju odmah.',
     cats: {
       fabrication: 'Digitalna proizvodnja',
       woodwork: 'Obrada drva',
@@ -229,7 +229,7 @@ export default {
 
   apply: {
     title: 'Prijava za korištenje Centra',
-    lead: 'Centar nema javnu registraciju. Ispunite prijavu i javit ćemo vam se nakon pregleda — ako je prijava odobrena, dobit ćete korisnički račun i termin uvodne obuke.',
+    lead: 'Centar nema javnu registraciju. Ispunite prijavu i javit ćemo vam se nakon pregleda. Ako je prijava odobrena, dobit ćete korisnički račun i termin uvodne obuke.',
     typeTitle: 'Tko se prijavljuje?',
     types: {
       student: { t: 'Student', d: 'Redoviti ili izvanredni student bilo kojeg visokog učilišta.' },
@@ -265,8 +265,8 @@ export default {
     },
     ph: {
       motivation:
-        'Opišite na čemu radite i što biste u Centru napravili. Nema pravog odgovora — zanima nas projekt, ne formulacija. Nekoliko rečenica je dovoljno.',
-      equipment: 'Npr. 3D pisač, osciloskop, stolna pila — ili ostavite prazno ako još niste sigurni.',
+        'Opišite na čemu radite i što biste u Centru napravili. Nema pravog odgovora: zanima nas projekt, ne formulacija. Nekoliko rečenica je dovoljno.',
+      equipment: 'Npr. 3D pisač, osciloskop, stolna pila. Ako još niste sigurni, ostavite prazno.',
       experience: 'Npr. ručni alat da, strojevi za obradu drva ne. Ovo utječe samo na raspored obuke, ne na odobrenje.',
       projectTitle: 'Radni naziv je sasvim dovoljan',
     },
@@ -300,7 +300,7 @@ export default {
     applyLink: 'Prijavite se za korištenje Centra',
     badCredentials: 'Neispravno korisničko ime ili lozinka',
     locked: 'Previše neuspjelih pokušaja. Račun je zaključan 15 minuta.',
-    serverError: 'Prijava trenutno nije moguća — poslužitelj je vratio pogrešku ({status}). Nije riječ o lozinci. Pokušajte ponovno ili se javite voditelju Centra.',
+    serverError: 'Prijava trenutno nije moguća jer je poslužitelj vratio pogrešku ({status}). Nije riječ o lozinci. Pokušajte ponovno ili se javite voditelju Centra.',
     inactive: 'Račun je deaktiviran. Javite se voditelju Centra.',
     setPwTitle: 'Postavite novu lozinku',
     setPwLead: 'Prije prvog korištenja potrebno je zamijeniti privremenu lozinku vlastitom.',
@@ -345,7 +345,7 @@ export default {
     groupNote: 'Sve odabrane stavke rezerviraju se u istom terminu. Ako je ijedna zauzeta, termin nije moguć.',
     combinedNote: 'Kao slobodni prikazani su samo termini u kojima su dostupne sve odabrane stavke.',
     successMulti: 'Sve stavke su rezervirane.',
-    successMixed: 'Rezervirano — dio stavki čeka odobrenje.',
+    successMixed: 'Rezervirano, ali dio stavki čeka odobrenje.',
     willConfirm: 'potvrđuje se odmah',
     willPend: 'ide na odobrenje',
     cancelGroup: 'Otkaži sve',
@@ -369,7 +369,7 @@ export default {
     hoursFew: 'sata',
     hour: 'sat',
     note: 'Napomena (neobavezno)',
-    notePlaceholder: 'Kratki opis onoga što radite — pomaže voditelju pri planiranju prostora.',
+    notePlaceholder: 'Kratki opis onoga što radite pomaže voditelju pri planiranju prostora.',
     confirm: 'Potvrdi rezervaciju',
     confirming: 'Rezerviram…',
     clearSel: 'Poništi odabir',
@@ -379,7 +379,7 @@ export default {
     pastSlot: 'Nije moguće rezervirati termin u prošlosti.',
     tooLong: 'Najdulja rezervacija za ovu opremu je {n} h.',
     closedSlot: 'Centar je u to vrijeme zatvoren.',
-    needTraining: 'Za ovu opremu potrebna je obuka — zahtjev ide na odobrenje.',
+    needTraining: 'Za ovu opremu potrebna je obuka, pa zahtjev ide na odobrenje.',
     available: 'slobodno',
     of: 'od',
     statusPending: 'Čeka odobrenje',
@@ -477,6 +477,7 @@ export default {
   },
 
   common: {
+    notProvided: 'nije navedeno',
     loading: 'Učitavanje…',
     save: 'Spremi',
     saving: 'Spremam…',
@@ -524,7 +525,7 @@ export default {
     accessibility: 'Pristupačnost',
     rights: 'Sva prava pridržana.',
     founder: 'Projekt Istarske županije',
-    note: 'Stranica je u izradi — dio podataka o Centru još nije dovršen.',
+    note: 'Stranica je u izradi i dio podataka o Centru još nije dovršen.',
   },
 
   months: ['siječnja', 'veljače', 'ožujka', 'travnja', 'svibnja', 'lipnja', 'srpnja', 'kolovoza', 'rujna', 'listopada', 'studenoga', 'prosinca'],
