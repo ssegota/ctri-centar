@@ -14,7 +14,6 @@ export default {
   nav: {
     home: 'Početna',
     tools: 'Oprema',
-    team: 'Naš tim',
     about: 'O Centru',
     apply: 'Prijava za korištenje',
     book: 'Rezervacije',
@@ -497,15 +496,6 @@ export default {
     forbidden: 'Nemate ovlasti za pristup ovoj stranici.',
     signedInAs: 'Prijavljeni kao',
     placeholder: 'Sadržaj u pripremi',
-  },
-
-  team: {
-    title: 'Naš tim',
-    lead: 'Ljudi koji vode Centar, drže obuke i pomažu korisnicima da od ideje dođu do prototipa.',
-    leadsTitle: 'Koordinacija Centra',
-    teamTitle: 'Tim',
-    teamHeading: 'Tko radi u Centru',
-    roles: { business: 'Poslovna koordinatorica', scientific: 'Znanstveni koordinator' },
   },
 
   partners: {

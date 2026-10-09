@@ -3,7 +3,6 @@ import Layout from './components/Layout.jsx'
 import { RequireAuth } from './components/ui.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
-import Team from './pages/Team.jsx'
 import Tools from './pages/Tools.jsx'
 import ToolDetail from './pages/ToolDetail.jsx'
 import Apply from './pages/Apply.jsx'
@@ -20,7 +19,6 @@ export default function App() {
       <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="team" element={<Team />} />
         <Route path="tools" element={<Tools />} />
         <Route path="tools/:id" element={<ToolDetail />} />
         <Route path="apply" element={<Apply />} />

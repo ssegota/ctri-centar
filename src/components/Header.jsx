@@ -20,7 +20,6 @@ export default function Header() {
     { to: '/', label: t('nav.home'), end: true },
     { to: '/tools', label: t('nav.tools') },
     { to: '/about', label: t('nav.about') },
-    { to: '/team', label: t('nav.team') },
     ...(user ? [{ to: '/book', label: t('nav.book') }] : []),
     ...(isAdmin ? [{ to: '/admin', label: t('nav.admin') }] : []),
   ]

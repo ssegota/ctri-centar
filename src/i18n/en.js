@@ -14,7 +14,6 @@ export default {
   nav: {
     home: 'Home',
     tools: 'Equipment',
-    team: 'Our team',
     about: 'About',
     apply: 'Apply for access',
     book: 'Bookings',
@@ -497,15 +496,6 @@ export default {
     forbidden: 'You do not have permission to view this page.',
     signedInAs: 'Signed in as',
     placeholder: 'Content in preparation',
-  },
-
-  team: {
-    title: 'Our team',
-    lead: 'The people who run the Centre, deliver the inductions and help members get from an idea to a prototype.',
-    leadsTitle: 'Coordination',
-    teamTitle: 'Team',
-    teamHeading: 'Who works at the Centre',
-    roles: { business: 'Business coordinator', scientific: 'Scientific coordinator' },
   },
 
   partners: {
