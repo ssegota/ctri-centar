@@ -506,7 +506,7 @@ table.t th.ind-col {
 .ftr a { color: var(--fg-muted); }
 .ftr a:hover { color: var(--fg); }
 .ftr__motto { font-weight: 800; color: var(--teal); font-size: .84rem; letter-spacing: .01em; }
-.ftr__partners { margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--border); }
+.ftr__partners { margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--border); text-align: center; }
 .ftr__partners h4 { margin-bottom: 16px; }
 .ftr__base {
   margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--border);
@@ -544,7 +544,7 @@ table.t th.ind-col {
 [data-theme='dark'] .partners__img--light { display: none; }
 [data-theme='dark'] .partners__img--dark { display: block; }
 /* Beats the footer's generic column-list rule. */
-.ftr ul.partners { flex-direction: row; align-items: center; }
+.ftr ul.partners { flex-direction: row; align-items: center; justify-content: center; }
 .partners--footer { gap: 18px 26px; }
 .partners--footer img { height: 46px; }
 .partners--cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
