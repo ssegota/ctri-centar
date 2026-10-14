@@ -168,7 +168,7 @@ export default {
       address: 'Alda Negrija 6, 52100 Pula, Croatia',
       hours: 'Mon – Fri, 08:00 – 20:00',
       hoursNote: 'Closed at weekends',
-      email: 'ctri@fipu.unipu.hr',
+      email: 'sbaressis@unipu.hr',
       phone: 'Coming soon',
     },
     placeholderNote: 'The phone number will be published once confirmed.',

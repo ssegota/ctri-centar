@@ -191,7 +191,7 @@ logo, not translatable copy.
 
 ### Still to fill in
 
-The Centre's address (Alda Negrija 6, Pula), email (`ctri@fipu.unipu.hr`) and
+The Centre's address (Alda Negrija 6, Pula), email (`sbaressis@unipu.hr`) and
 opening hours (Mon–Fri 08:00–20:00) are in. What remains, all in
 `src/i18n/{hr,en}.js` and marked in the UI with a dashed border:
 
